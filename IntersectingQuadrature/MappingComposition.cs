@@ -31,7 +31,7 @@ namespace IntersectingQuadrature {
             (Tensor1 f, Tensor2 jacobian) = EvaluateAndJacobian(tilde);
             Tensor2 G = Algebra.Transpose(jacobian) * jacobian;
             double g = Algebra.Determinant(G);
-            double J = Math.Sqrt(g);
+            double J = System.Math.Sqrt(g);
             return (J, f);
         }
     }

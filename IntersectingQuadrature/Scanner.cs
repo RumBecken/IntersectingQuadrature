@@ -117,9 +117,9 @@ namespace IntersectingQuadrature {
         }
 
         static void RemoveFacesWithSignFrom(SetList space) {
-            LinkedListNode<BinaryNode<Set>>? node = space.First;
+            LinkedListNode<BinaryNode<Set>> node = space.First;
             while (node != null) {
-                LinkedListNode<BinaryNode<Set>>? nextNode = node.Next;
+                LinkedListNode<BinaryNode<Set>> nextNode = node.Next;
                 if (node.Value.Value.Sign != Symbol.None) {
                     space.Remove(node);
                 }
@@ -128,16 +128,16 @@ namespace IntersectingQuadrature {
         }
 
         static SetList AddFaceLayerTo(SetList space, Axis heightDirection) {
-            SetList subspace = new(space.Dimension - 1); 
+            SetList subspace = new SetList(space.Dimension - 1); 
             foreach(BinaryNode<Set> face in space) {
                 Set topDomain = face.Value.Face( heightDirection, Symbol.Plus);
-                BinaryNode<Set> top = new(topDomain);
+                BinaryNode<Set> top = new BinaryNode<Set>(topDomain);
                 top.Parent = face;
                 face.SecondChild =  top;
                 subspace.AddLast(top);
 
                 Set bottomDomain = face.Value.Face( heightDirection, Symbol.Minus);
-                BinaryNode<Set> bottom = new(bottomDomain);
+                BinaryNode<Set> bottom = new BinaryNode<Set>(bottomDomain);
                 face.FirstChild = bottom;
                 bottom.Parent = face;
                 subspace.AddLast(bottom);

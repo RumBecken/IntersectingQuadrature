@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TensorAnalysis {
     public interface IScalarFunction {
 
-        public int M { get; }
+        int M { get; }
 
         double Evaluate(Tensor1 x);
 

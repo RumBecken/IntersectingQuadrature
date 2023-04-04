@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IntersectingQuadrature {
     internal class DomainComparer : IComparer<Set> {
-        public int Compare(Set? x, Set? y) {
+        public int Compare(Set x, Set y) {
             if (Equals(x.Geometry.ActiveDimensions, y.Geometry.ActiveDimensions)) {
                 return 0;
             } else {

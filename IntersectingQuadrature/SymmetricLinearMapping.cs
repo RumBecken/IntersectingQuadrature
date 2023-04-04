@@ -1,4 +1,5 @@
-﻿using TensorAnalysis;
+﻿using System;
+using TensorAnalysis;
 
 namespace IntersectingQuadrature {
     internal class SymmetricLinearMapping : LinearVectorFunction, IIntegralMapping {

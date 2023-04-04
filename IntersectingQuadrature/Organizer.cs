@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using TensorAnalysis;
 
@@ -17,7 +17,7 @@ namespace IntersectingQuadrature {
             LinkedList<NestedSet> domains = new LinkedList<NestedSet>();
             domains.AddFirst(space.Clone());
 
-            LinkedListNode<NestedSet>? node = domains.First;
+            LinkedListNode<NestedSet> node = domains.First;
             while (node != null) {
                 NestedSet domain = node.Value;
                 Iterate(domain, domains);

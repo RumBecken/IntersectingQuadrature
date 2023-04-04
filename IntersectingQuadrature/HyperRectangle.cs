@@ -22,7 +22,7 @@ namespace IntersectingQuadrature {
 
         public HyperRectangle(int codimension) {
             this.Codimension = codimension;
-            ActiveDimensions = new(codimension);
+            ActiveDimensions = new BitArray(codimension);
             Center = Tensor1.Zeros(codimension);
             Diameters = Tensor1.Zeros(codimension);
         }

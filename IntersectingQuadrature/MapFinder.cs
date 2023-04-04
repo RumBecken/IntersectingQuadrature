@@ -22,7 +22,7 @@ namespace IntersectingQuadrature {
             newton = new NewtonMethod(Environment.Epsilon);
             maxSubdivisions = 5;
             organizer = new Organizer(newton);
-            mapper = new(newton);
+            mapper = new Mapper.Mapper(newton);
         }
 
         public List<Map> FindMappings(IScalarFunction alpha, Symbol sign, HyperRectangle domain) {

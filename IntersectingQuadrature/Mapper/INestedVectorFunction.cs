@@ -10,12 +10,12 @@ namespace IntersectingQuadrature.Mapper {
    
     internal interface INestedVectorFunction {
 
-        public void Evaluate(Tensor1 tilde, Tensor1 evaluation);
+        void Evaluate(Tensor1 tilde, Tensor1 evaluation);
         
-        public double EvaluateAndDeterminant(Tensor1 tilde, Tensor1 evaluation);
+        double EvaluateAndDeterminant(Tensor1 tilde, Tensor1 evaluation);
 
-        public void EvaluateAndJacobian(Tensor1 tilde, Tensor1 evaluation, Tensor2 jacobian);
+        void EvaluateAndJacobian(Tensor1 tilde, Tensor1 evaluation, Tensor2 jacobian);
 
-        public void EvaluateAndJacobianAndHessian(Tensor1 tilde, Tensor1 evaluation, Tensor2 jacobian, Tensor3 hessian);
+        void EvaluateAndJacobianAndHessian(Tensor1 tilde, Tensor1 evaluation, Tensor2 jacobian, Tensor3 hessian);
     }
 }

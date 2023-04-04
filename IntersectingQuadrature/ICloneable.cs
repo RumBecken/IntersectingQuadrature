@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace IntersectingQuadrature {
     internal interface ICloneable<T> {
-        public T Clone();
+        T Clone();
     }
 }
