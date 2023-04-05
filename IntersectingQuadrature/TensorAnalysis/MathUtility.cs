@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
 
-namespace Example {
-    internal static class MathUtility {
+namespace IntersectingQuadrature.TensorAnalysis {
+    public static class MathUtility {
 
         public static int Pow(int x, int power) {
             if(power == 0) {

@@ -6,7 +6,7 @@ using System.Security.AccessControl;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using TensorAnalysis;
+using IntersectingQuadrature.TensorAnalysis;
 
 namespace IntersectingQuadrature {
     internal static class Scanner {

@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using TensorAnalysis;
+using IntersectingQuadrature.TensorAnalysis;
 
 namespace IntersectingQuadrature {
     internal static class ResizerTests {

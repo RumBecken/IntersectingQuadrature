@@ -5,9 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{067BE61D-390B-4654-A21C-970123B54989}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TensorAnalysis", "TensorAnalysis\TensorAnalysis.csproj", "{5EE36E0D-0FD3-4D88-8953-61E9F5847459}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntersectingQuadrature", "IntersectingQuadrature\IntersectingQuadrature.csproj", "{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntersectingQuadrature", "IntersectingQuadrature\IntersectingQuadrature.csproj", "{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{067BE61D-390B-4654-A21C-970123B54989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{067BE61D-390B-4654-A21C-970123B54989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{067BE61D-390B-4654-A21C-970123B54989}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EE36E0D-0FD3-4D88-8953-61E9F5847459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EE36E0D-0FD3-4D88-8953-61E9F5847459}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EE36E0D-0FD3-4D88-8953-61E9F5847459}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EE36E0D-0FD3-4D88-8953-61E9F5847459}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU

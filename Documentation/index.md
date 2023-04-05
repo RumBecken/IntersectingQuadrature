@@ -8,11 +8,11 @@ run examples from Example.csproj.
 
 ### NuGet 
 To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule.yml) : 
-- Define level sets [`IScalarFunction Alpha`](api/TensorAnalysis.IScalarFunction.yml) 
-  and [`IScalarFunction Beta`](api/TensorAnalysis.IScalarFunction.yml) by implementing the interface. 
+- Implement level sets [`IScalarFunction Alpha`](api/TensorAnalysis.IScalarFunction.yml) 
+  and [`IScalarFunction Beta`](api/TensorAnalysis.IScalarFunction.yml). 
 - Create [`HyperRectangle K`](api/IntersectingQuadrature.HyperRectangle.yml) of dimension *d* which confines the domain of integration.
 - Determine the domain of integration by selecting 
-  [`signAlpha`](api/IntersectingQuadrature.Symbol.yml) and [`Symbol signBeta`](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for `Alpha` and `Beta` respectively. 
+  [`Symbol signAlpha`](api/IntersectingQuadrature.Symbol.yml) and [`Symbol signBeta`](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for `Alpha` and `Beta` respectively. 
   You will receive a quadrature rule for the set {x &isin; K | sign(Alpha(x)) = signAlpha &and; sign(Beta(x)) = signBeta}.
 - Set `int n` to define the number *n<sup>d</sup>* of quadrature nodes.
 - Select a number `int subdivions` of subdivisions.
@@ -30,6 +30,26 @@ creates a quadrature rule, which is refined adaptively according to the relative
 double tau;
 AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
+```
+
+This simple example creates a 3-dimensional domain with flat surfaces and creates a quadrature rule over its volume :
+```cs
+using IntersectingQuadrature;
+
+namespace Example {
+
+  class Program {
+
+    static void Main(string[] args) {
+      IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
+      IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
+
+      Quadrater finder = new Quadrater();
+      HyperRectangle cell = new UnitCube(3);
+      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
+    }
+  }
+}
 ```
 
 ### Example.csproj

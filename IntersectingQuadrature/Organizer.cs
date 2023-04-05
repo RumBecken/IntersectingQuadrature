@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
-using TensorAnalysis;
+using IntersectingQuadrature.TensorAnalysis;
 
 namespace IntersectingQuadrature {
     internal class Organizer {

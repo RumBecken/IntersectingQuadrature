@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature;
-using TensorAnalysis;
+using IntersectingQuadrature.TensorAnalysis;
 
 namespace Example.Experiments {
     internal class Ufo {

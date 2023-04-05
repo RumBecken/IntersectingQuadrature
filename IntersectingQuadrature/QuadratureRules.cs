@@ -5,7 +5,7 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using TensorAnalysis;
+using IntersectingQuadrature.TensorAnalysis;
 
 namespace IntersectingQuadrature {
     internal static class QuadratureRules {
