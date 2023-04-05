@@ -64,17 +64,18 @@
 <p>Methods to create quadrature rules for domains defined by one or two intersecting level sets.</p>
 <h2 id="quick-start">Quick Start</h2>
 <h3 id="nuget">NuGet</h3>
-<p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html">QuadratureRule</a> <code>rule</code>:</p>
+<p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html">quadrature rule</a> <code>QuadratureRule rule</code>:</p>
 <ul>
-<li>Define level sets <code>Alpha</code> and  <code>Beta</code> by implementing <a href="api/TensorAnalysis.IScalarFunction.html">IscalarFunction</a>.</li>
-<li>Create an <a href="api/IntersectingQuadrature.HyperRectangle.html">HyperRectangle</a> <code>K</code> 	⊆ R<sup>d</sup> which confines the domain of integration.</li>
+<li>Define level sets <code>IscalarFunction Alpha</code> and  <code>IscalarFunction Beta</code> by implementing <a href="api/TensorAnalysis.IScalarFunction.html">IscalarFunction</a>.</li>
+<li>Create an <a href="api/IntersectingQuadrature.HyperRectangle.html">hyperrectangle</a> <code>HyperRectangle K</code> 	of dimension <em>d</em> which confines the domain of integration.</li>
 <li>Choose the domain of integration by selecting
-<a href="api/IntersectingQuadrature.Symbol.html">Symbols</a> <code>signAlpha</code> and <code>signBeta</code> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
+<a href="api/IntersectingQuadrature.Symbol.html">Symbols</a> <code>Symbol signAlpha</code> and <code>Symbol signBeta</code> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
 You will receive a quadrature rule for the set T = {x in K | sign(Alpha(x)) = a ∧ sign(Beta(x)) = b}.</li>
-<li>Set <code>n</code> to define the number of quadrature nodes n<sup>d</sup>.</li>
-<li>Select a number <code>subdivions</code> of subdivisions.</li>
+<li>Set <code>int n</code> to define the number <em>n<sup>d</sup></em> of quadrature nodes.</li>
+<li>Select a number <code>int subdivions</code> of subdivisions.</li>
 </ul>
-<p>You can construct a quadrature rule by creating a <a href="api/IntersectingQuadrature.Quadrater.html">Quadrater</a> :</p>
+<p>You can construct a quadrature rule by creating a <a href="api/IntersectingQuadrature.Quadrater.html">Quadrater</a> and calling
+<code>FindRule(...)</code> :</p>
 <pre><code class="lang-cs">IntersectingQuadrature.Quadrater Q = new Quadrater();
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 </code></pre>
