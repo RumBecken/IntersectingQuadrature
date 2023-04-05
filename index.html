@@ -63,19 +63,22 @@
 
 <p>Methods to create quadrature rules for domains defined by one or two intersecting level sets.</p>
 <h2 id="quick-start">Quick Start</h2>
+<p>You have two options to use this package. You can include it as a libary in your project as a NuGet package, or
+run examples from Example.csproj.</p>
 <h3 id="nuget">NuGet</h3>
-<p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html">quadrature rule</a> <code>QuadratureRule rule</code>:</p>
+<p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html"><code>QuadratureRule rule</code></a> :</p>
 <ul>
-<li>Define level sets <code>IscalarFunction Alpha</code> and  <code>IscalarFunction Beta</code> by implementing <a href="api/TensorAnalysis.IScalarFunction.html">IscalarFunction</a>.</li>
-<li>Create an <a href="api/IntersectingQuadrature.HyperRectangle.html">hyperrectangle</a> <code>HyperRectangle K</code> 	of dimension <em>d</em> which confines the domain of integration.</li>
-<li>Choose the domain of integration by selecting
-<a href="api/IntersectingQuadrature.Symbol.html">Symbols</a> <code>Symbol signAlpha</code> and <code>Symbol signBeta</code> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
-You will receive a quadrature rule for the set T = {x in K | sign(Alpha(x)) = a ∧ sign(Beta(x)) = b}.</li>
+<li>Define level sets <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Alpha</code></a>
+and <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Beta</code></a> by implementing the interface.</li>
+<li>Create <a href="api/IntersectingQuadrature.HyperRectangle.html"><code>HyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
+<li>Determine the domain of integration by selecting
+[signAlpha<code>](api/IntersectingQuadrature.Symbol.yml) and [</code>Symbol signBeta<code>](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for </code>Alpha<code>and</code>Beta` respectively.
+You will receive a quadrature rule for the set {x in K | sign(Alpha(x)) = a ∧ sign(Beta(x)) = b}.</li>
 <li>Set <code>int n</code> to define the number <em>n<sup>d</sup></em> of quadrature nodes.</li>
 <li>Select a number <code>int subdivions</code> of subdivisions.</li>
 </ul>
-<p>You can construct a quadrature rule by creating a <a href="api/IntersectingQuadrature.Quadrater.html">Quadrater</a> and calling
-<code>FindRule(...)</code> :</p>
+<p>You can construct a quadrature rule by creating a <a href="api/IntersectingQuadrature.Quadrater.html">Quadrater Q</a> and calling
+<code>Q.FindRule(...)</code> :</p>
 <pre><code class="lang-cs">IntersectingQuadrature.Quadrater Q = new Quadrater();
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 </code></pre>
