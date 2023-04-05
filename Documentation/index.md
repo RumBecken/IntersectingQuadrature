@@ -12,8 +12,8 @@ To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule
   and [`IScalarFunction Beta`](api/TensorAnalysis.IScalarFunction.yml) by implementing the interface. 
 - Create [`HyperRectangle K`](api/IntersectingQuadrature.HyperRectangle.yml) of dimension *d* which confines the domain of integration.
 - Determine the domain of integration by selecting 
-  [signAlpha`](api/IntersectingQuadrature.Symbol.yml) and [`Symbol signBeta`](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for `Alpha` and `Beta` respectively. 
-  You will receive a quadrature rule for the set {x in K | sign(Alpha(x)) = a &and; sign(Beta(x)) = b}.
+  [`signAlpha`](api/IntersectingQuadrature.Symbol.yml) and [`Symbol signBeta`](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for `Alpha` and `Beta` respectively. 
+  You will receive a quadrature rule for the set {x &isin; K | sign(Alpha(x)) = signAlpha &and; sign(Beta(x)) = signBeta}.
 - Set `int n` to define the number *n<sup>d</sup>* of quadrature nodes.
 - Select a number `int subdivions` of subdivisions.
 
