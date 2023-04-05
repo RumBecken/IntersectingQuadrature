@@ -68,8 +68,8 @@ run examples from Example.csproj.</p>
 <h3 id="nuget">NuGet</h3>
 <p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html"><code>QuadratureRule rule</code></a> :</p>
 <ul>
-<li>Implement level sets <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Alpha</code></a>
-and <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Beta</code></a>.</li>
+<li>Implement level sets <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Alpha</code></a>
+and <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Beta</code></a>.</li>
 <li>Create <a href="api/IntersectingQuadrature.HyperRectangle.html"><code>HyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
 <li>Determine the domain of integration by selecting
 <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signAlpha</code></a> and <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signBeta</code></a> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
@@ -88,13 +88,13 @@ creates a quadrature rule, which is refined adaptively according to the relative
 AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 </code></pre>
-<p>This simple example creates a 3-dimensional domain with flat surfaces and creates a quadrature rule over its volume :</p>
+<p>This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces :</p>
 <pre><code class="lang-cs">using IntersectingQuadrature;
 
 namespace Example {
 
   class Program {
-
+    
     static void Main(string[] args) {
       IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
       IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));

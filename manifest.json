@@ -257,160 +257,6 @@
       "version": ""
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.Algebra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.Algebra.html",
-          "hash": "iDfkpyunwfI2p3DgQFGUn4KPZdlhZBr0sCT2j+U8KN4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.ConstantPolynomial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.ConstantPolynomial.html",
-          "hash": "DWy8hFT9Tx5B6TnJrOJhl1n6n8hPsfWsBWT2T2vfUQ8="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.IScalarFunction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.IScalarFunction.html",
-          "hash": "UCAEYA/qU852/LNUnW2Wz9hn0dhf28ndXU2XYBtZN9o="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.IVectorFunction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.IVectorFunction.html",
-          "hash": "2HoNv5dM3rrHwmkcVY/zx1TEaWZzXbUYO9bmDilZYwI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.LinearPolynomial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.LinearPolynomial.html",
-          "hash": "wch5M404uBuuwFgpVGX/juPOXM1TJM7J9A8517WfriY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.LinearVectorFunction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.LinearVectorFunction.html",
-          "hash": "LIGWzDZbf3MZZwwDGgzKova0vamBFoObfV+Ow86LILM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.MathUtility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.MathUtility.html",
-          "hash": "H0nYMRjmsxWKk8wy+HIT7ebusIRXOG7CeTfjKwbikOE="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.QuadraticPolynomial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.QuadraticPolynomial.html",
-          "hash": "F1h467XgwB/x1j/mA0fs6HzMPbefjJW4tXiCxc+vUNU="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.ScalarComposition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.ScalarComposition.html",
-          "hash": "pHvWoyeZfEPhB0Hkb38571FYabfqxBgGzeC7GnHh5jM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.Tensor1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.Tensor1.html",
-          "hash": "rgZrp65gwzOwR6EvvF/RdbVuVGQA/t22ptIM6vcgduA="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.Tensor2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.Tensor2.html",
-          "hash": "m9qOB9vXqOwWoGpnRX22T8P5MU9t75GyectcslyzDVc="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.Tensor3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.Tensor3.html",
-          "hash": "apZ9n8cwrrg4H8P39u1XoryFYYxO0lFdn8U6zTDR9fs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.VectorComposition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.VectorComposition.html",
-          "hash": "dXiog8EINGfS6Yg8Sjn3luJwgLpGSWx6ekjXkrSnrLM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TensorAnalysis.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TensorAnalysis.html",
-          "hash": "1DeBKVJZGJA84XmdiFzgLOwdTnyUbhAIG7rXTljwj0w="
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -427,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7EjYEfOv6jXiEHIvKclEgesFYIIyKskLPWM/+KQoXg8="
+          "hash": "DlqjqK2CN65VyDw1JA0K/uHfgkX1/J1gNTXhqjjB+Fw="
         }
       },
       "version": ""
@@ -455,12 +301,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "jTCfFTLav6P9n6PvliAyQmgDGXVomfVOo2vmPCszeiU="
+          "hash": "aYh6/6j0O79Ph1ggrajpzhgB5aVvqVd/Rsnkn/8sXYw="
         }
       },
       "version": ""
