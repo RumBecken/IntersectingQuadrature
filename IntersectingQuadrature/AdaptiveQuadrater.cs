@@ -8,13 +8,16 @@ using IntersectingQuadrature.Mapper;
 using TensorAnalysis;
 
 namespace IntersectingQuadrature {
-    public class Quadrater {
+    public class AdaptiveQuadrater {
 
         MapFinder hunter;
+        Adapter adapter;
 
-        public Quadrater() {
+        public AdaptiveQuadrater(double tau) {
+            adapter = new Adapter(tau);
             hunter = new MapFinder();
         }
+
 
         public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, HyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(10);
@@ -39,8 +42,7 @@ namespace IntersectingQuadrature {
                 foreach (Map B in setB) {
                     IIntegralMapping AB = new MappingComposition(A.Mapping, B.Mapping);
                     QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, B.Domain.Dimension);
-                    //QuadratureRule gauss = QuadratureRules.Plot(3, B.Domain.Dimension);
-                    QuadratureRule Q = Map(AB, gauss);
+                    QuadratureRule Q = adapter.FindRule(f, AB, B.Domain, gauss);
                     rules.AddRange(Q);
                 }
                 

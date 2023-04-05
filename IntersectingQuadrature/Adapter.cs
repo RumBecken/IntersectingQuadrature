@@ -10,9 +10,13 @@ using TensorAnalysis;
 namespace IntersectingQuadrature {
     internal class Adapter {
 
-        static double c = 0.0001;
+        double tau = 0.0001;
 
-        public static QuadratureRule FindRule(IScalarFunction g, IIntegralMapping map, HyperRectangle domain, QuadratureRule rule) {
+        public Adapter(double tau) {
+            this.tau = tau;
+        }
+
+        public QuadratureRule FindRule(IScalarFunction g, IIntegralMapping map, HyperRectangle domain, QuadratureRule rule) {
             QuadratureRule rule0 = Map(map, rule);
             double s0 = Math.Abs(Quadrature.Evaluate(g, rule0));
             QuadratureRule result = new QuadratureRule(rule.Count);
@@ -23,7 +27,7 @@ namespace IntersectingQuadrature {
         }
 
 
-        static bool Adapt(IScalarFunction g, IIntegralMapping map, HyperRectangle domain, double s0, QuadratureRule baseRule, QuadratureRule result, int subdivs) {
+        bool Adapt(IScalarFunction g, IIntegralMapping map, HyperRectangle domain, double s0, QuadratureRule baseRule, QuadratureRule result, int subdivs) {
             if(subdivs < 0) {
                 return true;
             }
@@ -40,7 +44,7 @@ namespace IntersectingQuadrature {
                 s1 += s;
             }
             double deltaS = Math.Abs((s0 - s1) / s0);
-            if (deltaS < c) {
+            if (deltaS < tau) {
                 return true;
             } else {
                 --subdivs;
