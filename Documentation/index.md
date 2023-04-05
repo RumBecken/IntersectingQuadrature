@@ -4,17 +4,18 @@ Methods to create quadrature rules for domains defined by one or two intersectin
 
 ## Quick Start
 ### NuGet 
-To construct a [QuadratureRule](api/IntersectingQuadrature.QuadratureRule.yml) `rule`: 
-- Define level sets `Alpha` and  `Beta` by implementing [IscalarFunction](api/TensorAnalysis.IScalarFunction.yml).
-- Create an [HyperRectangle](api/IntersectingQuadrature.HyperRectangle.yml) `K` 	&sube; R<sup>d</sup> which confines the domain of integration.
+To construct a [quadrature rule](api/IntersectingQuadrature.QuadratureRule.yml) `QuadratureRule rule`: 
+- Define level sets `IscalarFunction Alpha` and  `IscalarFunction Beta` by implementing [IscalarFunction](api/TensorAnalysis.IScalarFunction.yml).
+- Create an [hyperrectangle](api/IntersectingQuadrature.HyperRectangle.yml) `HyperRectangle K` 	of dimension *d* which confines the domain of integration.
 - Choose the domain of integration by selecting 
-  [Symbols](api/IntersectingQuadrature.Symbol.yml) `signAlpha` and `signBeta` from {0, -, +} for `Alpha` and `Beta` respectively. 
+  [Symbols](api/IntersectingQuadrature.Symbol.yml) `Symbol signAlpha` and `Symbol signBeta` from {0, -, +} for `Alpha` and `Beta` respectively. 
   You will receive a quadrature rule for the set T = {x in K | sign(Alpha(x)) = a &and; sign(Beta(x)) = b}.
-- Set `n` to define the number of quadrature nodes n<sup>d</sup>.
-- Select a number `subdivions` of subdivisions.
+- Set `int n` to define the number *n<sup>d</sup>* of quadrature nodes.
+- Select a number `int subdivions` of subdivisions.
 
 
-You can construct a quadrature rule by creating a [Quadrater](api/IntersectingQuadrature.Quadrater.yml) :    
+You can construct a quadrature rule by creating a [Quadrater](api/IntersectingQuadrature.Quadrater.yml) and calling 
+`FindRule(...)` :    
 ```cs
 IntersectingQuadrature.Quadrater Q = new Quadrater();
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
