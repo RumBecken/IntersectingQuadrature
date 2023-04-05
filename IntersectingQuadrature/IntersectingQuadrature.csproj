@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net7.0;net6.0</TargetFrameworks>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>Lauritz Beck</Authors>
     <Company>Chair of Fluid Dynamics, TU Darmstadt</Company>

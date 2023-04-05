@@ -35,6 +35,7 @@ QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivi
 This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces :
 ```cs
 using IntersectingQuadrature;
+using IntersectingQuadrature.TensorAnalysis;
 
 namespace Example {
 
