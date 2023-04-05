@@ -32,14 +32,14 @@ AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 ```
 
-This simple example creates a 3-dimensional domain with flat surfaces and creates a quadrature rule over its volume :
+This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces :
 ```cs
 using IntersectingQuadrature;
 
 namespace Example {
 
   class Program {
-
+    
     static void Main(string[] args) {
       IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
       IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
