@@ -64,8 +64,7 @@
 <p>Methods to create quadrature rules for domains defined by one or two intersecting level sets.</p>
 <h2 id="quick-start">Quick Start</h2>
 <p>You have two options to use this package. You can include it as a libary in your project as a NuGet package, or
-run examples from Example.csproj.</p>
-<h3 id="nuget">NuGet</h3>
+add IntersectingQuadrature.csproj to your project.</p>
 <p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html"><code>QuadratureRule rule</code></a> :</p>
 <ul>
 <li>Implement level sets <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Alpha</code></a>
@@ -77,7 +76,7 @@ You will receive a quadrature rule for the set {x ∈ K | sign(Alpha(x)) = signA
 <li>Set <code>int n</code> to define the number <em>n<sup>d</sup></em> of quadrature nodes.</li>
 <li>Select a number <code>int subdivions</code> of subdivisions.</li>
 </ul>
-<p>You can construct a quadrature rule by creating a <a href="api/IntersectingQuadrature.Quadrater.html">Quadrater Q</a> and calling
+<p>You can construct a quadrature rule by creating a <a href="api/IntersectingQuadrature.Quadrater.html"><code>Quadrater Q</code></a> and calling
 <code>Q.FindRule(...)</code> :</p>
 <pre><code class="lang-cs">IntersectingQuadrature.Quadrater Q = new Quadrater();
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
@@ -107,7 +106,7 @@ namespace Example {
   }
 }
 </code></pre>
-<h3 id="examplecsproj">Example.csproj</h3>
+<h2 id="examples">Examples</h2>
 <p>To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.</p>
 </article>
           </div>
