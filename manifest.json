@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.AdaptiveQuadrater.html",
-          "hash": "cQPJHqzptHma6HEWYegw0C1UxN1q58rgoivFFoucXVk="
+          "hash": "bvIWQHJTea7gVvN3FOwXgItCR0jTTC8fFGpqz14VyWM="
         }
       },
       "version": ""
@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.HyperRectangle.html",
-          "hash": "7O7ygA2irgzJq9IoX8KWl2hPxO6/gJqcJgIpHKt+yks="
+          "hash": "tIAEgnLHWsVUgS9Kh3M4kk0aoCPWqE9fF7iewAmiZsk="
         }
       },
       "version": ""
@@ -31,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.Quadrater.html",
-          "hash": "MktuLvTjKkbyosZGwjpTB4m/cc4qSs/xHYSTJlq2VPs="
+          "hash": "pMvKXrImXqGnH6eaG2pkGegCjvYf4u0lMegEBPXomAM="
         }
       },
       "version": ""
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.Quadrature.html",
-          "hash": "W5Et2xYK9uufiNCX4sD1WpqJC+O691IhkpMA/LTRDmI="
+          "hash": "zLTFVkl//jXseqbEUh9KBwnLhTSAepmCUPHgZpxt+z8="
         }
       },
       "version": ""
@@ -53,7 +53,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.QuadratureNode.html",
-          "hash": "uPxcGx08sQorsINum55GHvmsC5TjtaHpu7hI//x5Sdo="
+          "hash": "vDhxCaxGPrzoYmtyLiIa2qLH8aNnUKP1qhGW9edmGzc="
         }
       },
       "version": ""
@@ -76,6 +76,160 @@
         ".html": {
           "relative_path": "api/IntersectingQuadrature.Symbol.html",
           "hash": "DUGbuzxPMPcF/GgmzlYWpOOiz/iLeQaUGkE6vNgOJAo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Algebra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Algebra.html",
+          "hash": "PvyzBRvzNALucwTh/4AC0ld01dcuCMSQrGOgMJ4F5X8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html",
+          "hash": "fzTwUKjJf6EZH2vO2iH0XgtDA3VGLE/oW60GiKdW4Z8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html",
+          "hash": "dWmBUXpxbbERNtbskzoToAlOi0D9w/iWwmUNrC/6XMo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html",
+          "hash": "Xkq19Fo/dty3JL/5Cxd+/5f1/4jxZOevsEnsNgXUWQ8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html",
+          "hash": "Cva8MIoFLnXsDULxq8MA3KgMJ5iFDCPTOYQ0YObpU4s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html",
+          "hash": "sGbCo3CTKciuA1z7oGQSolR1zQOTmWBgp87N8E7GQGU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.MathUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.MathUtility.html",
+          "hash": "ScWs7fryDtyEEcoYFmYsSunsoCrIO0E/LmHCC3hbJo4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html",
+          "hash": "2K5wbii9ExXk2jTCFEjM0EJQu0IUWmwrWNiia/OUpZw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html",
+          "hash": "5qbjqU3LWVCl7SsZGz24K0SeHIFRlP3c0NUc6jrGVUM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor1.html",
+          "hash": "ArNqb7SdXqXzJndriXBwhCTRGpmxcxEyyClj2GTJ5rw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor2.html",
+          "hash": "Huz+44H6NVRE37hTM7aD2G1G8ZaOMML3Y5OAjCSDZ2Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor3.html",
+          "hash": "Wrk/bkQCJhuMfLoTlHnyKTZ1uLLhLNLzGNp6P2tx/Uk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.VectorComposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html",
+          "hash": "5tfoimhLSIlJ7Ecw1F/us7zjBqyOeX64XgwdePaNlPc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.html",
+          "hash": "5/jdmdoW9RkBHyWL9y3wRZo2DX4JTMBCPHl+KqEmPz4="
         }
       },
       "version": ""
@@ -273,7 +427,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LOCID9CdUaGXbfCAkapKO+qza/m1HjuLP1i6KTPu33g="
+          "hash": "7EjYEfOv6jXiEHIvKclEgesFYIIyKskLPWM/+KQoXg8="
         }
       },
       "version": ""
@@ -306,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "mabZwM9ZRWY9GZ6xBQLJJVJ72TFmAI1WBVoypu+TTeU="
+          "hash": "jTCfFTLav6P9n6PvliAyQmgDGXVomfVOo2vmPCszeiU="
         }
       },
       "version": ""

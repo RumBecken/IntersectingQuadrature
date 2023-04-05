@@ -68,11 +68,11 @@ run examples from Example.csproj.</p>
 <h3 id="nuget">NuGet</h3>
 <p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html"><code>QuadratureRule rule</code></a> :</p>
 <ul>
-<li>Define level sets <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Alpha</code></a>
-and <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Beta</code></a> by implementing the interface.</li>
+<li>Implement level sets <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Alpha</code></a>
+and <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Beta</code></a>.</li>
 <li>Create <a href="api/IntersectingQuadrature.HyperRectangle.html"><code>HyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
 <li>Determine the domain of integration by selecting
-<a href="api/IntersectingQuadrature.Symbol.html"><code>signAlpha</code></a> and <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signBeta</code></a> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
+<a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signAlpha</code></a> and <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signBeta</code></a> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
 You will receive a quadrature rule for the set {x ∈ K | sign(Alpha(x)) = signAlpha ∧ sign(Beta(x)) = signBeta}.</li>
 <li>Set <code>int n</code> to define the number <em>n<sup>d</sup></em> of quadrature nodes.</li>
 <li>Select a number <code>int subdivions</code> of subdivisions.</li>
@@ -87,6 +87,24 @@ creates a quadrature rule, which is refined adaptively according to the relative
 <pre><code class="lang-cs">double tau;
 AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
+</code></pre>
+<p>This simple example creates a 3-dimensional domain with flat surfaces and creates a quadrature rule over its volume :</p>
+<pre><code class="lang-cs">using IntersectingQuadrature;
+
+namespace Example {
+
+  class Program {
+
+    static void Main(string[] args) {
+      IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
+      IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
+
+      Quadrater finder = new Quadrater();
+      HyperRectangle cell = new UnitCube(3);
+      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
+    }
+  }
+}
 </code></pre>
 <h3 id="examplecsproj">Example.csproj</h3>
 <p>To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.</p>

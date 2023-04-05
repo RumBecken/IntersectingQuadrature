@@ -32,22 +32,22 @@ references:
   fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.New
   nameWithType: AdaptiveQuadrater.AdaptiveQuadrater
   nameWithType.vb: AdaptiveQuadrater.New
-- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name: FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name.vb: FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
   nameWithType: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
   nameWithType.vb: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name.vb: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
   nameWithType: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
   nameWithType.vb: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
 - uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule*
@@ -198,22 +198,22 @@ references:
   fullName.vb: IntersectingQuadrature.Quadrater.New
   nameWithType: Quadrater.Quadrater
   nameWithType.vb: Quadrater.New
-- uid: IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+- uid: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name: FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name.vb: FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
   nameWithType: Quadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
   nameWithType.vb: Quadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-- uid: IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+- uid: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
+  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
   name.vb: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
   nameWithType: Quadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
   nameWithType.vb: Quadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
 - uid: IntersectingQuadrature.Quadrater.FindRule*
@@ -229,28 +229,28 @@ references:
   commentId: T:IntersectingQuadrature.Quadrature
   fullName: IntersectingQuadrature.Quadrature
   nameWithType: Quadrature
-- uid: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule)
+- uid: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule)
   name: Evaluate(IScalarFunction, QuadratureRule)
-  href: api/IntersectingQuadrature.Quadrature.html#IntersectingQuadrature_Quadrature_Evaluate_TensorAnalysis_IScalarFunction_IntersectingQuadrature_QuadratureRule_
-  commentId: M:IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule)
-  fullName: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule)
+  href: api/IntersectingQuadrature.Quadrature.html#IntersectingQuadrature_Quadrature_Evaluate_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_QuadratureRule_
+  commentId: M:IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule)
+  fullName: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule)
   nameWithType: Quadrature.Evaluate(IScalarFunction, QuadratureRule)
-- uid: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:,0:])
+- uid: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:,0:])
   name: Evaluate(IScalarFunction, QuadratureRule[,,])
-  href: api/IntersectingQuadrature.Quadrature.html#IntersectingQuadrature_Quadrature_Evaluate_TensorAnalysis_IScalarFunction_IntersectingQuadrature_QuadratureRule_0__0__0___
-  commentId: M:IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:,0:])
+  href: api/IntersectingQuadrature.Quadrature.html#IntersectingQuadrature_Quadrature_Evaluate_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_QuadratureRule_0__0__0___
+  commentId: M:IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:,0:])
   name.vb: Evaluate(IScalarFunction, QuadratureRule(,,))
-  fullName: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule[,,])
-  fullName.vb: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule(,,))
+  fullName: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule[,,])
+  fullName.vb: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule(,,))
   nameWithType: Quadrature.Evaluate(IScalarFunction, QuadratureRule[,,])
   nameWithType.vb: Quadrature.Evaluate(IScalarFunction, QuadratureRule(,,))
-- uid: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:])
+- uid: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:])
   name: Evaluate(IScalarFunction, QuadratureRule[,])
-  href: api/IntersectingQuadrature.Quadrature.html#IntersectingQuadrature_Quadrature_Evaluate_TensorAnalysis_IScalarFunction_IntersectingQuadrature_QuadratureRule_0__0___
-  commentId: M:IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:])
+  href: api/IntersectingQuadrature.Quadrature.html#IntersectingQuadrature_Quadrature_Evaluate_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_QuadratureRule_0__0___
+  commentId: M:IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.QuadratureRule[0:,0:])
   name.vb: Evaluate(IScalarFunction, QuadratureRule(,))
-  fullName: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule[,])
-  fullName.vb: IntersectingQuadrature.Quadrature.Evaluate(TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule(,))
+  fullName: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule[,])
+  fullName.vb: IntersectingQuadrature.Quadrature.Evaluate(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.QuadratureRule(,))
   nameWithType: Quadrature.Evaluate(IScalarFunction, QuadratureRule[,])
   nameWithType.vb: Quadrature.Evaluate(IScalarFunction, QuadratureRule(,))
 - uid: IntersectingQuadrature.Quadrature.Evaluate*
@@ -349,6 +349,1381 @@ references:
   commentId: F:IntersectingQuadrature.Symbol.Zero
   fullName: IntersectingQuadrature.Symbol.Zero
   nameWithType: Symbol.Zero
+- uid: IntersectingQuadrature.TensorAnalysis
+  name: IntersectingQuadrature.TensorAnalysis
+  href: api/IntersectingQuadrature.TensorAnalysis.html
+  commentId: N:IntersectingQuadrature.TensorAnalysis
+  fullName: IntersectingQuadrature.TensorAnalysis
+  nameWithType: IntersectingQuadrature.TensorAnalysis
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra
+  name: Algebra
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.Algebra
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra
+  nameWithType: Algebra
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Determinant(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: Determinant(Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Determinant_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Algebra.Determinant(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Determinant(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Algebra.Determinant(Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Determinant*
+  name: Determinant
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Determinant_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Algebra.Determinant
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Determinant
+  nameWithType: Algebra.Determinant
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Dyadic(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Dyadic(Tensor1, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Dyadic_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Algebra.Dyadic(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Dyadic(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: Algebra.Dyadic(Tensor1, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Dyadic*
+  name: Dyadic
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Dyadic_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Algebra.Dyadic
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Dyadic
+  nameWithType: Algebra.Dyadic
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor1,System.Double)
+  name: Scale(Tensor1, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Scale_IntersectingQuadrature_TensorAnalysis_Tensor1_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor1,System.Double)
+  name.vb: Scale(Tensor1, Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor1, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor1, Double)
+  nameWithType: Algebra.Scale(Tensor1, double)
+  nameWithType.vb: Algebra.Scale(Tensor1, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor2,System.Double)
+  name: Scale(Tensor2, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Scale_IntersectingQuadrature_TensorAnalysis_Tensor2_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor2,System.Double)
+  name.vb: Scale(Tensor2, Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor2, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor2, Double)
+  nameWithType: Algebra.Scale(Tensor2, double)
+  nameWithType.vb: Algebra.Scale(Tensor2, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor3,System.Double)
+  name: Scale(Tensor3, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Scale_IntersectingQuadrature_TensorAnalysis_Tensor3_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor3,System.Double)
+  name.vb: Scale(Tensor3, Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor3, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Algebra.Scale(IntersectingQuadrature.TensorAnalysis.Tensor3, Double)
+  nameWithType: Algebra.Scale(Tensor3, double)
+  nameWithType.vb: Algebra.Scale(Tensor3, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Scale*
+  name: Scale
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Scale_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Algebra.Scale
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Scale
+  nameWithType: Algebra.Scale
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Transpose(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: Transpose(Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Transpose_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Algebra.Transpose(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Transpose(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Algebra.Transpose(Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Algebra.Transpose*
+  name: Transpose
+  href: api/IntersectingQuadrature.TensorAnalysis.Algebra.html#IntersectingQuadrature_TensorAnalysis_Algebra_Transpose_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Algebra.Transpose
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Algebra.Transpose
+  nameWithType: Algebra.Transpose
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial
+  name: ConstantPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial
+  nameWithType: ConstantPolynomial
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.#ctor(System.Double,System.Int32)
+  name: ConstantPolynomial(double, int)
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial__ctor_System_Double_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.#ctor(System.Double,System.Int32)
+  name.vb: New(Double, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.ConstantPolynomial(double, int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.New(Double, Integer)
+  nameWithType: ConstantPolynomial.ConstantPolynomial(double, int)
+  nameWithType.vb: ConstantPolynomial.New(Double, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.#ctor*
+  name: ConstantPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.ConstantPolynomial
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.New
+  nameWithType: ConstantPolynomial.ConstantPolynomial
+  nameWithType.vb: ConstantPolynomial.New
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.A
+  name: A
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_A
+  commentId: F:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.A
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.A
+  nameWithType: ConstantPolynomial.A
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: ConstantPolynomial.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.Evaluate
+  nameWithType: ConstantPolynomial.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradient(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_EvaluateAndGradient_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: ConstantPolynomial.EvaluateAndGradient(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradient*
+  name: EvaluateAndGradient
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_EvaluateAndGradient_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradient
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradient
+  nameWithType: ConstantPolynomial.EvaluateAndGradient
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradientAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_EvaluateAndGradientAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: ConstantPolynomial.EvaluateAndGradientAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradientAndHessian*
+  name: EvaluateAndGradientAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_EvaluateAndGradientAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradientAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.EvaluateAndGradientAndHessian
+  nameWithType: ConstantPolynomial.EvaluateAndGradientAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.M
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.M
+  nameWithType: ConstantPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html#IntersectingQuadrature_TensorAnalysis_ConstantPolynomial_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.M
+  nameWithType: ConstantPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction
+  name: IScalarFunction
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.IScalarFunction
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction
+  nameWithType: IScalarFunction
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.IScalarFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: IScalarFunction.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IScalarFunction.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.Evaluate
+  nameWithType: IScalarFunction.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradient(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_EvaluateAndGradient_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: IScalarFunction.EvaluateAndGradient(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradient*
+  name: EvaluateAndGradient
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_EvaluateAndGradient_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradient
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradient
+  nameWithType: IScalarFunction.EvaluateAndGradient
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradientAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_EvaluateAndGradientAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: IScalarFunction.EvaluateAndGradientAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradientAndHessian*
+  name: EvaluateAndGradientAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_EvaluateAndGradientAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradientAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.EvaluateAndGradientAndHessian
+  nameWithType: IScalarFunction.EvaluateAndGradientAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.IScalarFunction.M
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.M
+  nameWithType: IScalarFunction.M
+- uid: IntersectingQuadrature.TensorAnalysis.IScalarFunction.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html#IntersectingQuadrature_TensorAnalysis_IScalarFunction_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IScalarFunction.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IScalarFunction.M
+  nameWithType: IScalarFunction.M
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction
+  name: IVectorFunction
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.IVectorFunction
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction
+  nameWithType: IVectorFunction
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.IVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: IVectorFunction.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IVectorFunction.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.Evaluate
+  nameWithType: IVectorFunction.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndJacobian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_EvaluateAndJacobian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: IVectorFunction.EvaluateAndJacobian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobian*
+  name: EvaluateAndJacobian
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_EvaluateAndJacobian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobian
+  nameWithType: IVectorFunction.EvaluateAndJacobian
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndJacobianAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_EvaluateAndJacobianAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: IVectorFunction.EvaluateAndJacobianAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobianAndHessian*
+  name: EvaluateAndJacobianAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_EvaluateAndJacobianAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobianAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.EvaluateAndJacobianAndHessian
+  nameWithType: IVectorFunction.EvaluateAndJacobianAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.IVectorFunction.M
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.M
+  nameWithType: IVectorFunction.M
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IVectorFunction.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.M
+  nameWithType: IVectorFunction.M
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.N
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_N
+  commentId: P:IntersectingQuadrature.TensorAnalysis.IVectorFunction.N
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.N
+  nameWithType: IVectorFunction.N
+- uid: IntersectingQuadrature.TensorAnalysis.IVectorFunction.N*
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html#IntersectingQuadrature_TensorAnalysis_IVectorFunction_N_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.IVectorFunction.N
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.IVectorFunction.N
+  nameWithType: IVectorFunction.N
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial
+  name: LinearPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.LinearPolynomial
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial
+  nameWithType: LinearPolynomial
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.#ctor(System.Double,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: LinearPolynomial(double, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial__ctor_System_Double_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.#ctor(System.Double,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name.vb: New(Double, Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.LinearPolynomial(double, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.New(Double, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearPolynomial.LinearPolynomial(double, Tensor1)
+  nameWithType.vb: LinearPolynomial.New(Double, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.#ctor*
+  name: LinearPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.LinearPolynomial
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.New
+  nameWithType: LinearPolynomial.LinearPolynomial
+  nameWithType.vb: LinearPolynomial.New
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.A
+  name: A
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_A
+  commentId: F:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.A
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.A
+  nameWithType: LinearPolynomial.A
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.B
+  name: B
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_B
+  commentId: F:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.B
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.B
+  nameWithType: LinearPolynomial.B
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearPolynomial.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.Evaluate
+  nameWithType: LinearPolynomial.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradient(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_EvaluateAndGradient_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearPolynomial.EvaluateAndGradient(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradient*
+  name: EvaluateAndGradient
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_EvaluateAndGradient_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradient
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradient
+  nameWithType: LinearPolynomial.EvaluateAndGradient
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradientAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_EvaluateAndGradientAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearPolynomial.EvaluateAndGradientAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradientAndHessian*
+  name: EvaluateAndGradientAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_EvaluateAndGradientAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradientAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.EvaluateAndGradientAndHessian
+  nameWithType: LinearPolynomial.EvaluateAndGradientAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M
+  nameWithType: LinearPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearPolynomial_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M
+  nameWithType: LinearPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction
+  name: LinearVectorFunction
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction
+  nameWithType: LinearVectorFunction
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: LinearVectorFunction(Tensor1, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction__ctor_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: New(Tensor1, Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.LinearVectorFunction(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.New(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: LinearVectorFunction.LinearVectorFunction(Tensor1, Tensor2)
+  nameWithType.vb: LinearVectorFunction.New(Tensor1, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: LinearVectorFunction(Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction__ctor_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: New(Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.LinearVectorFunction(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.New(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: LinearVectorFunction.LinearVectorFunction(Tensor2)
+  nameWithType.vb: LinearVectorFunction.New(Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor*
+  name: LinearVectorFunction
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.LinearVectorFunction
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.New
+  nameWithType: LinearVectorFunction.LinearVectorFunction
+  nameWithType.vb: LinearVectorFunction.New
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearVectorFunction.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate
+  nameWithType: LinearVectorFunction.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndJacobian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearVectorFunction.EvaluateAndJacobian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian*
+  name: EvaluateAndJacobian
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian
+  nameWithType: LinearVectorFunction.EvaluateAndJacobian
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndJacobianAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobianAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearVectorFunction.EvaluateAndJacobianAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian*
+  name: EvaluateAndJacobianAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobianAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian
+  nameWithType: LinearVectorFunction.EvaluateAndJacobianAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  nameWithType: LinearVectorFunction.M
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  nameWithType: LinearVectorFunction.M
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_N
+  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  nameWithType: LinearVectorFunction.N
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N*
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_N_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  nameWithType: LinearVectorFunction.N
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility
+  name: MathUtility
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.MathUtility
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility
+  nameWithType: MathUtility
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Abs(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Abs(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Abs_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.MathUtility.Abs(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Abs(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: MathUtility.Abs(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Abs(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: Abs(Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Abs_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.MathUtility.Abs(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Abs(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: MathUtility.Abs(Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Abs*
+  name: Abs
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Abs_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.MathUtility.Abs
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Abs
+  nameWithType: MathUtility.Abs
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Max(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Max(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Max_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.MathUtility.Max(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Max(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: MathUtility.Max(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Max*
+  name: Max
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Max_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.MathUtility.Max
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Max
+  nameWithType: MathUtility.Max
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Min(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Min(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Min_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.MathUtility.Min(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Min(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: MathUtility.Min(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Min*
+  name: Min
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Min_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.MathUtility.Min
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Min
+  nameWithType: MathUtility.Min
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(System.Double,System.Int32)
+  name: Pow(double, int)
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Pow_System_Double_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(System.Double,System.Int32)
+  name.vb: Pow(Double, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(double, int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(Double, Integer)
+  nameWithType: MathUtility.Pow(double, int)
+  nameWithType.vb: MathUtility.Pow(Double, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(System.Int32,System.Int32)
+  name: Pow(int, int)
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Pow_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(System.Int32,System.Int32)
+  name.vb: Pow(Integer, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(int, int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow(Integer, Integer)
+  nameWithType: MathUtility.Pow(int, int)
+  nameWithType.vb: MathUtility.Pow(Integer, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow*
+  name: Pow
+  href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html#IntersectingQuadrature_TensorAnalysis_MathUtility_Pow_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.MathUtility.Pow
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.MathUtility.Pow
+  nameWithType: MathUtility.Pow
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial
+  name: QuadraticPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial
+  nameWithType: QuadraticPolynomial
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.#ctor(System.Double,IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: QuadraticPolynomial(double, Tensor1, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial__ctor_System_Double_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.#ctor(System.Double,IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: New(Double, Tensor1, Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.QuadraticPolynomial(double, IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.New(Double, IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: QuadraticPolynomial.QuadraticPolynomial(double, Tensor1, Tensor2)
+  nameWithType.vb: QuadraticPolynomial.New(Double, Tensor1, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.#ctor*
+  name: QuadraticPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.QuadraticPolynomial
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.New
+  nameWithType: QuadraticPolynomial.QuadraticPolynomial
+  nameWithType.vb: QuadraticPolynomial.New
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.A
+  name: A
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_A
+  commentId: F:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.A
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.A
+  nameWithType: QuadraticPolynomial.A
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.B
+  name: B
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_B
+  commentId: F:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.B
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.B
+  nameWithType: QuadraticPolynomial.B
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.C
+  name: C
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_C
+  commentId: F:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.C
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.C
+  nameWithType: QuadraticPolynomial.C
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: QuadraticPolynomial.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.Evaluate
+  nameWithType: QuadraticPolynomial.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradient(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_EvaluateAndGradient_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: QuadraticPolynomial.EvaluateAndGradient(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradient*
+  name: EvaluateAndGradient
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_EvaluateAndGradient_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradient
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradient
+  nameWithType: QuadraticPolynomial.EvaluateAndGradient
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradientAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_EvaluateAndGradientAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: QuadraticPolynomial.EvaluateAndGradientAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradientAndHessian*
+  name: EvaluateAndGradientAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_EvaluateAndGradientAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradientAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.EvaluateAndGradientAndHessian
+  nameWithType: QuadraticPolynomial.EvaluateAndGradientAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.M
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.M
+  nameWithType: QuadraticPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html#IntersectingQuadrature_TensorAnalysis_QuadraticPolynomial_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.M
+  nameWithType: QuadraticPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition
+  name: ScalarComposition
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.ScalarComposition
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition
+  nameWithType: ScalarComposition
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.#ctor(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  name: ScalarComposition(IScalarFunction, IVectorFunction)
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition__ctor_IntersectingQuadrature_TensorAnalysis_IScalarFunction_IntersectingQuadrature_TensorAnalysis_IVectorFunction_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ScalarComposition.#ctor(IntersectingQuadrature.TensorAnalysis.IScalarFunction,IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  name.vb: New(IScalarFunction, IVectorFunction)
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.ScalarComposition(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.ScalarComposition.New(IntersectingQuadrature.TensorAnalysis.IScalarFunction, IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  nameWithType: ScalarComposition.ScalarComposition(IScalarFunction, IVectorFunction)
+  nameWithType.vb: ScalarComposition.New(IScalarFunction, IVectorFunction)
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.#ctor*
+  name: ScalarComposition
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ScalarComposition.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.ScalarComposition
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.ScalarComposition.New
+  nameWithType: ScalarComposition.ScalarComposition
+  nameWithType.vb: ScalarComposition.New
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ScalarComposition.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: ScalarComposition.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ScalarComposition.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.Evaluate
+  nameWithType: ScalarComposition.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradient(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_EvaluateAndGradient_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradient(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: ScalarComposition.EvaluateAndGradient(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradient*
+  name: EvaluateAndGradient
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_EvaluateAndGradient_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradient
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradient
+  nameWithType: ScalarComposition.EvaluateAndGradient
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndGradientAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_EvaluateAndGradientAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradientAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: ScalarComposition.EvaluateAndGradientAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradientAndHessian*
+  name: EvaluateAndGradientAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_EvaluateAndGradientAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradientAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.EvaluateAndGradientAndHessian
+  nameWithType: ScalarComposition.EvaluateAndGradientAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.ScalarComposition.M
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.M
+  nameWithType: ScalarComposition.M
+- uid: IntersectingQuadrature.TensorAnalysis.ScalarComposition.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html#IntersectingQuadrature_TensorAnalysis_ScalarComposition_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.ScalarComposition.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.ScalarComposition.M
+  nameWithType: ScalarComposition.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1
+  name: Tensor1
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.Tensor1
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1
+  nameWithType: Tensor1
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Clone
+  name: Clone()
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Clone
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.Clone
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Clone()
+  nameWithType: Tensor1.Clone()
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Clone*
+  name: Clone
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Clone_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.Clone
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Clone
+  nameWithType: Tensor1.Clone
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Item(System.Int32)
+  name: this[int]
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Item_System_Int32_
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.this[int]
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.this[](Integer)
+  nameWithType: Tensor1.this[int]
+  nameWithType.vb: Tensor1.this[](Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Item*
+  name: this
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Item_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.this
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.this[]
+  nameWithType: Tensor1.this
+  nameWithType.vb: Tensor1.this[]
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor1.M
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.M
+  nameWithType: Tensor1.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.M
+  nameWithType: Tensor1.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Addition(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: operator +(Tensor1, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Addition_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Addition(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name.vb: +(Tensor1, Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator +(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.+(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: Tensor1.operator +(Tensor1, Tensor1)
+  nameWithType.vb: Tensor1.+(Tensor1, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Addition*
+  name: operator +
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Addition_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator +
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.+
+  nameWithType: Tensor1.operator +
+  nameWithType.vb: Tensor1.+
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Division(IntersectingQuadrature.TensorAnalysis.Tensor1,System.Double)
+  name: operator /(Tensor1, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Division_IntersectingQuadrature_TensorAnalysis_Tensor1_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Division(IntersectingQuadrature.TensorAnalysis.Tensor1,System.Double)
+  name.vb: /(Tensor1, Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator /(IntersectingQuadrature.TensorAnalysis.Tensor1, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1./(IntersectingQuadrature.TensorAnalysis.Tensor1, Double)
+  nameWithType: Tensor1.operator /(Tensor1, double)
+  nameWithType.vb: Tensor1./(Tensor1, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Division*
+  name: operator /
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Division_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Division
+  isSpec: "True"
+  name.vb: /
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator /
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1./
+  nameWithType: Tensor1.operator /
+  nameWithType.vb: Tensor1./
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: operator *(Tensor1, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name.vb: '*(Tensor1, Tensor1)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator *(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.*(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: Tensor1.operator *(Tensor1, Tensor1)
+  nameWithType.vb: Tensor1.*(Tensor1, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: operator *(Tensor1, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: '*(Tensor1, Tensor2)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator *(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.*(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Tensor1.operator *(Tensor1, Tensor2)
+  nameWithType.vb: Tensor1.*(Tensor1, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,System.Double)
+  name: operator *(Tensor1, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor1_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,System.Double)
+  name.vb: '*(Tensor1, Double)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator *(IntersectingQuadrature.TensorAnalysis.Tensor1, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.*(IntersectingQuadrature.TensorAnalysis.Tensor1, Double)
+  nameWithType: Tensor1.operator *(Tensor1, double)
+  nameWithType.vb: Tensor1.*(Tensor1, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: operator *(Tensor2, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor2_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name.vb: '*(Tensor2, Tensor1)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator *(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.*(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: Tensor1.operator *(Tensor2, Tensor1)
+  nameWithType.vb: Tensor1.*(Tensor2, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(System.Double,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: operator *(double, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Multiply_System_Double_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply(System.Double,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name.vb: '*(Double, Tensor1)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator *(double, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.*(Double, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: Tensor1.operator *(double, Tensor1)
+  nameWithType.vb: Tensor1.*(Double, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply*
+  name: operator *
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Multiply_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator *
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.*
+  nameWithType: Tensor1.operator *
+  nameWithType.vb: Tensor1.*
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Subtraction(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: operator -(Tensor1, Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Subtraction_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Subtraction(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name.vb: -(Tensor1, Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator -(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.-(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: Tensor1.operator -(Tensor1, Tensor1)
+  nameWithType.vb: Tensor1.-(Tensor1, Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.op_Subtraction*
+  name: operator -
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_op_Subtraction_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.operator -
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.-
+  nameWithType: Tensor1.operator -
+  nameWithType.vb: Tensor1.-
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(System.Double,System.Double,System.Double)
+  name: Vector(double, double, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Vector_System_Double_System_Double_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(System.Double,System.Double,System.Double)
+  name.vb: Vector(Double, Double, Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(double, double, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(Double, Double, Double)
+  nameWithType: Tensor1.Vector(double, double, double)
+  nameWithType.vb: Tensor1.Vector(Double, Double, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(System.Double,System.Double)
+  name: Vector(double, double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Vector_System_Double_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(System.Double,System.Double)
+  name.vb: Vector(Double, Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(double, double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(Double, Double)
+  nameWithType: Tensor1.Vector(double, double)
+  nameWithType.vb: Tensor1.Vector(Double, Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(System.Double)
+  name: Vector(double)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Vector_System_Double_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(System.Double)
+  name.vb: Vector(Double)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(double)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector(Double)
+  nameWithType: Tensor1.Vector(double)
+  nameWithType.vb: Tensor1.Vector(Double)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector*
+  name: Vector
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Vector_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.Vector
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Vector
+  nameWithType: Tensor1.Vector
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros(System.Int32)
+  name: Zeros(int)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Zeros_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros(System.Int32)
+  name.vb: Zeros(Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros(int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros(Integer)
+  nameWithType: Tensor1.Zeros(int)
+  nameWithType.vb: Tensor1.Zeros(Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros*
+  name: Zeros
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor1.html#IntersectingQuadrature_TensorAnalysis_Tensor1_Zeros_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor1.Zeros
+  nameWithType: Tensor1.Zeros
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2
+  name: Tensor2
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.Tensor2
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2
+  nameWithType: Tensor2
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Clone
+  name: Clone()
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Clone
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.Clone
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Clone()
+  nameWithType: Tensor2.Clone()
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Clone*
+  name: Clone
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Clone_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.Clone
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Clone
+  nameWithType: Tensor2.Clone
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Item(System.Int32,System.Int32)
+  name: this[int, int]
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Item_System_Int32_System_Int32_
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor2.Item(System.Int32,System.Int32)
+  name.vb: this[](Integer, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.this[int, int]
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.this[](Integer, Integer)
+  nameWithType: Tensor2.this[int, int]
+  nameWithType.vb: Tensor2.this[](Integer, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Item*
+  name: this
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Item_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.this
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.this[]
+  nameWithType: Tensor2.this
+  nameWithType.vb: Tensor2.this[]
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor2.M
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.M
+  nameWithType: Tensor2.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.M
+  nameWithType: Tensor2.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.N
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_N
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor2.N
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.N
+  nameWithType: Tensor2.N
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.N*
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_N_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.N
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.N
+  nameWithType: Tensor2.N
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.op_Addition(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: operator +(Tensor2, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_op_Addition_IntersectingQuadrature_TensorAnalysis_Tensor2_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.op_Addition(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: +(Tensor2, Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.operator +(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.+(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Tensor2.operator +(Tensor2, Tensor2)
+  nameWithType.vb: Tensor2.+(Tensor2, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.op_Addition*
+  name: operator +
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_op_Addition_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.operator +
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.+
+  nameWithType: Tensor2.operator +
+  nameWithType.vb: Tensor2.+
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: operator *(Tensor2, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor2_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: '*(Tensor2, Tensor2)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.operator *(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.*(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Tensor2.operator *(Tensor2, Tensor2)
+  nameWithType.vb: Tensor2.*(Tensor2, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.op_Multiply*
+  name: operator *
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_op_Multiply_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.operator *
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.*
+  nameWithType: Tensor2.operator *
+  nameWithType.vb: Tensor2.*
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.op_Subtraction(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: operator -(Tensor2, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_op_Subtraction_IntersectingQuadrature_TensorAnalysis_Tensor2_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.op_Subtraction(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: -(Tensor2, Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.operator -(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.-(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Tensor2.operator -(Tensor2, Tensor2)
+  nameWithType.vb: Tensor2.-(Tensor2, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.op_Subtraction*
+  name: operator -
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_op_Subtraction_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.operator -
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.-
+  nameWithType: Tensor2.operator -
+  nameWithType.vb: Tensor2.-
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Unit(System.Int32)
+  name: Unit(int)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Unit_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.Unit(System.Int32)
+  name.vb: Unit(Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Unit(int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.Unit(Integer)
+  nameWithType: Tensor2.Unit(int)
+  nameWithType.vb: Tensor2.Unit(Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Unit*
+  name: Unit
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Unit_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.Unit
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Unit
+  nameWithType: Tensor2.Unit
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(System.Int32,System.Int32)
+  name: Zeros(int, int)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Zeros_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(System.Int32,System.Int32)
+  name.vb: Zeros(Integer, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(int, int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(Integer, Integer)
+  nameWithType: Tensor2.Zeros(int, int)
+  nameWithType.vb: Tensor2.Zeros(Integer, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(System.Int32)
+  name: Zeros(int)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Zeros_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(System.Int32)
+  name.vb: Zeros(Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros(Integer)
+  nameWithType: Tensor2.Zeros(int)
+  nameWithType.vb: Tensor2.Zeros(Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros*
+  name: Zeros
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor2.html#IntersectingQuadrature_TensorAnalysis_Tensor2_Zeros_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor2.Zeros
+  nameWithType: Tensor2.Zeros
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3
+  name: Tensor3
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.Tensor3
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3
+  nameWithType: Tensor3
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Clone
+  name: Clone()
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Clone
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.Clone
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.Clone()
+  nameWithType: Tensor3.Clone()
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Clone*
+  name: Clone
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Clone_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.Clone
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.Clone
+  nameWithType: Tensor3.Clone
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Item(System.Int32,System.Int32,System.Int32)
+  name: this[int, int, int]
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Item_System_Int32_System_Int32_System_Int32_
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor3.Item(System.Int32,System.Int32,System.Int32)
+  name.vb: this[](Integer, Integer, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.this[int, int, int]
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.this[](Integer, Integer, Integer)
+  nameWithType: Tensor3.this[int, int, int]
+  nameWithType.vb: Tensor3.this[](Integer, Integer, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Item*
+  name: this
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Item_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.this
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.this[]
+  nameWithType: Tensor3.this
+  nameWithType.vb: Tensor3.this[]
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor3.M
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.M
+  nameWithType: Tensor3.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.M
+  nameWithType: Tensor3.M
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.N
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_N
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor3.N
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.N
+  nameWithType: Tensor3.N
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.N*
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_N_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.N
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.N
+  nameWithType: Tensor3.N
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.O
+  name: O
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_O
+  commentId: P:IntersectingQuadrature.TensorAnalysis.Tensor3.O
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.O
+  nameWithType: Tensor3.O
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.O*
+  name: O
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_O_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.O
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.O
+  nameWithType: Tensor3.O
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Addition(IntersectingQuadrature.TensorAnalysis.Tensor3,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name: operator +(Tensor3, Tensor3)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Addition_IntersectingQuadrature_TensorAnalysis_Tensor3_IntersectingQuadrature_TensorAnalysis_Tensor3_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Addition(IntersectingQuadrature.TensorAnalysis.Tensor3,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name.vb: +(Tensor3, Tensor3)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator +(IntersectingQuadrature.TensorAnalysis.Tensor3, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.+(IntersectingQuadrature.TensorAnalysis.Tensor3, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  nameWithType: Tensor3.operator +(Tensor3, Tensor3)
+  nameWithType.vb: Tensor3.+(Tensor3, Tensor3)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Addition*
+  name: operator +
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Addition_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator +
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.+
+  nameWithType: Tensor3.operator +
+  nameWithType.vb: Tensor3.+
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name: operator *(Tensor1, Tensor3)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor3_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name.vb: '*(Tensor1, Tensor3)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator *(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.*(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  nameWithType: Tensor3.operator *(Tensor1, Tensor3)
+  nameWithType.vb: Tensor3.*(Tensor1, Tensor3)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name: operator *(Tensor2, Tensor3)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor2_IntersectingQuadrature_TensorAnalysis_Tensor3_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor2,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name.vb: '*(Tensor2, Tensor3)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator *(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.*(IntersectingQuadrature.TensorAnalysis.Tensor2, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  nameWithType: Tensor3.operator *(Tensor2, Tensor3)
+  nameWithType.vb: Tensor3.*(Tensor2, Tensor3)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor3,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: operator *(Tensor3, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Multiply_IntersectingQuadrature_TensorAnalysis_Tensor3_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply(IntersectingQuadrature.TensorAnalysis.Tensor3,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name.vb: '*(Tensor3, Tensor2)'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator *(IntersectingQuadrature.TensorAnalysis.Tensor3, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.*(IntersectingQuadrature.TensorAnalysis.Tensor3, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: Tensor3.operator *(Tensor3, Tensor2)
+  nameWithType.vb: Tensor3.*(Tensor3, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply*
+  name: operator *
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Multiply_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator *
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.*
+  nameWithType: Tensor3.operator *
+  nameWithType.vb: Tensor3.*
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Subtraction(IntersectingQuadrature.TensorAnalysis.Tensor3,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name: operator -(Tensor3, Tensor3)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Subtraction_IntersectingQuadrature_TensorAnalysis_Tensor3_IntersectingQuadrature_TensorAnalysis_Tensor3_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Subtraction(IntersectingQuadrature.TensorAnalysis.Tensor3,IntersectingQuadrature.TensorAnalysis.Tensor3)
+  name.vb: -(Tensor3, Tensor3)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator -(IntersectingQuadrature.TensorAnalysis.Tensor3, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.-(IntersectingQuadrature.TensorAnalysis.Tensor3, IntersectingQuadrature.TensorAnalysis.Tensor3)
+  nameWithType: Tensor3.operator -(Tensor3, Tensor3)
+  nameWithType.vb: Tensor3.-(Tensor3, Tensor3)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.op_Subtraction*
+  name: operator -
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_op_Subtraction_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.operator -
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.-
+  nameWithType: Tensor3.operator -
+  nameWithType.vb: Tensor3.-
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(System.Int32,System.Int32,System.Int32)
+  name: Zeros(int, int, int)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Zeros_System_Int32_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(System.Int32,System.Int32,System.Int32)
+  name.vb: Zeros(Integer, Integer, Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(int, int, int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(Integer, Integer, Integer)
+  nameWithType: Tensor3.Zeros(int, int, int)
+  nameWithType.vb: Tensor3.Zeros(Integer, Integer, Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(System.Int32)
+  name: Zeros(int)
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Zeros_System_Int32_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(System.Int32)
+  name.vb: Zeros(Integer)
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(int)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros(Integer)
+  nameWithType: Tensor3.Zeros(int)
+  nameWithType.vb: Tensor3.Zeros(Integer)
+- uid: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros*
+  name: Zeros
+  href: api/IntersectingQuadrature.TensorAnalysis.Tensor3.html#IntersectingQuadrature_TensorAnalysis_Tensor3_Zeros_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.Tensor3.Zeros
+  nameWithType: Tensor3.Zeros
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition
+  name: VectorComposition
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.VectorComposition
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition
+  nameWithType: VectorComposition
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.#ctor(IntersectingQuadrature.TensorAnalysis.IVectorFunction,IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  name: VectorComposition(IVectorFunction, IVectorFunction)
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition__ctor_IntersectingQuadrature_TensorAnalysis_IVectorFunction_IntersectingQuadrature_TensorAnalysis_IVectorFunction_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.VectorComposition.#ctor(IntersectingQuadrature.TensorAnalysis.IVectorFunction,IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  name.vb: New(IVectorFunction, IVectorFunction)
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.VectorComposition(IntersectingQuadrature.TensorAnalysis.IVectorFunction, IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.VectorComposition.New(IntersectingQuadrature.TensorAnalysis.IVectorFunction, IntersectingQuadrature.TensorAnalysis.IVectorFunction)
+  nameWithType: VectorComposition.VectorComposition(IVectorFunction, IVectorFunction)
+  nameWithType.vb: VectorComposition.New(IVectorFunction, IVectorFunction)
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.#ctor*
+  name: VectorComposition
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.VectorComposition.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.VectorComposition
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.VectorComposition.New
+  nameWithType: VectorComposition.VectorComposition
+  nameWithType.vb: VectorComposition.New
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.VectorComposition.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: VectorComposition.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.VectorComposition.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.Evaluate
+  nameWithType: VectorComposition.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndJacobian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_EvaluateAndJacobian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: VectorComposition.EvaluateAndJacobian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobian*
+  name: EvaluateAndJacobian
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_EvaluateAndJacobian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobian
+  nameWithType: VectorComposition.EvaluateAndJacobian
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  name: EvaluateAndJacobianAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_EvaluateAndJacobianAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: VectorComposition.EvaluateAndJacobianAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobianAndHessian*
+  name: EvaluateAndJacobianAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_EvaluateAndJacobianAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobianAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.EvaluateAndJacobianAndHessian
+  nameWithType: VectorComposition.EvaluateAndJacobianAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.M
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.VectorComposition.M
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.M
+  nameWithType: VectorComposition.M
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.M*
+  name: M
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.VectorComposition.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.M
+  nameWithType: VectorComposition.M
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.N
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_N
+  commentId: P:IntersectingQuadrature.TensorAnalysis.VectorComposition.N
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.N
+  nameWithType: VectorComposition.N
+- uid: IntersectingQuadrature.TensorAnalysis.VectorComposition.N*
+  name: N
+  href: api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html#IntersectingQuadrature_TensorAnalysis_VectorComposition_N_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.VectorComposition.N
+  isSpec: "True"
+  fullName: IntersectingQuadrature.TensorAnalysis.VectorComposition.N
+  nameWithType: VectorComposition.N
 - uid: IntersectingQuadrature.UnitCube
   name: UnitCube
   href: api/IntersectingQuadrature.UnitCube.html
