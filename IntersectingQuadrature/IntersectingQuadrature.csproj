@@ -11,12 +11,13 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>Copyright (c) 2023 Lauritz Beck</Copyright>
     <RepositoryUrl>https://github.com/RumBecken/IntersectingQuadrature</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
     <None Include="..\README.md" Pack="true" PackagePath="\" />
-    <ProjectReference Include="..\TensorAnalysis\TensorAnalysis.csproj"  PrivateAssets="all"/>
+    <ProjectReference Include="..\TensorAnalysis\TensorAnalysis.csproj" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
