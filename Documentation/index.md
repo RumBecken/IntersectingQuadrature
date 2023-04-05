@@ -4,9 +4,8 @@ Methods to create quadrature rules for domains defined by one or two intersectin
 
 ## Quick Start
 You have two options to use this package. You can include it as a libary in your project as a NuGet package, or 
-run examples from Example.csproj. 
+add IntersectingQuadrature.csproj to your project. 
 
-### NuGet 
 To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule.yml) : 
 - Implement level sets [`IScalarFunction Alpha`](api/TensorAnalysis.IScalarFunction.yml) 
   and [`IScalarFunction Beta`](api/TensorAnalysis.IScalarFunction.yml). 
@@ -18,7 +17,7 @@ To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule
 - Select a number `int subdivions` of subdivisions.
 
 
-You can construct a quadrature rule by creating a [Quadrater Q](api/IntersectingQuadrature.Quadrater.yml) and calling 
+You can construct a quadrature rule by creating a [`Quadrater Q`](api/IntersectingQuadrature.Quadrater.yml) and calling 
 `Q.FindRule(...)` :    
 ```cs
 IntersectingQuadrature.Quadrater Q = new Quadrater();
@@ -53,5 +52,5 @@ namespace Example {
 }
 ```
 
-### Example.csproj
+## Examples
 To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.  
