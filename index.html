@@ -72,8 +72,8 @@ run examples from Example.csproj.</p>
 and <a href="api/TensorAnalysis.IScalarFunction.html"><code>IScalarFunction Beta</code></a> by implementing the interface.</li>
 <li>Create <a href="api/IntersectingQuadrature.HyperRectangle.html"><code>HyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
 <li>Determine the domain of integration by selecting
-[signAlpha<code>](api/IntersectingQuadrature.Symbol.yml) and [</code>Symbol signBeta<code>](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for </code>Alpha<code>and</code>Beta` respectively.
-You will receive a quadrature rule for the set {x in K | sign(Alpha(x)) = a ∧ sign(Beta(x)) = b}.</li>
+<a href="api/IntersectingQuadrature.Symbol.html"><code>signAlpha</code></a> and <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signBeta</code></a> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
+You will receive a quadrature rule for the set {x ∈ K | sign(Alpha(x)) = signAlpha ∧ sign(Beta(x)) = signBeta}.</li>
 <li>Set <code>int n</code> to define the number <em>n<sup>d</sup></em> of quadrature nodes.</li>
 <li>Select a number <code>int subdivions</code> of subdivisions.</li>
 </ul>
