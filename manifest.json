@@ -5,6 +5,17 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.AdaptiveQuadrater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.AdaptiveQuadrater.html",
+          "hash": "cQPJHqzptHma6HEWYegw0C1UxN1q58rgoivFFoucXVk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/IntersectingQuadrature.HyperRectangle.yml",
       "output": {
         ".html": {
@@ -20,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.Quadrater.html",
-          "hash": "CGuPfacK3BhVT8cgQ4P422WHHHEuWGgZQzBhm0nQj3I="
+          "hash": "MktuLvTjKkbyosZGwjpTB4m/cc4qSs/xHYSTJlq2VPs="
         }
       },
       "version": ""
@@ -86,7 +97,7 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.html",
-          "hash": "fqrkN0/6loWqljc0ueIOniXiN7qxlyfbh4wzYCBNMU4="
+          "hash": "I3Ql6do6SGLvs0390PHA9wygqD0nBsVcV7pHuqZkwPk="
         }
       },
       "version": ""
@@ -262,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "2NVFufeRHi+v0fAfrbhe1ZB9pKgjRgT6QUBv3JSFxxE="
+          "hash": "LOCID9CdUaGXbfCAkapKO+qza/m1HjuLP1i6KTPu33g="
         }
       },
       "version": ""
@@ -290,15 +301,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "s2hO1r8y5F5QylKCtCqNEThiHsZHqheqmKXv7mAneKo="
+          "hash": "/Eh7gpRPqyQrWNrhc0965OhSc5Nt9hXIMcBSgHAMea8="
         }
       },
       "version": ""

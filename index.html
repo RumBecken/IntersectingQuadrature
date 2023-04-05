@@ -78,7 +78,7 @@ You will receive a quadrature rule for the set T = {x in K | sign(Alpha(x)) = a 
 <pre><code class="lang-cs">IntersectingQuadrature.Quadrater Q = new Quadrater();
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 </code></pre>
-<p>If required, the <a href="api/IntersectingQuadrature.AdaptiveQuadrater.yml">AdaptiveQuadrater</a>
+<p>If required, the <a href="api/IntersectingQuadrature.AdaptiveQuadrater.html">AdaptiveQuadrater</a>
 creates a quadrature rule, which is refined adaptively according to the relative error threshold <code>tau</code> :</p>
 <pre><code class="lang-cs">double tau;
 AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
