@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class QuadratureRule
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class QuadratureRule
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="IntersectingQuadrature.QuadratureRule">
+
+
+
+  <h1 id="IntersectingQuadrature_QuadratureRule" data-uid="IntersectingQuadrature.QuadratureRule" class="text-break">Class QuadratureRule
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="IntersectingQuadrature.QuadratureNode.html">QuadratureNode</a>&gt;</div>
+    <div class="level2"><span class="xref">QuadratureRule</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="IntersectingQuadrature.QuadratureNode.html">QuadratureNode</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="IntersectingQuadrature.QuadratureNode.html">QuadratureNode</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="IntersectingQuadrature.QuadratureNode.html">QuadratureNode</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="IntersectingQuadrature.QuadratureNode.html">QuadratureNode</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="IntersectingQuadrature.QuadratureNode.html">QuadratureNode</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.add">List&lt;QuadratureNode&gt;.Add(QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange">List&lt;QuadratureNode&gt;.AddRange(IEnumerable&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly">List&lt;QuadratureNode&gt;.AsReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0)">List&lt;QuadratureNode&gt;.BinarySearch(QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0-system-collections-generic-icomparer((-0)))">List&lt;QuadratureNode&gt;.BinarySearch(QuadratureNode, IComparer&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(system-int32-system-int32-0-system-collections-generic-icomparer((-0)))">List&lt;QuadratureNode&gt;.BinarySearch(int, int, QuadratureNode, IComparer&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.clear">List&lt;QuadratureNode&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.contains">List&lt;QuadratureNode&gt;.Contains(QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall">List&lt;QuadratureNode&gt;.ConvertAll&lt;TOutput&gt;(Converter&lt;QuadratureNode, TOutput&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0())">List&lt;QuadratureNode&gt;.CopyTo(QuadratureNode[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0()-system-int32)">List&lt;QuadratureNode&gt;.CopyTo(QuadratureNode[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(system-int32-0()-system-int32-system-int32)">List&lt;QuadratureNode&gt;.CopyTo(int, QuadratureNode[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.exists">List&lt;QuadratureNode&gt;.Exists(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.find">List&lt;QuadratureNode&gt;.Find(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findall">List&lt;QuadratureNode&gt;.FindAll(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-int32-system-predicate((-0)))">List&lt;QuadratureNode&gt;.FindIndex(int, int, Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-predicate((-0)))">List&lt;QuadratureNode&gt;.FindIndex(int, Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-predicate((-0)))">List&lt;QuadratureNode&gt;.FindIndex(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast">List&lt;QuadratureNode&gt;.FindLast(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-int32-system-predicate((-0)))">List&lt;QuadratureNode&gt;.FindLastIndex(int, int, Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-predicate((-0)))">List&lt;QuadratureNode&gt;.FindLastIndex(int, Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-predicate((-0)))">List&lt;QuadratureNode&gt;.FindLastIndex(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach">List&lt;QuadratureNode&gt;.ForEach(Action&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator">List&lt;QuadratureNode&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange">List&lt;QuadratureNode&gt;.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0)">List&lt;QuadratureNode&gt;.IndexOf(QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32)">List&lt;QuadratureNode&gt;.IndexOf(QuadratureNode, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32-system-int32)">List&lt;QuadratureNode&gt;.IndexOf(QuadratureNode, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insert">List&lt;QuadratureNode&gt;.Insert(int, QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange">List&lt;QuadratureNode&gt;.InsertRange(int, IEnumerable&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0)">List&lt;QuadratureNode&gt;.LastIndexOf(QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32)">List&lt;QuadratureNode&gt;.LastIndexOf(QuadratureNode, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32-system-int32)">List&lt;QuadratureNode&gt;.LastIndexOf(QuadratureNode, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.remove">List&lt;QuadratureNode&gt;.Remove(QuadratureNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall">List&lt;QuadratureNode&gt;.RemoveAll(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat">List&lt;QuadratureNode&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange">List&lt;QuadratureNode&gt;.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse">List&lt;QuadratureNode&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse(system-int32-system-int32)">List&lt;QuadratureNode&gt;.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort">List&lt;QuadratureNode&gt;.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-collections-generic-icomparer((-0)))">List&lt;QuadratureNode&gt;.Sort(IComparer&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-comparison((-0)))">List&lt;QuadratureNode&gt;.Sort(Comparison&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-int32-system-int32-system-collections-generic-icomparer((-0)))">List&lt;QuadratureNode&gt;.Sort(int, int, IComparer&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray">List&lt;QuadratureNode&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess">List&lt;QuadratureNode&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall">List&lt;QuadratureNode&gt;.TrueForAll(Predicate&lt;QuadratureNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity">List&lt;QuadratureNode&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.count">List&lt;QuadratureNode&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">List&lt;QuadratureNode&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="IntersectingQuadrature.html">IntersectingQuadrature</a></h6>
+  <h6><strong>Assembly</strong>: IntersectingQuadrature.dll</h6>
+  <h5 id="IntersectingQuadrature_QuadratureRule_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QuadratureRule : List&lt;QuadratureNode&gt;, IList&lt;QuadratureNode&gt;, ICollection&lt;QuadratureNode&gt;, IReadOnlyList&lt;QuadratureNode&gt;, IReadOnlyCollection&lt;QuadratureNode&gt;, IEnumerable&lt;QuadratureNode&gt;, IList, ICollection, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_QuadratureRule__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.QuadratureRule.%23ctor(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/QuadratureRule.cs/#L12">View Source</a>
+  </span>
+  <a id="IntersectingQuadrature_QuadratureRule__ctor_" data-uid="IntersectingQuadrature.QuadratureRule.#ctor*"></a>
+  <h4 id="IntersectingQuadrature_QuadratureRule__ctor_System_Int32_" data-uid="IntersectingQuadrature.QuadratureRule.#ctor(System.Int32)">QuadratureRule(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuadratureRule(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">capacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_QuadratureRule_Allocate_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.QuadratureRule.Allocate(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/QuadratureRule.cs/#L16">View Source</a>
+  </span>
+  <a id="IntersectingQuadrature_QuadratureRule_Allocate_" data-uid="IntersectingQuadrature.QuadratureRule.Allocate*"></a>
+  <h4 id="IntersectingQuadrature_QuadratureRule_Allocate_System_Int32_System_Int32_" data-uid="IntersectingQuadrature.QuadratureRule.Allocate(System.Int32,System.Int32)">Allocate(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuadratureRule Allocate(int count, int dim)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">dim</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IntersectingQuadrature.QuadratureRule.html">QuadratureRule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_QuadratureRule.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.QuadratureRule%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/QuadratureRule.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

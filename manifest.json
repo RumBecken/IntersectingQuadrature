@@ -1,0 +1,321 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/IntersectingQuadrature/IntersectingQuadrature/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.HyperRectangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.HyperRectangle.html",
+          "hash": "7O7ygA2irgzJq9IoX8KWl2hPxO6/gJqcJgIpHKt+yks="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.Quadrater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.Quadrater.html",
+          "hash": "CGuPfacK3BhVT8cgQ4P422WHHHEuWGgZQzBhm0nQj3I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.Quadrature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.Quadrature.html",
+          "hash": "W5Et2xYK9uufiNCX4sD1WpqJC+O691IhkpMA/LTRDmI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.QuadratureNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.QuadratureNode.html",
+          "hash": "uPxcGx08sQorsINum55GHvmsC5TjtaHpu7hI//x5Sdo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.QuadratureRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.QuadratureRule.html",
+          "hash": "We6J4Y21lcgbwtKJEfFsn9ANRC3BmDu9HZ1VsaB9NNA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.Symbol.html",
+          "hash": "DUGbuzxPMPcF/GgmzlYWpOOiz/iLeQaUGkE6vNgOJAo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.UnitCube.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.UnitCube.html",
+          "hash": "PHbJtS8kmvR93mIRY9xnL7/UOjY7ndFOFrYixqeUKjg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.html",
+          "hash": "fqrkN0/6loWqljc0ueIOniXiN7qxlyfbh4wzYCBNMU4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.Algebra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.Algebra.html",
+          "hash": "iDfkpyunwfI2p3DgQFGUn4KPZdlhZBr0sCT2j+U8KN4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.ConstantPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.ConstantPolynomial.html",
+          "hash": "DWy8hFT9Tx5B6TnJrOJhl1n6n8hPsfWsBWT2T2vfUQ8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.IScalarFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.IScalarFunction.html",
+          "hash": "UCAEYA/qU852/LNUnW2Wz9hn0dhf28ndXU2XYBtZN9o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.IVectorFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.IVectorFunction.html",
+          "hash": "2HoNv5dM3rrHwmkcVY/zx1TEaWZzXbUYO9bmDilZYwI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.LinearPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.LinearPolynomial.html",
+          "hash": "wch5M404uBuuwFgpVGX/juPOXM1TJM7J9A8517WfriY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.LinearVectorFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.LinearVectorFunction.html",
+          "hash": "LIGWzDZbf3MZZwwDGgzKova0vamBFoObfV+Ow86LILM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.MathUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.MathUtility.html",
+          "hash": "H0nYMRjmsxWKk8wy+HIT7ebusIRXOG7CeTfjKwbikOE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.QuadraticPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.QuadraticPolynomial.html",
+          "hash": "F1h467XgwB/x1j/mA0fs6HzMPbefjJW4tXiCxc+vUNU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.ScalarComposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.ScalarComposition.html",
+          "hash": "pHvWoyeZfEPhB0Hkb38571FYabfqxBgGzeC7GnHh5jM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.Tensor1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.Tensor1.html",
+          "hash": "rgZrp65gwzOwR6EvvF/RdbVuVGQA/t22ptIM6vcgduA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.Tensor2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.Tensor2.html",
+          "hash": "m9qOB9vXqOwWoGpnRX22T8P5MU9t75GyectcslyzDVc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.Tensor3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.Tensor3.html",
+          "hash": "apZ9n8cwrrg4H8P39u1XoryFYYxO0lFdn8U6zTDR9fs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.VectorComposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.VectorComposition.html",
+          "hash": "dXiog8EINGfS6Yg8Sjn3luJwgLpGSWx6ekjXkrSnrLM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TensorAnalysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TensorAnalysis.html",
+          "hash": "1DeBKVJZGJA84XmdiFzgLOwdTnyUbhAIG7rXTljwj0w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "P8K6UJppxcSbRhTt+dM30ge29ykofzrHrOG8yCAtk+g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "2NVFufeRHi+v0fAfrbhe1ZB9pKgjRgT6QUBv3JSFxxE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "frtepKgf7hRs9nQHL5GYzFzOxbhz741jqVtAf/ZTYYY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "hoOAEArO/GKyLWK2ctFFuFXPkjmWIeqbG2Koo1FVtHw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "aVe9U1RxWP3P5E5X/x2rL8jCuFlqix3bHKxtkjZ3zxg="
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
