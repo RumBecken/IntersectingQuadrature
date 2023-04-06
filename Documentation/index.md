@@ -1,8 +1,36 @@
 # Intersecting Quadrature 
 
-Methods to create quadrature rules for domains defined by one or two intersecting level sets.  
+A package that offers methods to create quadrature rules for domains defined by one or two intersecting level sets.
+It is used in the discontinuous Galerkin framework [BoSSS](https://github.com/FDYdarmstadt/BoSSS) developed by the chair of fluid dynamics, Technical University of Darmstadt.
 
 ## Quick Start
+
+Create a .dotNet project and simply include the NuGet package in your .Net project through nuget.org.
+
+Place this code in program.cs and run it :
+```cs
+using IntersectingQuadrature;
+using IntersectingQuadrature.TensorAnalysis;
+
+namespace Example {
+
+  class Program {
+    
+    static void Main(string[] args) {
+      IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
+      IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
+
+      Quadrater finder = new Quadrater();
+      HyperRectangle cell = new UnitCube(3);
+      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
+    }
+  }
+}
+```
+This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces.
+
+## Usage
+
 You have two options to use this package. You can include it as a libary in your project as a NuGet package, or 
 add IntersectingQuadrature.csproj to your project. 
 
@@ -29,27 +57,6 @@ creates a quadrature rule, which is refined adaptively according to the relative
 double tau;
 AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
-```
-
-This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces :
-```cs
-using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
-
-namespace Example {
-
-  class Program {
-    
-    static void Main(string[] args) {
-      IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
-      IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
-
-      Quadrater finder = new Quadrater();
-      HyperRectangle cell = new UnitCube(3);
-      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
-    }
-  }
-}
 ```
 
 ## Examples
