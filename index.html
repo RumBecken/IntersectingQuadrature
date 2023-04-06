@@ -61,8 +61,31 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="intersecting-quadrature">Intersecting Quadrature</h1>
 
-<p>Methods to create quadrature rules for domains defined by one or two intersecting level sets.</p>
+<p>A package that offers methods to create quadrature rules for domains defined by one or two intersecting level sets.
+It is used in the discontinuous Galerkin framework <a href="https://github.com/FDYdarmstadt/BoSSS">BoSSS</a> developed by the chair of fluid dynamics, Technical University of Darmstadt.</p>
 <h2 id="quick-start">Quick Start</h2>
+<p>Create a .dotNet project and simply include the NuGet package in your .Net project through nuget.org.</p>
+<p>Place this code in program.cs and run it :</p>
+<pre><code class="lang-cs">using IntersectingQuadrature;
+using IntersectingQuadrature.TensorAnalysis;
+
+namespace Example {
+
+  class Program {
+    
+    static void Main(string[] args) {
+      IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
+      IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
+
+      Quadrater finder = new Quadrater();
+      HyperRectangle cell = new UnitCube(3);
+      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
+    }
+  }
+}
+</code></pre>
+<p>This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces.</p>
+<h2 id="usage">Usage</h2>
 <p>You have two options to use this package. You can include it as a libary in your project as a NuGet package, or
 add IntersectingQuadrature.csproj to your project.</p>
 <p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html"><code>QuadratureRule rule</code></a> :</p>
@@ -86,25 +109,6 @@ creates a quadrature rule, which is refined adaptively according to the relative
 <pre><code class="lang-cs">double tau;
 AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
-</code></pre>
-<p>This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces :</p>
-<pre><code class="lang-cs">using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
-
-namespace Example {
-
-  class Program {
-    
-    static void Main(string[] args) {
-      IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
-      IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
-
-      Quadrater finder = new Quadrater();
-      HyperRectangle cell = new UnitCube(3);
-      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
-    }
-  }
-}
 </code></pre>
 <h2 id="examples">Examples</h2>
 <p>To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.</p>
