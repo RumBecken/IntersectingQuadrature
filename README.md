@@ -46,5 +46,6 @@ Intersecting Quadrature uses
 
 ## License
 Copyright (c) 2023 Lauritz Beck
+
 MIT
 
