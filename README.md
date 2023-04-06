@@ -1,5 +1,4 @@
-![Intersecting Quadrature](Documentation/pictures/logo.svg)
-***
+# ![Intersecting Quadrature](Documentation/pictures/logo.svg)
 
 ## Description
 A package that offers methods to create quadrature rules for domains defined by one or two intersecting level sets.
