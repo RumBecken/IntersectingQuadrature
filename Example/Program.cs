@@ -18,7 +18,8 @@ Console.WriteLine();
 //Example.Experiments.Ufo.Line(1);
 
 //Example.Experiments.Ufo.VolumeAdaptive(4);
-//*
+Example.Experiments.TrilinearTunnel.Exact();
+/*
 for (int n = 1; n < 5; ++n) {
     Example.Experiments.ToricSection.Line(n);
     Example.Experiments.ToricSection.Surface(n);

@@ -20,7 +20,7 @@ namespace IntersectingQuadrature {
 
         public MapFinder() {
             newton = new NewtonMethod(Environment.Epsilon);
-            maxSubdivisions = 5;
+            maxSubdivisions = 6;
             organizer = new Organizer(newton);
             mapper = new Mapper.Mapper(newton);
         }
