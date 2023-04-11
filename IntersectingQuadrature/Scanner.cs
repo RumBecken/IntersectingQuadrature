@@ -290,4 +290,145 @@ namespace IntersectingQuadrature {
             }
         }
     }
+
+    internal static class Scanner1 {
+
+        static Decider decider = new Decider(Environment.Epsilon);
+
+        public static bool TryDecompose(IScalarFunction alpha, HyperRectangle geometry, out NestedSet body) {
+            body = new NestedSet(alpha, geometry);
+            bool graphable = FindFaces(body.LowestLeafs(), alpha);
+            return graphable;
+        }
+
+        static bool FindFaces(SetList faces, IScalarFunction alpha) {
+            if (faces.Dimension > 0) {
+                foreach (BinaryNode<Set> face in faces) {
+                    TrySetSign(face.Value, alpha);
+                }
+                RemoveFacesWithSignFrom(faces);
+
+                if (faces.Count > 0) {
+                    Axis heightDirection = FindHeightDirection(alpha, faces);
+                    foreach (BinaryNode<Set> face in faces) {
+                        face.Value.HeightDirection = heightDirection;
+                    }
+                    foreach (BinaryNode<Set> face in faces) {
+                        if (!IsMonotoneIn(alpha, heightDirection, face.Value)) {
+                            face.Value.Graphable = false;
+                            return false;
+                        }
+                    }
+                    SetList subspace = AddFaceLayerTo(faces, heightDirection);
+                    return FindFaces(subspace, alpha);
+                } else {
+                    return true;
+                }
+            } else {
+                foreach (BinaryNode<Set> face in faces) {
+                    SetSign(alpha, face.Value);
+                }
+                return true;
+            }
+        }
+
+        static void RemoveFacesWithSignFrom(SetList space) {
+            LinkedListNode<BinaryNode<Set>> node = space.First;
+            while (node != null) {
+                LinkedListNode<BinaryNode<Set>> nextNode = node.Next;
+                if (node.Value.Value.Sign != Symbol.None) {
+                    space.Remove(node);
+                }
+                node = nextNode;
+            }
+        }
+
+        static SetList AddFaceLayerTo(SetList space, Axis heightDirection) {
+            SetList subspace = new SetList(space.Dimension - 1);
+            foreach (BinaryNode<Set> face in space) {
+                Set topDomain = face.Value.Face(heightDirection, Symbol.Plus);
+                BinaryNode<Set> top = new BinaryNode<Set>(topDomain);
+                top.Parent = face;
+                face.SecondChild = top;
+                subspace.AddLast(top);
+
+                Set bottomDomain = face.Value.Face(heightDirection, Symbol.Minus);
+                BinaryNode<Set> bottom = new BinaryNode<Set>(bottomDomain);
+                face.FirstChild = bottom;
+                bottom.Parent = face;
+                subspace.AddLast(bottom);
+            }
+            return subspace;
+        }
+
+        static Axis FindHeightDirection(IScalarFunction alpha, SetList space) {
+            int heightDirection = -1;
+            double maxAbsSquared = double.MinValue;
+            foreach (BinaryNode<Set> face in space) {
+                (double e, Tensor1 g) = alpha.EvaluateAndGradient(Tensor1.Zeros(alpha.M));
+                Tensor1 gradient = ProjectGradientTo(face.Value.Geometry, g);
+                double absSquared = gradient * gradient;
+                if (absSquared > maxAbsSquared) {
+                    maxAbsSquared = absSquared;
+                    heightDirection = IndexOfMaxEntryOn(face.Value.Geometry, gradient);
+                }
+            }
+            return (Axis)heightDirection;
+        }
+
+        static Tensor1 ProjectGradientTo(HyperRectangle face, Tensor1 gradient) {
+            for (int i = 0; i < gradient.M; ++i) {
+                if (!face.ActiveDimensions[i]) {
+                    gradient[i] = 0;
+                }
+            }
+            return gradient;
+        }
+
+        static int IndexOfMaxEntryOn(HyperRectangle face, Tensor1 x) {
+            double max = double.MinValue;
+            int index = -1;
+            for (int i = 0; i < x.M; ++i) {
+                if (face.ActiveDimensions[i]) {
+                    double abs = Math.Abs(x[i]);
+                    if (max < abs) {
+                        max = abs;
+                        index = i;
+                    }
+                }
+            }
+            return index;
+        }
+
+        static void SetSign(IScalarFunction alpha, Set domain) {
+            double a = alpha.Evaluate(domain.Geometry.Center);
+            Symbol sign = decider.Sign(a);
+            domain.Sign = sign;
+        }
+
+        static void TrySetSign(Set face, IScalarFunction alpha) {
+            Interpolation.Bezier bz = Interpolation.Interpolator.Quadratic(alpha, face.Geometry);
+            Tensor1 P = bz.P;
+            face.Sign = decider.Sign(P);
+        }
+
+        static bool IsMonotoneIn(IScalarFunction alpha, Axis heightDirection, Set face) {
+
+            GradientComponent grad_h = new GradientComponent(alpha, (int)heightDirection);
+            Interpolation.Bezier bz = Interpolation.Interpolator.Quadratic(grad_h, face.Geometry);
+            Tensor1 P = bz.P;
+            (Symbol maxSign, Symbol minSign) = decider.MaxMinSign(P);
+
+            if ((minSign == Symbol.Plus || minSign == Symbol.Zero) && maxSign == Symbol.Plus) {
+                return true;
+            } else if (minSign == Symbol.Minus && (maxSign == Symbol.Minus || maxSign == Symbol.Zero)) {
+                return true;
+            } else if (minSign == Symbol.Zero && maxSign == Symbol.Zero) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    }
 }

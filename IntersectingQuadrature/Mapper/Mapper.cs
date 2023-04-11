@@ -16,18 +16,18 @@ namespace IntersectingQuadrature.Mapper {
         }
 
         public IIntegralMapping ExtractMapping(NestedSet set1) {
-            Debug.Assert(set1.Alpha.M == set1.Root.Value.Geometry.Dimension);
+            Debug.Assert(set1.Alpha.M == set1.Root.Value.Geometry.BodyDimension);
             NestedSet set = set1.Clone();
 
             Axis[] order = Order(set.Root);
-            Tensor2 perturbationMatrix = Tensor2.Zeros(set.Root.Value.Geometry.Dimension);
+            Tensor2 perturbationMatrix = Tensor2.Zeros(set.Root.Value.Geometry.BodyDimension);
             for(int i = 0; i < order.Length; ++i) {
                 perturbationMatrix[i, (int)order[i]] = 1;
             }
             Tensor2 dePerturbationMatrix = Algebra.Transpose(perturbationMatrix);
 
-            SymmetricLinearMapping perturbation = new SymmetricLinearMapping(perturbationMatrix);
-            SymmetricLinearMapping dePerturbation = new SymmetricLinearMapping(dePerturbationMatrix);
+            LinearMapping perturbation = new LinearMapping(perturbationMatrix);
+            LinearMapping dePerturbation = new LinearMapping(dePerturbationMatrix);
             
             IScalarFunction dePerturbatedAlpha = new ScalarComposition(set.Alpha, dePerturbation);
 
@@ -40,7 +40,7 @@ namespace IntersectingQuadrature.Mapper {
             return finalMap;
         }
 
-        static void Perturbate(NestedSet box, SymmetricLinearMapping perturbation) {
+        static void Perturbate(NestedSet box, LinearMapping perturbation) {
             foreach(BinaryNode<Set> subspace in box.Root.Descendants()) {
                 subspace.Value.Geometry.Center = perturbation.Evaluate(subspace.Value.Geometry.Center);
                 subspace.Value.Geometry.Diameters = perturbation.Evaluate(subspace.Value.Geometry.Diameters);
@@ -55,13 +55,13 @@ namespace IntersectingQuadrature.Mapper {
             Heights mPlus = CubeSide(box.Root.Value, Symbol.Plus);
             SetZero(mPlus, box, alpha, rooter, Symbol.Plus);
 
-            int d = box.Root.Value.Geometry.Dimension;
+            int d = box.Root.Value.Geometry.BodyDimension;
             IIntegralMapping map = NestedMapping.Dimension(d, mPlus, mMinus);
             return map;
         }
 
         static Axis[] Order(BinaryNode<Set> root) {
-            int dim = root.Value.Geometry.Dimension;
+            int dim = root.Value.Geometry.BodyDimension;
             int[] position = new int[dim];
             Axis[] order = new Axis[dim];
             for (int i = 0; i < dim; ++i) {
@@ -94,7 +94,7 @@ namespace IntersectingQuadrature.Mapper {
         }
 
         static Heights CubeSide(Set box, Symbol side) {
-            int d = box.Geometry.Dimension;
+            int d = box.Geometry.BodyDimension;
             Heights cubeSide = new Heights();
             for (int i = 0; i < d; ++i) {
                 double m = (int)side * box.Geometry.Diameters[i] / 2.0 + box.Geometry.Center[i];
@@ -132,13 +132,13 @@ namespace IntersectingQuadrature.Mapper {
                             throw new ArgumentException();
                         }
 
-                        if (sign == Symbol.Zero && bottomChild.Value.Geometry.Dimension > 0) {
+                        if (sign == Symbol.Zero && bottomChild.Value.Geometry.BodyDimension > 0) {
                             Tensor1 top = topChild.Value.Geometry.Center;
                             top = topChild.Value.BoundingBox.Center;
                             Tensor1 bottom = bottomChild.Value.Geometry.Center;
                             bottom = bottomChild.Value.BoundingBox.Center;
 
-                            switch (bottomChild.Value.Geometry.Dimension) {
+                            switch (bottomChild.Value.Geometry.BodyDimension) {
                                 case 1:
                                 ZeroLine y = new ZeroLine(rooter, alpha, top, bottom);
                                 heights.SetY(y);

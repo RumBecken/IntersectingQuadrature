@@ -35,7 +35,7 @@ namespace IntersectingQuadrature {
         }
 
         public SetList Gather(int level) {
-            SetList faces = new SetList(Root.Value.Geometry.Dimension - level);
+            SetList faces = new SetList(Root.Value.Geometry.BodyDimension - level);
             Root.Descendants( level, faces);
             return faces;
         }

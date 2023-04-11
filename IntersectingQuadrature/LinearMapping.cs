@@ -2,15 +2,15 @@
 using IntersectingQuadrature.TensorAnalysis;
 
 namespace IntersectingQuadrature {
-    internal class SymmetricLinearMapping : LinearVectorFunction, IIntegralMapping {
+    internal class LinearMapping : LinearVectorPolynomial, IIntegralMapping {
 
         double jacobiDeterminant;
         
-        public SymmetricLinearMapping(Tensor2 A) : base(A) {
+        public LinearMapping(Tensor2 A) : base(A) {
             jacobiDeterminant = Math.Abs(Algebra.Determinant(A));
         }
 
-        public SymmetricLinearMapping(Tensor1 A, Tensor2 B) : base(A,B) {
+        public LinearMapping(Tensor1 A, Tensor2 B) : base(A,B) {
             jacobiDeterminant = Math.Abs(Algebra.Determinant(B));
         }
 

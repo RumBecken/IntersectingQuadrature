@@ -10,9 +10,9 @@ namespace IntersectingQuadrature {
 
     public class HyperRectangle {
 
-        public int Codimension;
+        public int SpaceDimension;
 
-        public int Dimension;
+        public int BodyDimension;
         
         public Tensor1 Center;
 
@@ -21,7 +21,7 @@ namespace IntersectingQuadrature {
         public BitArray ActiveDimensions;
 
         public HyperRectangle(int codimension) {
-            this.Codimension = codimension;
+            this.SpaceDimension = codimension;
             ActiveDimensions = new BitArray(codimension);
             Center = Tensor1.Zeros(codimension);
             Diameters = Tensor1.Zeros(codimension);
@@ -32,7 +32,7 @@ namespace IntersectingQuadrature {
                 throw new ArgumentException("Height direction not active.");
             }
             HyperRectangle face = Clone();
-            --face.Dimension;
+            --face.BodyDimension;
             face.Center[direction] = (int)sign * Diameters[direction] / 2.0 + Center[direction];
             face.Diameters[direction] = 0;
             face.ActiveDimensions[direction] = false;
@@ -57,9 +57,9 @@ namespace IntersectingQuadrature {
         }
 
         public HyperRectangle Clone() {
-            HyperRectangle clone = new HyperRectangle(Codimension);
-            clone.Dimension = Dimension;
-            for(int i = 0; i < clone.Codimension; ++i) {
+            HyperRectangle clone = new HyperRectangle(SpaceDimension);
+            clone.BodyDimension = BodyDimension;
+            for(int i = 0; i < clone.SpaceDimension; ++i) {
                 clone.ActiveDimensions[i] = ActiveDimensions[i];
                 clone.Center[i] = Center[i];
                 clone.Diameters[i] = Diameters[i];

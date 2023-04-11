@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntersectingQuadrature.TensorAnalysis {
 
-    public class LinearVectorFunction : IVectorFunction {
+    public class LinearVectorPolynomial : IVectorFunction {
 
         Tensor1 A;
         Tensor2 B;
@@ -15,14 +15,14 @@ namespace IntersectingQuadrature.TensorAnalysis {
 
         public int N { get; private set; }
 
-        public LinearVectorFunction(Tensor2 B) {
+        public LinearVectorPolynomial(Tensor2 B) {
             this.B = B;
             A = Tensor1.Zeros(B.N);
             N = A.M;
             M = B.N;
         }
 
-        public LinearVectorFunction(Tensor1 A, Tensor2 B) {
+        public LinearVectorPolynomial(Tensor1 A, Tensor2 B) {
             this.B = B;
             this.A = A;
             N = A.M;

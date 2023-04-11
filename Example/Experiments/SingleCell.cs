@@ -10,6 +10,16 @@ using IntersectingQuadrature.TensorAnalysis;
 namespace Example.Experiments {
     internal static class SingleCell {
 
+        public static void Sphere() {
+            IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, -1.5),1);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3,2);
+
+            IO.Write("nodesSphere.txt", rule);
+        }
+
         public static void Cylinder() {
 
             IScalarFunction beta = Plane3D.XY(0.00);
@@ -57,7 +67,7 @@ namespace Example.Experiments {
             cell.Diameters[1] = 0.66666666666666663;
             cell.Diameters[2] = 0.66666666666666663;
             cell.ActiveDimensions.SetAll(true);
-            cell.Dimension = 3;
+            cell.BodyDimension = 3;
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, cell, 2);
 
             IO.Write("nodes.txt", rule);
@@ -77,7 +87,7 @@ namespace Example.Experiments {
             cell.Diameters[1] = h;
             cell.Diameters[2] = h;
             cell.ActiveDimensions.SetAll(true);
-            cell.Dimension = 3;
+            cell.BodyDimension = 3;
             QuadratureRule rule = finder.FindRule(beta, Symbol.Zero, alpha, Symbol.Minus, cell, 4);
             IO.Write("nodes.txt", rule);
         }

@@ -9,7 +9,7 @@ using IntersectingQuadrature.TensorAnalysis;
 namespace Example.Experiments {
     internal class Rotation : IVectorFunction {
 
-        LinearVectorFunction f;
+        LinearVectorPolynomial f;
         
         public int M => f.M;
 
@@ -20,7 +20,7 @@ namespace Example.Experiments {
             Tensor2 Q = d * d;
             Algebra.Scale(Q, 1.0 / (1 + (from * to)));
             Q = Q + d + Tensor2.Unit(from.M);
-            f = new LinearVectorFunction(Q);
+            f = new LinearVectorPolynomial(Q);
         }
 
          public Tensor1 Evaluate(Tensor1 x) {

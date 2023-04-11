@@ -24,7 +24,7 @@ namespace IntersectingQuadrature.Interpolation {
             Tensor1 y = Probe(f, domain, 3);
             Tensor1 P;
             Tensor2 M;
-            switch (domain.Dimension) {
+            switch (domain.BodyDimension) {
                 case 1:
                 M = LazyLoad(ref N2Dim1, 3, n2Dim1);
                 P =  M * y;
@@ -40,7 +40,7 @@ namespace IntersectingQuadrature.Interpolation {
                 default:
                 throw new NotImplementedException();
             }
-            return new Bezier(P, domain.Dimension);
+            return new Bezier(P, domain.BodyDimension);
         }
 
         public static Bezier Cubic(IScalarFunction f, HyperRectangle domain) {
@@ -48,7 +48,7 @@ namespace IntersectingQuadrature.Interpolation {
             Tensor1 y = Probe(f, domain, 4);
             Tensor1 P;
             Tensor2 M;
-            switch (domain.Dimension) {
+            switch (domain.BodyDimension) {
                 case 1:
                 M = LazyLoad(ref N3Dim1, 4, n3Dim1);
                 P = M * y;
@@ -64,17 +64,17 @@ namespace IntersectingQuadrature.Interpolation {
                 default:
                 throw new NotImplementedException();
             }
-            return new Bezier(P, domain.Dimension);
+            return new Bezier(P, domain.BodyDimension);
         }
 
         static Tensor1 Probe(IScalarFunction f, HyperRectangle domain, int n) {
-            Tensor1 y = Tensor1.Zeros(MathUtility.Pow(n, domain.Dimension));
+            Tensor1 y = Tensor1.Zeros(MathUtility.Pow(n, domain.BodyDimension));
             Tensor1 center = domain.Center;
-            Tensor1 x = Tensor1.Zeros(domain.Codimension);
+            Tensor1 x = Tensor1.Zeros(domain.SpaceDimension);
             
             for(int j = 0; j < y.M; ++j) {
                 int l = 1;
-                for (int i = 0; i < domain.Codimension; ++i) {
+                for (int i = 0; i < domain.SpaceDimension; ++i) {
                     double delta = domain.Diameters[i] / (n - 1);
                     int k = (j /l) % n;
                     x[i] = center[i] - domain.Diameters[i] / 2 + k * delta;

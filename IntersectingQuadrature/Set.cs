@@ -15,6 +15,8 @@ namespace IntersectingQuadrature {
 
         public IScalarFunction Alpha;
 
+        public bool Graphable = true;
+
         public HyperRectangle Geometry;
 
         public HyperRectangle BoundingBox;

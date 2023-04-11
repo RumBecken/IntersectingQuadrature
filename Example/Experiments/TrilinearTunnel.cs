@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 namespace Example.Experiments {
     internal class TrilinearTunnel {
 
-
         class Tunnel : IScalarFunction {
             public int M => 3;
 
@@ -60,7 +59,7 @@ namespace Example.Experiments {
             HyperRectangle cube = new UnitCube(3);
             cube.Diameters = Tensor1.Vector(1,1,1);
             cube.Center = Tensor1.Vector(0.5, 0.5, 0.5);
-            QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Zero, cube, n);
+            QuadratureRule rule = finder.FindRule(beta, Symbol.Minus, cube, n);
 
             IO.Write("nodes.txt", rule);
             double s = Math.Abs(Quadrature.Evaluate(f, rule));
