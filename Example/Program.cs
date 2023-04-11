@@ -8,6 +8,7 @@ Console.WriteLine();
 //*/
 
 //Example.Experiments.SingleCell.Sphere();
+Example.Experiments.SingleCell.Torus();
 //Example.Experiments.SlantedSheet.Exact();
 //Example.Experiments.SlantedSheet.SubdivisionPlot();
 //Example.Experiments.Convergence.LipVolume(3);
@@ -18,7 +19,7 @@ Console.WriteLine();
 //Example.Experiments.Ufo.Line(1);
 
 //Example.Experiments.Ufo.VolumeAdaptive(4);
-Example.Experiments.TrilinearTunnel.Exact();
+//Example.Experiments.TrilinearTunnel.Exact();
 /*
 for (int n = 1; n < 5; ++n) {
     Example.Experiments.ToricSection.Line(n);

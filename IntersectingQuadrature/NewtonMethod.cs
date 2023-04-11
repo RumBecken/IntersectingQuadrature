@@ -24,7 +24,7 @@ namespace IntersectingQuadrature {
             double minPhi = int.MaxValue;
             int minCounter = 0;
             double X = -1;
-            while (minCounter < 5) {
+            while (minCounter < 2) {
                 
                 x0 = x1;
                 Tensor1 v0 = (1 - x0) * a + x0 * b;

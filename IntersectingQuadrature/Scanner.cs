@@ -1,12 +1,10 @@
 ﻿using IntersectingQuadrature.Interpolation;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Security.AccessControl;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature.TensorAnalysis;
+using System.Collections;
 
 namespace IntersectingQuadrature {
     internal static class Scanner {
@@ -309,18 +307,18 @@ namespace IntersectingQuadrature {
                 RemoveFacesWithSignFrom(faces);
 
                 if (faces.Count > 0) {
-                    Axis heightDirection = FindHeightDirection(alpha, faces);
-                    foreach (BinaryNode<Set> face in faces) {
-                        face.Value.HeightDirection = heightDirection;
-                    }
-                    foreach (BinaryNode<Set> face in faces) {
-                        if (!IsMonotoneIn(alpha, heightDirection, face.Value)) {
-                            face.Value.Graphable = false;
-                            return false;
+                    if (TryFindHeightDirection(alpha, faces, out Axis heightDirection)){
+                        foreach (BinaryNode<Set> face in faces) {
+                            face.Value.HeightDirection = heightDirection;
                         }
+                        SetList subspace = AddFaceLayerTo(faces, heightDirection);
+                        return FindFaces(subspace, alpha);
+                    } else {
+                        foreach (BinaryNode<Set> face in faces) {
+                            face.Value.HeightDirection = heightDirection;
+                        }
+                        return false;
                     }
-                    SetList subspace = AddFaceLayerTo(faces, heightDirection);
-                    return FindFaces(subspace, alpha);
                 } else {
                     return true;
                 }
@@ -361,19 +359,83 @@ namespace IntersectingQuadrature {
             return subspace;
         }
 
-        static Axis FindHeightDirection(IScalarFunction alpha, SetList space) {
-            int heightDirection = -1;
-            double maxAbsSquared = double.MinValue;
-            foreach (BinaryNode<Set> face in space) {
-                (double e, Tensor1 g) = alpha.EvaluateAndGradient(Tensor1.Zeros(alpha.M));
-                Tensor1 gradient = ProjectGradientTo(face.Value.Geometry, g);
-                double absSquared = gradient * gradient;
-                if (absSquared > maxAbsSquared) {
-                    maxAbsSquared = absSquared;
-                    heightDirection = IndexOfMaxEntryOn(face.Value.Geometry, gradient);
+        static bool TryFindHeightDirection(IScalarFunction alpha, SetList faces, out Axis heightDirection) {
+            
+            (bool Graphable, double Spread, Set Face)[,] dimCheck = 
+                new (bool , double, Set)[faces.Count, alpha.M];
+
+            int j = 0;
+            foreach (BinaryNode<Set> face in faces) {
+                HyperRectangle geometry = face.Value.Geometry;
+                for (int i = 0; i < geometry.SpaceDimension; ++i) {
+                    if (geometry.ActiveDimensions[i]) {
+                        GradientComponent grad_h = new GradientComponent(alpha, i);
+                        Interpolation.Bezier bz = Interpolation.Interpolator.Quadratic(grad_h, geometry);
+                        Tensor1 P = bz.P;
+                        double min = MathUtility.Min(P);
+                        double max = MathUtility.Max(P);
+
+                        dimCheck[j,i].Graphable = IsMonotone(max, min);
+                        dimCheck[j, i].Spread = Math.Abs(max - min);
+                        dimCheck[j, i].Face = face.Value;
+                    }
+                }
+                ++j;
+            }
+            BitArray activeDimensions = faces.First.Value.Value.Geometry.ActiveDimensions;
+
+            heightDirection = Axis.None;
+            double minSpread = double.MaxValue;
+            for (int i = 0; i < dimCheck.GetLength(1); ++i) {
+                if (activeDimensions[i]) {
+                    bool graphable = true;
+                    double totalSpread = 0;
+                    for (j = 0; j < dimCheck.GetLength(0); ++j) {
+                        graphable &= dimCheck[j, i].Graphable;
+                        totalSpread += dimCheck[j, i].Spread;
+                    }
+                    if (graphable & totalSpread < minSpread) {
+                        heightDirection = (Axis)i;
+                        minSpread = totalSpread;
+                    }
                 }
             }
-            return (Axis)heightDirection;
+            if(heightDirection != Axis.None) {
+                return true;
+            } else {
+                minSpread = double.MinValue;
+                Set faceOfMin = null;
+                for (int i = 0; i < dimCheck.GetLength(1); ++i) {
+                    if (activeDimensions[i]) {
+                        for (j = 0; j < dimCheck.GetLength(0); ++j) {
+                            double spread = dimCheck[j, i].Spread;
+                            if (spread > minSpread) {
+                                minSpread = spread;
+                                faceOfMin = dimCheck[j, i].Face;
+                                heightDirection = (Axis)i;
+                            }
+                        }
+                    }
+                }
+                faceOfMin.Graphable = false;
+                return false;
+            }
+
+        }
+
+        static bool IsMonotone(double max, double min) {
+            Symbol maxSign = decider.Sign(max);
+            Symbol minSign = decider.Sign(min);
+
+            if ((minSign == Symbol.Plus || minSign == Symbol.Zero) && maxSign == Symbol.Plus) {
+                return true;
+            } else if (minSign == Symbol.Minus && (maxSign == Symbol.Minus || maxSign == Symbol.Zero)) {
+                return true;
+            } else if (minSign == Symbol.Zero && maxSign == Symbol.Zero) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
         static Tensor1 ProjectGradientTo(HyperRectangle face, Tensor1 gradient) {

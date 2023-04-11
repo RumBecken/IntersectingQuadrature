@@ -11,13 +11,23 @@ namespace Example.Experiments {
     internal static class SingleCell {
 
         public static void Sphere() {
-            IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, -1.5),1);
+            IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, -1.5), 1);
 
             Quadrater ruler = new Quadrater();
             HyperRectangle cube = new UnitCube(3);
-            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3,2);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 3);
 
             IO.Write("nodesSphere.txt", rule);
+        }
+
+        public static void Torus() {
+            IScalarFunction alpha = new Torus(Tensor1.Vector(0, -4, -2.9), 4, 2);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+
+            IO.Write("nodesTorus.txt", rule);
         }
 
         public static void Cylinder() {
