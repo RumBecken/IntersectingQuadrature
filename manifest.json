@@ -125,10 +125,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.yml",
+      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html"
+          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html"
         }
       },
       "version": ""

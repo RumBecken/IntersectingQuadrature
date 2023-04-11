@@ -88,6 +88,12 @@ references:
   commentId: F:IntersectingQuadrature.HyperRectangle.ActiveDimensions
   fullName: IntersectingQuadrature.HyperRectangle.ActiveDimensions
   nameWithType: HyperRectangle.ActiveDimensions
+- uid: IntersectingQuadrature.HyperRectangle.BodyDimension
+  name: BodyDimension
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_BodyDimension
+  commentId: F:IntersectingQuadrature.HyperRectangle.BodyDimension
+  fullName: IntersectingQuadrature.HyperRectangle.BodyDimension
+  nameWithType: HyperRectangle.BodyDimension
 - uid: IntersectingQuadrature.HyperRectangle.Center
   name: Center
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Center
@@ -107,24 +113,12 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.Clone
   nameWithType: HyperRectangle.Clone
-- uid: IntersectingQuadrature.HyperRectangle.Codimension
-  name: Codimension
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Codimension
-  commentId: F:IntersectingQuadrature.HyperRectangle.Codimension
-  fullName: IntersectingQuadrature.HyperRectangle.Codimension
-  nameWithType: HyperRectangle.Codimension
 - uid: IntersectingQuadrature.HyperRectangle.Diameters
   name: Diameters
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Diameters
   commentId: F:IntersectingQuadrature.HyperRectangle.Diameters
   fullName: IntersectingQuadrature.HyperRectangle.Diameters
   nameWithType: HyperRectangle.Diameters
-- uid: IntersectingQuadrature.HyperRectangle.Dimension
-  name: Dimension
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Dimension
-  commentId: F:IntersectingQuadrature.HyperRectangle.Dimension
-  fullName: IntersectingQuadrature.HyperRectangle.Dimension
-  nameWithType: HyperRectangle.Dimension
 - uid: IntersectingQuadrature.HyperRectangle.Face(System.Int32,IntersectingQuadrature.Symbol)
   name: Face(int, Symbol)
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Face_System_Int32_IntersectingQuadrature_Symbol_
@@ -173,6 +167,12 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.Resize
   nameWithType: HyperRectangle.Resize
+- uid: IntersectingQuadrature.HyperRectangle.SpaceDimension
+  name: SpaceDimension
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_SpaceDimension
+  commentId: F:IntersectingQuadrature.HyperRectangle.SpaceDimension
+  fullName: IntersectingQuadrature.HyperRectangle.SpaceDimension
+  nameWithType: HyperRectangle.SpaceDimension
 - uid: IntersectingQuadrature.Quadrater
   name: Quadrater
   href: api/IntersectingQuadrature.Quadrater.html
@@ -735,105 +735,105 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.TensorAnalysis.LinearPolynomial.M
   nameWithType: LinearPolynomial.M
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction
-  name: LinearVectorFunction
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html
-  commentId: T:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction
-  nameWithType: LinearVectorFunction
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
-  name: LinearVectorFunction(Tensor1, Tensor2)
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction__ctor_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor2_
-  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial
+  name: LinearVectorPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html
+  commentId: T:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial
+  nameWithType: LinearVectorPolynomial
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: LinearVectorPolynomial(Tensor1, Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial__ctor_IntersectingQuadrature_TensorAnalysis_Tensor1_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor1,IntersectingQuadrature.TensorAnalysis.Tensor2)
   name.vb: New(Tensor1, Tensor2)
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.LinearVectorFunction(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
-  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.New(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
-  nameWithType: LinearVectorFunction.LinearVectorFunction(Tensor1, Tensor2)
-  nameWithType.vb: LinearVectorFunction.New(Tensor1, Tensor2)
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor2)
-  name: LinearVectorFunction(Tensor2)
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction__ctor_IntersectingQuadrature_TensorAnalysis_Tensor2_
-  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.LinearVectorPolynomial(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.New(IntersectingQuadrature.TensorAnalysis.Tensor1, IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: LinearVectorPolynomial.LinearVectorPolynomial(Tensor1, Tensor2)
+  nameWithType.vb: LinearVectorPolynomial.New(Tensor1, Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  name: LinearVectorPolynomial(Tensor2)
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial__ctor_IntersectingQuadrature_TensorAnalysis_Tensor2_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.#ctor(IntersectingQuadrature.TensorAnalysis.Tensor2)
   name.vb: New(Tensor2)
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.LinearVectorFunction(IntersectingQuadrature.TensorAnalysis.Tensor2)
-  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.New(IntersectingQuadrature.TensorAnalysis.Tensor2)
-  nameWithType: LinearVectorFunction.LinearVectorFunction(Tensor2)
-  nameWithType.vb: LinearVectorFunction.New(Tensor2)
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor*
-  name: LinearVectorFunction
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction__ctor_
-  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.#ctor
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.LinearVectorPolynomial(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.New(IntersectingQuadrature.TensorAnalysis.Tensor2)
+  nameWithType: LinearVectorPolynomial.LinearVectorPolynomial(Tensor2)
+  nameWithType.vb: LinearVectorPolynomial.New(Tensor2)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.#ctor*
+  name: LinearVectorPolynomial
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial__ctor_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.LinearVectorFunction
-  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.New
-  nameWithType: LinearVectorFunction.LinearVectorFunction
-  nameWithType.vb: LinearVectorFunction.New
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.LinearVectorPolynomial
+  fullName.vb: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.New
+  nameWithType: LinearVectorPolynomial.LinearVectorPolynomial
+  nameWithType.vb: LinearVectorPolynomial.New
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
   name: Evaluate(Tensor1)
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
-  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
-  nameWithType: LinearVectorFunction.Evaluate(Tensor1)
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate*
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_Evaluate_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.Evaluate(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearVectorPolynomial.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.Evaluate*
   name: Evaluate
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_Evaluate_
-  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_Evaluate_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.Evaluate
   isSpec: "True"
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.Evaluate
-  nameWithType: LinearVectorFunction.Evaluate
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.Evaluate
+  nameWithType: LinearVectorPolynomial.Evaluate
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
   name: EvaluateAndJacobian(Tensor1)
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobian_IntersectingQuadrature_TensorAnalysis_Tensor1_
-  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
-  nameWithType: LinearVectorFunction.EvaluateAndJacobian(Tensor1)
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian*
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_EvaluateAndJacobian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearVectorPolynomial.EvaluateAndJacobian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobian*
   name: EvaluateAndJacobian
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobian_
-  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_EvaluateAndJacobian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobian
   isSpec: "True"
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobian
-  nameWithType: LinearVectorFunction.EvaluateAndJacobian
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobian
+  nameWithType: LinearVectorPolynomial.EvaluateAndJacobian
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
   name: EvaluateAndJacobianAndHessian(Tensor1)
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobianAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
-  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
-  nameWithType: LinearVectorFunction.EvaluateAndJacobianAndHessian(Tensor1)
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian*
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_EvaluateAndJacobianAndHessian_IntersectingQuadrature_TensorAnalysis_Tensor1_
+  commentId: M:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobianAndHessian(IntersectingQuadrature.TensorAnalysis.Tensor1)
+  nameWithType: LinearVectorPolynomial.EvaluateAndJacobianAndHessian(Tensor1)
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobianAndHessian*
   name: EvaluateAndJacobianAndHessian
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_EvaluateAndJacobianAndHessian_
-  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_EvaluateAndJacobianAndHessian_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobianAndHessian
   isSpec: "True"
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.EvaluateAndJacobianAndHessian
-  nameWithType: LinearVectorFunction.EvaluateAndJacobianAndHessian
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.EvaluateAndJacobianAndHessian
+  nameWithType: LinearVectorPolynomial.EvaluateAndJacobianAndHessian
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.M
   name: M
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_M
-  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
-  nameWithType: LinearVectorFunction.M
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M*
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_M
+  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.M
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.M
+  nameWithType: LinearVectorPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.M*
   name: M
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_M_
-  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_M_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.M
   isSpec: "True"
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.M
-  nameWithType: LinearVectorFunction.M
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.M
+  nameWithType: LinearVectorPolynomial.M
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.N
   name: N
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_N
-  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
-  nameWithType: LinearVectorFunction.N
-- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N*
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_N
+  commentId: P:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.N
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.N
+  nameWithType: LinearVectorPolynomial.N
+- uid: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.N*
   name: N
-  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.html#IntersectingQuadrature_TensorAnalysis_LinearVectorFunction_N_
-  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
+  href: api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html#IntersectingQuadrature_TensorAnalysis_LinearVectorPolynomial_N_
+  commentId: Overload:IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.N
   isSpec: "True"
-  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorFunction.N
-  nameWithType: LinearVectorFunction.N
+  fullName: IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.N
+  nameWithType: LinearVectorPolynomial.N
 - uid: IntersectingQuadrature.TensorAnalysis.MathUtility
   name: MathUtility
   href: api/IntersectingQuadrature.TensorAnalysis.MathUtility.html
