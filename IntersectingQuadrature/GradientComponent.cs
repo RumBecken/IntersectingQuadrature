@@ -31,7 +31,7 @@ namespace IntersectingQuadrature {
         public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x) {
             Console.WriteLine("Attention: Hack fix active");
             (double evaluation, Tensor1 gradient) = EvaluateAndGradient(x);
-            double d = 0.000001;
+            double d = 0.00001;
             Tensor2 hessian = Tensor2.Zeros(x.M);
             for(int i = 0; i < x.M; ++i) {
                 Tensor1 delta = Tensor1.Zeros(x.M);
