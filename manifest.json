@@ -155,6 +155,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/IntersectingQuadrature.Tensor.ScalarComposition.yml",
       "output": {
         ".html": {

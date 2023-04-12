@@ -935,6 +935,15 @@ references:
   commentId: T:IntersectingQuadrature.Tensor.QuadraticPolynomial
   fullName: IntersectingQuadrature.Tensor.QuadraticPolynomial
   nameWithType: QuadraticPolynomial
+- uid: IntersectingQuadrature.Tensor.QuadraticPolynomial.#ctor(IntersectingQuadrature.Tensor.Tensor2)
+  name: QuadraticPolynomial(Tensor2)
+  href: api/IntersectingQuadrature.Tensor.QuadraticPolynomial.html#IntersectingQuadrature_Tensor_QuadraticPolynomial__ctor_IntersectingQuadrature_Tensor_Tensor2_
+  commentId: M:IntersectingQuadrature.Tensor.QuadraticPolynomial.#ctor(IntersectingQuadrature.Tensor.Tensor2)
+  name.vb: New(Tensor2)
+  fullName: IntersectingQuadrature.Tensor.QuadraticPolynomial.QuadraticPolynomial(IntersectingQuadrature.Tensor.Tensor2)
+  fullName.vb: IntersectingQuadrature.Tensor.QuadraticPolynomial.New(IntersectingQuadrature.Tensor.Tensor2)
+  nameWithType: QuadraticPolynomial.QuadraticPolynomial(Tensor2)
+  nameWithType.vb: QuadraticPolynomial.New(Tensor2)
 - uid: IntersectingQuadrature.Tensor.QuadraticPolynomial.#ctor(System.Double,IntersectingQuadrature.Tensor.Tensor1,IntersectingQuadrature.Tensor.Tensor2)
   name: QuadraticPolynomial(double, Tensor1, Tensor2)
   href: api/IntersectingQuadrature.Tensor.QuadraticPolynomial.html#IntersectingQuadrature_Tensor_QuadraticPolynomial__ctor_System_Double_IntersectingQuadrature_Tensor_Tensor1_IntersectingQuadrature_Tensor_Tensor2_
@@ -1024,6 +1033,105 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.QuadraticPolynomial.M
   nameWithType: QuadraticPolynomial.M
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial
+  name: QuadraticVectorPolynomial
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html
+  commentId: T:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial
+  nameWithType: QuadraticVectorPolynomial
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.#ctor(IntersectingQuadrature.Tensor.Tensor1,IntersectingQuadrature.Tensor.Tensor2,IntersectingQuadrature.Tensor.Tensor3)
+  name: QuadraticVectorPolynomial(Tensor1, Tensor2, Tensor3)
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial__ctor_IntersectingQuadrature_Tensor_Tensor1_IntersectingQuadrature_Tensor_Tensor2_IntersectingQuadrature_Tensor_Tensor3_
+  commentId: M:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.#ctor(IntersectingQuadrature.Tensor.Tensor1,IntersectingQuadrature.Tensor.Tensor2,IntersectingQuadrature.Tensor.Tensor3)
+  name.vb: New(Tensor1, Tensor2, Tensor3)
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.QuadraticVectorPolynomial(IntersectingQuadrature.Tensor.Tensor1, IntersectingQuadrature.Tensor.Tensor2, IntersectingQuadrature.Tensor.Tensor3)
+  fullName.vb: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.New(IntersectingQuadrature.Tensor.Tensor1, IntersectingQuadrature.Tensor.Tensor2, IntersectingQuadrature.Tensor.Tensor3)
+  nameWithType: QuadraticVectorPolynomial.QuadraticVectorPolynomial(Tensor1, Tensor2, Tensor3)
+  nameWithType.vb: QuadraticVectorPolynomial.New(Tensor1, Tensor2, Tensor3)
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.#ctor(IntersectingQuadrature.Tensor.Tensor3)
+  name: QuadraticVectorPolynomial(Tensor3)
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial__ctor_IntersectingQuadrature_Tensor_Tensor3_
+  commentId: M:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.#ctor(IntersectingQuadrature.Tensor.Tensor3)
+  name.vb: New(Tensor3)
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.QuadraticVectorPolynomial(IntersectingQuadrature.Tensor.Tensor3)
+  fullName.vb: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.New(IntersectingQuadrature.Tensor.Tensor3)
+  nameWithType: QuadraticVectorPolynomial.QuadraticVectorPolynomial(Tensor3)
+  nameWithType.vb: QuadraticVectorPolynomial.New(Tensor3)
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.#ctor*
+  name: QuadraticVectorPolynomial
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial__ctor_
+  commentId: Overload:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.QuadraticVectorPolynomial
+  fullName.vb: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.New
+  nameWithType: QuadraticVectorPolynomial.QuadraticVectorPolynomial
+  nameWithType.vb: QuadraticVectorPolynomial.New
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.Evaluate(IntersectingQuadrature.Tensor.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_Evaluate_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.Evaluate(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.Evaluate(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: QuadraticVectorPolynomial.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_Evaluate_
+  commentId: Overload:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.Evaluate
+  nameWithType: QuadraticVectorPolynomial.Evaluate
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobian(IntersectingQuadrature.Tensor.Tensor1)
+  name: EvaluateAndJacobian(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_EvaluateAndJacobian_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobian(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobian(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: QuadraticVectorPolynomial.EvaluateAndJacobian(Tensor1)
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobian*
+  name: EvaluateAndJacobian
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_EvaluateAndJacobian_
+  commentId: Overload:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobian
+  nameWithType: QuadraticVectorPolynomial.EvaluateAndJacobian
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian(IntersectingQuadrature.Tensor.Tensor1)
+  name: EvaluateAndJacobianAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_EvaluateAndJacobianAndHessian_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian(Tensor1)
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian*
+  name: EvaluateAndJacobianAndHessian
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_EvaluateAndJacobianAndHessian_
+  commentId: Overload:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian
+  nameWithType: QuadraticVectorPolynomial.EvaluateAndJacobianAndHessian
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.M
+  name: M
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_M
+  commentId: P:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.M
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.M
+  nameWithType: QuadraticVectorPolynomial.M
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.M*
+  name: M
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_M_
+  commentId: Overload:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.M
+  nameWithType: QuadraticVectorPolynomial.M
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.N
+  name: N
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_N
+  commentId: P:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.N
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.N
+  nameWithType: QuadraticVectorPolynomial.N
+- uid: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.N*
+  name: N
+  href: api/IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.html#IntersectingQuadrature_Tensor_QuadraticVectorPolynomial_N_
+  commentId: Overload:IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.N
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.QuadraticVectorPolynomial.N
+  nameWithType: QuadraticVectorPolynomial.N
 - uid: IntersectingQuadrature.Tensor.ScalarComposition
   name: ScalarComposition
   href: api/IntersectingQuadrature.Tensor.ScalarComposition.html
@@ -1606,6 +1714,15 @@ references:
   fullName.vb: IntersectingQuadrature.Tensor.Tensor3.*(IntersectingQuadrature.Tensor.Tensor2, IntersectingQuadrature.Tensor.Tensor3)
   nameWithType: Tensor3.operator *(Tensor2, Tensor3)
   nameWithType.vb: Tensor3.*(Tensor2, Tensor3)
+- uid: IntersectingQuadrature.Tensor.Tensor3.op_Multiply(IntersectingQuadrature.Tensor.Tensor3,IntersectingQuadrature.Tensor.Tensor1)
+  name: operator *(Tensor3, Tensor1)
+  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_op_Multiply_IntersectingQuadrature_Tensor_Tensor3_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor3.op_Multiply(IntersectingQuadrature.Tensor.Tensor3,IntersectingQuadrature.Tensor.Tensor1)
+  name.vb: '*(Tensor3, Tensor1)'
+  fullName: IntersectingQuadrature.Tensor.Tensor3.operator *(IntersectingQuadrature.Tensor.Tensor3, IntersectingQuadrature.Tensor.Tensor1)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor3.*(IntersectingQuadrature.Tensor.Tensor3, IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: Tensor3.operator *(Tensor3, Tensor1)
+  nameWithType.vb: Tensor3.*(Tensor3, Tensor1)
 - uid: IntersectingQuadrature.Tensor.Tensor3.op_Multiply(IntersectingQuadrature.Tensor.Tensor3,IntersectingQuadrature.Tensor.Tensor2)
   name: operator *(Tensor3, Tensor2)
   href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_op_Multiply_IntersectingQuadrature_Tensor_Tensor3_IntersectingQuadrature_Tensor_Tensor2_
@@ -1615,6 +1732,15 @@ references:
   fullName.vb: IntersectingQuadrature.Tensor.Tensor3.*(IntersectingQuadrature.Tensor.Tensor3, IntersectingQuadrature.Tensor.Tensor2)
   nameWithType: Tensor3.operator *(Tensor3, Tensor2)
   nameWithType.vb: Tensor3.*(Tensor3, Tensor2)
+- uid: IntersectingQuadrature.Tensor.Tensor3.op_Multiply(System.Double,IntersectingQuadrature.Tensor.Tensor3)
+  name: operator *(double, Tensor3)
+  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_op_Multiply_System_Double_IntersectingQuadrature_Tensor_Tensor3_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor3.op_Multiply(System.Double,IntersectingQuadrature.Tensor.Tensor3)
+  name.vb: '*(Double, Tensor3)'
+  fullName: IntersectingQuadrature.Tensor.Tensor3.operator *(double, IntersectingQuadrature.Tensor.Tensor3)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor3.*(Double, IntersectingQuadrature.Tensor.Tensor3)
+  nameWithType: Tensor3.operator *(double, Tensor3)
+  nameWithType.vb: Tensor3.*(Double, Tensor3)
 - uid: IntersectingQuadrature.Tensor.Tensor3.op_Multiply*
   name: operator *
   href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_op_Multiply_
