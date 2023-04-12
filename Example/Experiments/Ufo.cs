@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace Example.Experiments {
     internal class Ufo {
@@ -156,7 +156,7 @@ namespace Example.Experiments {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Zero, beta, Symbol.Zero, n, i);
 
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
-                Console.WriteLine($"{i},{s}");
+                Console.WriteLine($"{i},{s}, ");
                 IO.Write($"nodesLineH{n}_{i}.txt", rules);
                 long l = 0;
                 foreach(QuadratureRule rule in rules) {
@@ -168,7 +168,7 @@ namespace Example.Experiments {
             IO.Write($"lineConvergenceH{n}.txt", results);
         }
 
-        public static void LineAdaptive(int n = 2) {
+        public static void LineAdaptive(double tau, int n = 2) {
             double R = 0.9;
             IScalarFunction beta = new Sphere(Tensor1.Vector(-1, -1, 0.51), R);
             IScalarFunction alpha = new Sphere(Tensor1.Vector(-1, -1, -0.49), R);
@@ -177,7 +177,7 @@ namespace Example.Experiments {
             double exact = 2.0 * Math.PI * Math.Sqrt(R * R - 0.5 * 0.5) / 4.0;
             List<double[]> results = new List<double[]>();
             for (int i = 8; i < 65; ++i) {
-                QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Zero, beta, Symbol.Zero, n, i);
+                QuadratureRule[,,] rules = Grid.FindRuleAdaptive(alpha, Symbol.Zero, beta, Symbol.Zero, n, i, tau);
 
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 Console.WriteLine($"{i},{s}");

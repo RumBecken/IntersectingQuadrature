@@ -2,9 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
+using System.Xml.Schema;
 using IntersectingQuadrature.Mapper;
 using System.Diagnostics;
 
@@ -19,6 +22,8 @@ namespace IntersectingQuadrature {
 
         MapFinder hunter;
 
+        public static int Subdivisions = 0; 
+
         public NestedGrapher(MapFinder hunter) {
             this.hunter = hunter;
         }
@@ -32,13 +37,14 @@ namespace IntersectingQuadrature {
         }
 
         void Decompose(IIntegralMapping subdivision, IScalarFunction alpha, HyperRectangle geometry, LinkedList<Decomposition> sets) {
-            if(Scanner1.TryDecompose(alpha, geometry, out NestedSet body)) {
+            if(Scanner.TryDecompose(alpha, geometry, out NestedSet body)) {
                 Decomposition decomposition = new Decomposition {
                     Subdivision = subdivision,
                     Graph = body
                 };
                 sets.AddLast(decomposition);
             } else {
+                Subdivisions += 1;
                 List<Map> maps = Subdivide(alpha, geometry, body);
                 foreach (Map T in maps) {
                     IScalarFunction alphaT = new ScalarComposition(alpha, T.Mapping);

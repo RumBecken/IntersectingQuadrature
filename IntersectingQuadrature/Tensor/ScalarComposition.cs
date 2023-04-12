@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntersectingQuadrature.TensorAnalysis {
+namespace IntersectingQuadrature.Tensor {
     public class ScalarComposition : IScalarFunction {
 
         IScalarFunction f;

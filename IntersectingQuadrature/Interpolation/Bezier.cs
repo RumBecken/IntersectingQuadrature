@@ -5,15 +5,21 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature.Interpolation {
     internal class Bezier {
 
+        public int Dimension;
+
+        public int M;
+        
         public Tensor1 P;
 
-        public Bezier(Tensor1 P, int dim) {
+        public Bezier(Tensor1 P, int m, int dim) {
             this.P = P;
+            this.Dimension = dim;
+            this.M = m;
         }
     }
 
@@ -40,7 +46,7 @@ namespace IntersectingQuadrature.Interpolation {
                 default:
                 throw new NotImplementedException();
             }
-            return new Bezier(P, domain.BodyDimension);
+            return new Bezier(P, 3, domain.BodyDimension);
         }
 
         public static Bezier Cubic(IScalarFunction f, HyperRectangle domain) {
@@ -64,7 +70,7 @@ namespace IntersectingQuadrature.Interpolation {
                 default:
                 throw new NotImplementedException();
             }
-            return new Bezier(P, domain.BodyDimension);
+            return new Bezier(P, 4, domain.BodyDimension);
         }
 
         static Tensor1 Probe(IScalarFunction f, HyperRectangle domain, int n) {

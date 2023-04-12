@@ -1,5 +1,5 @@
 ﻿using System;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
     internal class LinearMapping : LinearVectorPolynomial, IIntegralMapping {

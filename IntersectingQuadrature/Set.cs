@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
     internal class Set : ICloneable<Set> {
@@ -13,7 +13,7 @@ namespace IntersectingQuadrature {
 
         public Axis HeightDirection;
 
-        public IScalarFunction Alpha;
+        public Bezier Alpha;
 
         public bool Graphable = true;
 

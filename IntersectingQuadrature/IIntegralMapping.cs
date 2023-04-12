@@ -1,4 +1,4 @@
-﻿using IntersectingQuadrature.TensorAnalysis;
+﻿using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
     internal interface IIntegralMapping : IVectorFunction {

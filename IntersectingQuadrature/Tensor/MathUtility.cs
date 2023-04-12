@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntersectingQuadrature.TensorAnalysis {
+namespace IntersectingQuadrature.Tensor {
     public static class MathUtility {
 
         public static int Pow(int x, int power) {

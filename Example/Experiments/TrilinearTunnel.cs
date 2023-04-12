@@ -1,5 +1,5 @@
 ﻿using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿using IntersectingQuadrature.TensorAnalysis;
+﻿using IntersectingQuadrature.Tensor;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -29,9 +29,20 @@ namespace IntersectingQuadrature {
         }
 
         public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x) {
-            //Console.WriteLine("Attention: Hack fix active");
+            Console.WriteLine("Attention: Hack fix active");
             (double evaluation, Tensor1 gradient) = EvaluateAndGradient(x);
-            return (evaluation, gradient, Tensor2.Zeros(alpha.M));
+            double d = 0.000001;
+            Tensor2 hessian = Tensor2.Zeros(x.M);
+            for(int i = 0; i < x.M; ++i) {
+                Tensor1 delta = Tensor1.Zeros(x.M);
+                delta[i] = d;
+                (double evaluation1, Tensor1 gradient1) = EvaluateAndGradient(x + delta);
+                for (int j = 0; j < x.M; ++j) {
+                    hessian[i, j] = (gradient1[j] - gradient[j]) / d; 
+                }
+            }
+
+            return (evaluation, gradient, hessian);
         }
     }
 }

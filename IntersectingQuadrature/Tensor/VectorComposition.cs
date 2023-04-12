@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace IntersectingQuadrature.TensorAnalysis {
+namespace IntersectingQuadrature.Tensor {
     public class VectorComposition : IVectorFunction {
 
         IVectorFunction injection;

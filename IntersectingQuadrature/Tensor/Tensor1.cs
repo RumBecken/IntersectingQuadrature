@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntersectingQuadrature.TensorAnalysis {
+namespace IntersectingQuadrature.Tensor {
 
     public class Tensor1 {
         
@@ -20,6 +20,14 @@ namespace IntersectingQuadrature.TensorAnalysis {
 
         public static Tensor1 Zeros(int m) {
             return new Tensor1(m);
+        }
+
+        public static Tensor1 Ones(int m) {
+            Tensor1 t =  new Tensor1(m);
+            for(int i = 0; i < m; ++i) {
+                t[i] = 1;
+            }
+            return t;
         }
 
         public static Tensor1 Vector(double x) {

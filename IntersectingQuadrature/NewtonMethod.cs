@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
     internal class NewtonMethod : IRootFinder {
@@ -24,7 +24,7 @@ namespace IntersectingQuadrature {
             double minPhi = int.MaxValue;
             int minCounter = 0;
             double X = -1;
-            while (minCounter < 2) {
+            while (minCounter < 5) {
                 
                 x0 = x1;
                 Tensor1 v0 = (1 - x0) * a + x0 * b;

@@ -4,15 +4,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
 
     internal class MapFinder {
 
         IRootFinder newton;
-
-        int maxSubdivisions;
 
         Organizer organizer;
 
@@ -22,7 +20,6 @@ namespace IntersectingQuadrature {
 
         public MapFinder() {
             newton = new NewtonMethod(Environment.Epsilon);
-            maxSubdivisions = 6;
             organizer = new Organizer(newton);
             mapper = new Mapper.Mapper(newton);
             grapher = new NestedGrapher(this);

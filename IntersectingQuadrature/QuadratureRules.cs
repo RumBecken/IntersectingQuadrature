@@ -5,7 +5,7 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
     internal static class QuadratureRules {
@@ -186,6 +186,12 @@ namespace IntersectingQuadrature {
                 });
             }
             return rule;
+        }
+
+        public static QuadratureRule TanhSinh(int n) {
+            QuadratureRule tanhRule = new QuadratureRule(n);
+            throw new NotImplementedException();
+            return tanhRule;
         }
 
         public static QuadratureRule GaussTschebychow(int n) {

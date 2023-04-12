@@ -8,6 +8,6 @@ namespace IntersectingQuadrature {
     
     static class Environment {
         
-        public const double Epsilon = 1e-12;  
+        public const double Epsilon = 1e-8;  
     }
 }

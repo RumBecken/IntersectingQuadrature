@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace Example.Experiments {
     internal static class Grid {
@@ -73,6 +73,24 @@ namespace Example.Experiments {
                         rule = finder.FindRule(alpha, signAlpha, beta, signBeta, cell, n, subdivisions);
                         rules[i, j, k] = rule;
                         ++c;
+                    }
+                }
+            }
+            Console.WriteLine(finder.Subdivisions);
+            return rules;
+        }
+
+        public static QuadratureRule[,,] FindRuleAdaptive(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, int n, int cells, double tau) {
+            AdaptiveQuadrater finder = new AdaptiveQuadrater(tau);
+            HyperRectangle[,,] grid = CreateGrid(cells);
+            QuadratureRule[,,] rules = new QuadratureRule[cells, cells, cells];
+            for (int i = 0; i < cells; ++i) {
+                for (int j = 0; j < cells; ++j) {
+                    for (int k = 0; k < cells; ++k) {
+                        HyperRectangle cell = grid[i, j, k];
+                        QuadratureRule rule;
+                        rule = finder.FindRule(alpha, signAlpha, beta, signBeta, cell, n);
+                        rules[i, j, k] = rule;
                     }
                 }
             }

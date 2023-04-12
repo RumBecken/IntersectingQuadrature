@@ -4,8 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntersectingQuadrature.TensorAnalysis {
+namespace IntersectingQuadrature.Tensor {
     public static class Algebra {
+
+        public static double Sum(Tensor1 t) {
+            double s = 0;
+            for(int i = 0; i < t.M; ++i) {
+                s += t[i];
+            }
+            return s;
+        }
 
         public static double Determinant(Tensor2 t) {
             double det;

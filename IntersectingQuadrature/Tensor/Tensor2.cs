@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace IntersectingQuadrature.TensorAnalysis {
+namespace IntersectingQuadrature.Tensor {
     public class Tensor2 {
         
         double[,] values;
