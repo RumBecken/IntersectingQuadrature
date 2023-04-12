@@ -75,140 +75,140 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Algebra.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.Algebra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Algebra.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.Algebra.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.ConstantPolynomial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.ConstantPolynomial.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.ConstantPolynomial.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.IScalarFunction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.IScalarFunction.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.IScalarFunction.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.IVectorFunction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.IVectorFunction.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.IVectorFunction.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.LinearPolynomial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearPolynomial.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.LinearPolynomial.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.LinearVectorPolynomial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.LinearVectorPolynomial.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.LinearVectorPolynomial.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.MathUtility.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.MathUtility.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.MathUtility.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.MathUtility.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.QuadraticPolynomial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.QuadraticPolynomial.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.QuadraticPolynomial.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.ScalarComposition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.ScalarComposition.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.ScalarComposition.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor1.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.Tensor1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor1.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.Tensor1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor2.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.Tensor2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor2.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.Tensor2.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor3.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.Tensor3.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.Tensor3.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.Tensor3.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.VectorComposition.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.VectorComposition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.VectorComposition.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.VectorComposition.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.TensorAnalysis.yml",
+      "source_relative_path": "api/IntersectingQuadrature.Tensor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.TensorAnalysis.html"
+          "relative_path": "api/IntersectingQuadrature.Tensor.html"
         }
       },
       "version": ""
