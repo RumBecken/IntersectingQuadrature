@@ -31,8 +31,8 @@ namespace IntersectingQuadrature.Mapper {
             zero[0] = x;
             zero[1] = y;
             (double e, Tensor1 gradient) = alpha.EvaluateAndGradient(zero);
-            double dxy = -gradient[0] / gradient[1];
-            return (y, dxy);
+            double dxY = -gradient[0] / gradient[1];
+            return (y, dxY);
         }
 
         public (double Y, double DxY, double DxxY) YdYddY(double x) {
@@ -41,11 +41,11 @@ namespace IntersectingQuadrature.Mapper {
             zero[0] = x;
             zero[1] = y;
             (double e, Tensor1 gradient, Tensor2 hessian) = alpha.EvaluateAndGradientAndHessian(zero);
-            double dxy = -gradient[0] / gradient[1];
+            double dxY = -gradient[0] / gradient[1];
 
-            double dxxy = -(hessian[0, 0] + 2 * hessian[0, 1] * dxy + hessian[1, 1] * dxy * dxy);
-            dxxy /= gradient[1];
-            return (y, dxy, dxxy);
+            double dxxY = -(hessian[0, 0] + 2 * hessian[0, 1] * dxY + hessian[1, 1] * dxY * dxY);
+            dxxY /= gradient[1];
+            return (y, dxY, dxxY);
         }
     }
 }

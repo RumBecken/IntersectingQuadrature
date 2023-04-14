@@ -39,6 +39,9 @@ namespace IntersectingQuadrature {
                     minCounter = 0;
                     X = x0;
                 }
+                if(Double.IsNaN(x1)) {
+                    throw new Exception("Ill-posed root");
+                }
             };
             //Console.WriteLine(iterationCounter);
             

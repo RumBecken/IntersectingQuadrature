@@ -59,7 +59,7 @@ namespace IntersectingQuadrature.Mapper {
         }
 
         public void EvaluateAndJacobianAndHessian(Tensor1 tilde, Tensor1 evaluation, Tensor2 jacobian, Tensor3 hessian) {
-            nested.EvaluateAndJacobian(tilde, evaluation, jacobian);
+            nested.EvaluateAndJacobianAndHessian(tilde, evaluation, jacobian, hessian);
             double x = evaluation[0];
             double y = evaluation[1];
             (double mPlus, double dxmPlus, double dymPlus, double dxxmPlus, double dxymPlus, double dyymPlus) = this.mPlus.ZdZddZ(x, y);
@@ -80,11 +80,12 @@ namespace IntersectingQuadrature.Mapper {
             hessian[2, 0, 0] = (Mxxz * jacobian[0, 0] + Mxyz * jacobian[1, 0] + Myz * hessian[1, 0, 0]) / 2;
             hessian[2, 0, 1] = (Mxyz * jacobian[1, 1] + Myz * hessian[1, 0, 1]) / 2;
             hessian[2, 0, 2] = ((dxmPlus - dxmMinus) * jacobian[0, 0] + (dymPlus - dymMinus) * jacobian[1, 0]) / 2;
+            
             hessian[2, 1, 0] = (Mxyz * jacobian[1, 1] + Myz * hessian[1, 0, 1]) / 2;
             hessian[2, 1, 1] = Myyz * jacobian[1, 1] / 2;
             hessian[2, 1, 2] = (dymPlus - dymMinus) * jacobian[1, 1] / 2;
-            hessian[2, 2, 0] = ((dxmPlus - dxmMinus) * jacobian[0, 0] + (dymPlus - dymMinus) * jacobian[1, 0]) / 2;
             
+            hessian[2, 2, 0] = ((dxmPlus - dxmMinus) * jacobian[0, 0] + (dymPlus - dymMinus) * jacobian[1, 0]) / 2;
             hessian[2, 2, 1] = (dymPlus - dymMinus) * jacobian[1, 1] / 2;
             hessian[2, 2, 2] = 0;
 
