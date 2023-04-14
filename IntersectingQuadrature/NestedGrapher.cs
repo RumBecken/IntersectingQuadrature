@@ -29,15 +29,21 @@ namespace IntersectingQuadrature {
         }
 
         public LinkedList<Decomposition> Decompose( IScalarFunction alpha, HyperRectangle geometry) {
+            
+            Tensor2 B = Tensor2.Zeros(alpha.M);
+            for(int i = 0; i < alpha.M; ++i) {
+                B[i, i] = geometry.Diameters[i] / 2.0;
+            }
+            LinearMapping selfmap = new LinearMapping(geometry.Center, B);
+            IScalarFunction subAlpha = new ScalarComposition(alpha, selfmap);
+            
             LinkedList<Decomposition> sets = new LinkedList<Decomposition>();
-            Tensor2 B = Tensor2.Unit(alpha.M);
-            LinearMapping selfmap = new LinearMapping(B);
-            Decompose(selfmap, alpha, geometry, sets);
+            Decompose(selfmap, subAlpha, sets);
             return sets;
         }
 
-        void Decompose(IIntegralMapping subdivision, IScalarFunction alpha, HyperRectangle geometry, LinkedList<Decomposition> sets) {
-            if(Scanner.TryDecompose(alpha, geometry, out NestedSet body)) {
+        void Decompose(IIntegralMapping subdivision, IScalarFunction alpha, LinkedList<Decomposition> sets) {
+            if(Scanner.TryDecompose(alpha, new UnitCube(alpha.M), out NestedSet body)) {
                 Decomposition decomposition = new Decomposition {
                     Subdivision = subdivision,
                     Graph = body
@@ -45,11 +51,11 @@ namespace IntersectingQuadrature {
                 sets.AddLast(decomposition);
             } else {
                 Subdivisions += 1;
-                List<Map> maps = Subdivide(alpha, geometry, body);
+                List<Map> maps = Subdivide(alpha, new UnitCube(alpha.M), body);
                 foreach (Map T in maps) {
                     IScalarFunction alphaT = new ScalarComposition(alpha, T.Mapping);
                     IIntegralMapping mm = new MappingComposition(subdivision, T.Mapping);
-                    Decompose(mm, alphaT, T.Domain, sets);
+                    Decompose(mm, alphaT, sets);
                 }
             }
         }

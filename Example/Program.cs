@@ -7,9 +7,11 @@ Console.WriteLine();
 
 //*/
 
-Example.Experiments.SingleCell.Sphere();
-//Example.Experiments.SingleCell.Torus();
-//Example.Experiments.SlantedSheet.Exact();
+//Example.Experiments.SingleCell.SphericSheet();
+Example.Experiments.SingleCell.CylindricSheet();
+//Example.Experiments.SphericalWaveSheet.Surface();
+//Example.Experiments.SingleCell.Sphere();
+//Example.Experiments.SlantedSheet.Subdivision();
 //Example.Experiments.SlantedSheet.SubdivisionPlot();
 //Example.Experiments.Convergence.LipVolume(3);
 
@@ -29,7 +31,7 @@ for (int n = 1; n < 5; ++n) {
 /*
 for (int n = 1; n < 5; ++n) {
     Example.Experiments.ToricSection.Line(n);
-    Example.Experiments.ToricSection.Surface(n);
+    //Example.Experiments.ToricSection.Surface(n);
 }
 //*/
 //Example.Experiments.Ufo.LineAdaptive(0.001, 2);

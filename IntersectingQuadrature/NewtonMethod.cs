@@ -24,8 +24,10 @@ namespace IntersectingQuadrature {
             double minPhi = int.MaxValue;
             int minCounter = 0;
             double X = -1;
-            while (minCounter < 5) {
-                
+
+            int iterationCounter = 0;
+            while (minCounter < 2) {
+                ++iterationCounter;
                 x0 = x1;
                 Tensor1 v0 = (1 - x0) * a + x0 * b;
                 (double phi0, Tensor1 gradient0) = phi.EvaluateAndGradient(v0);
@@ -38,19 +40,11 @@ namespace IntersectingQuadrature {
                     X = x0;
                 }
             };
-            
+            //Console.WriteLine(iterationCounter);
             
             if (minPhi > epsilon) {
                 throw new Exception("Root not found");
             }
-            /*
-            if (X > 1 + epsilon) {
-                X = 1;
-            }
-            if(X < -epsilon * 1e5) {
-                X = 0;
-            }
-            //*/
             Tensor1 root = (1 - X) * a + X * b;
             return root;
         }

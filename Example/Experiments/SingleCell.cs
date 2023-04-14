@@ -11,21 +11,82 @@ namespace Example.Experiments {
     internal static class SingleCell {
 
         public static void Sphere() {
-            IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, -1.5), 1);
-
-            Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitCube(3);
-            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 3);
-
-            IO.Write("nodesSphere.txt", rule);
-        }
-
-        public static void Torus() {
-            IScalarFunction alpha = new Torus(Tensor1.Vector(0, -4, -2.9), 4, 2);
+            IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, 0), 0.5);
 
             Quadrater ruler = new Quadrater();
             HyperRectangle cube = new UnitCube(3);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+
+            IO.Write("nodesSphere.txt", rule);
+        }
+
+        public static void TorusCap() {
+            IScalarFunction alpha = new Torus(Tensor1.Vector(0.01, -4.01, -2.9), 4, 2);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+
+            IO.Write("nodesTorus.txt", rule);
+        }
+
+        public static void CylindricSheet() {
+
+            Tensor2 A = Tensor2.Zeros(3);
+            A[0, 0] = 1;
+            double d = 0.2;
+            IScalarFunction a = new QuadraticPolynomial(-d * d, Tensor1.Zeros(3), A) ;
+
+            double r = 3;
+            double c = 3.9;
+            Tensor2 B = Tensor2.Zeros(3);
+            B[0, 0] = 2*c;
+            Tensor3 C = Tensor3.Zeros(3);
+            C[0, 0, 0] = 1;
+            C[1, 0, 1] = 1;
+            IVectorFunction b = new QuadraticVectorPolynomial(Tensor1.Vector(-r*r + c * c,0,0), B, C);
+
+            IScalarFunction alpha = new ScalarComposition(a, b);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+
+            IO.Write("nodesSheet.txt", rule);
+        }
+
+        public static void SphericSheet() {
+
+            Tensor2 A = Tensor2.Zeros(3);
+            A[0, 0] = 1;
+            double d = 0.2;
+            IScalarFunction a = new QuadraticPolynomial(-d * d, Tensor1.Zeros(3), A);
+
+            double r = 3;
+            double c = 3;
+            Tensor2 B = Tensor2.Zeros(3);
+            B[0, 0] = 2 * c;
+            Tensor3 C = Tensor3.Zeros(3);
+            C[0, 0, 0] = 1;
+            C[1, 0, 1] = 1;
+            C[2, 0, 2] = 1;
+            IVectorFunction b = new QuadraticVectorPolynomial(Tensor1.Vector(-r * r + c * c, 0, 0), B, C);
+
+            IScalarFunction alpha = new ScalarComposition(a, b);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+
+            IO.Write("nodesSheet.txt", rule);
+        }
+
+        public static void Torus() {
+            IScalarFunction alpha = new Torus(Tensor1.Vector(0.00, 0, 0), 0.7, 0.2);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 3, 5);
 
             IO.Write("nodesTorus.txt", rule);
         }

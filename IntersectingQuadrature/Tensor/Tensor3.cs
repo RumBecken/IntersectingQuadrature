@@ -74,7 +74,7 @@ namespace IntersectingQuadrature.Tensor {
             for (int i = 0; i < a.M; ++i) {
                 for (int j = 0; j < a.N; ++j) {
                     for (int k = 0; k < a.O; ++k) {
-                        c[j, k] += a[i, j, k] * b[k] ;
+                        c[i, j] += a[i, j, k] * b[k] ;
                     }
                 }
             }
