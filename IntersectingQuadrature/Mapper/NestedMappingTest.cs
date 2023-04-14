@@ -124,7 +124,7 @@ namespace IntersectingQuadrature.Mapper {
         public static void HalfRadius() {
             NestedMapping m = NestedMapping.Dimension1(Sphere(), Plane(0));
             
-            double x = 0;
+            double x = 0.3;
             (Tensor1 evaluation, Tensor2 jacobian, Tensor3 hessian) = m.EvaluateAndJacobianAndHessian(Tensor1.Vector(x));
 
             double Tx = 0.5 * x + 0.5;
@@ -138,8 +138,8 @@ namespace IntersectingQuadrature.Mapper {
         [Test]
         public static void HalfCircle() {
             NestedMapping m = NestedMapping.Dimension2(Sphere(), Plane(0));
-            double x = 0;
-            double y = 0;
+            double x = -0.2;
+            double y = -0.2;
             (Tensor1 evaluation, Tensor2 jacobian, Tensor3 hessian) = m.EvaluateAndJacobianAndHessian(Tensor1.Vector(x,y));
 
             double Tx = 0.5 * x + 0.5;
@@ -171,9 +171,9 @@ namespace IntersectingQuadrature.Mapper {
         [Test]
         public static void QuarterSphere() {
             NestedMapping m = NestedMapping.Dimension3(Sphere(), Plane(0));
-            double x = 0;
-            double y = 0;
-            double z = 0;
+            double x = 0.2;
+            double y = 0.2;
+            double z = 0.2;
             (Tensor1 evaluation, Tensor2 jacobian, Tensor3 hessian) = m.EvaluateAndJacobianAndHessian(Tensor1.Vector(x,y,z));
 
             double Tx = 0.5 * x + 0.5;
