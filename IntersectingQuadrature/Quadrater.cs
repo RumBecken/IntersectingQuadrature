@@ -23,8 +23,12 @@ namespace IntersectingQuadrature {
             List<Map> setA = hunter.FindMappings(alpha, sign, domain);
             foreach (Map A in setA) {
                 QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, A.Domain.BodyDimension);
-                QuadratureRule rule = Map(A.Mapping, gauss);
-                rules.AddRange(rule);
+                try {
+                    QuadratureRule rule = Map(A.Mapping, gauss);
+                    rules.AddRange(rule);
+                } catch (Exception e) {
+                    Console.WriteLine(e);
+                };
             }
             return rules;
         }

@@ -107,6 +107,7 @@ namespace Example.Experiments {
                         HyperRectangle cell = grid[i, j, k];
                         QuadratureRule rule = finder.FindRule(alpha, signAlpha, cell, n);
                         rules[i, j, k] = rule;
+                        Console.WriteLine($"Working on cell{i},{j},{k}");
                     }
                 }
             }

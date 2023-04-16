@@ -18,10 +18,11 @@ Example.Experiments.SingleCell.CylindricSheet();
 //Example.Experiments.SingleCell.TwoPlaneVolume(2);
 //Example.Experiments.OscillatingEdge.Surface(1);
 
-//Example.Experiments.Ufo.Line(1);
+//Example.Experiments.Ufo.LineH(2);
 
 //Example.Experiments.Ufo.LineAdaptive(0.1,1);
 //Example.Experiments.TrilinearTunnel.Exact();
+//Example.Experiments.SphericalSheet.WaveSurface();
 /*
 for (int n = 1; n < 5; ++n) {
     Example.Experiments.OscillatingEdge.Surface(n);

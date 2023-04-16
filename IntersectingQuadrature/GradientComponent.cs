@@ -36,6 +36,9 @@ namespace IntersectingQuadrature {
                 Tensor1 delta = Tensor1.Zeros(x.M);
                 delta[i] = d;
                 double sign = -Math.Sign(x[i]);
+                if(sign == 0) {
+                    sign = 1;
+                }
                 (double evaluation1, Tensor1 gradient1) = EvaluateAndGradient(x + sign * delta);
                 for (int j = 0; j < x.M; ++j) {
                     hessian[i, j] = sign * (gradient1[j] - gradient[j]) / d; 

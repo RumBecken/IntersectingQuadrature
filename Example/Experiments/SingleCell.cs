@@ -40,7 +40,7 @@ namespace Example.Experiments {
             double r = 3;
             double c = 3.9;
             Tensor2 B = Tensor2.Zeros(3);
-            B[0, 0] = 2*c;
+            B[0, 0] = 2 * c;
             Tensor3 C = Tensor3.Zeros(3);
             C[0, 0, 0] = 1;
             C[1, 0, 1] = 1;

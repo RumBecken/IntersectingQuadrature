@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Example.Experiments {
-    internal class SphericalWaveSheet {
+    internal class SphericalSheet {
 
         
         class SphericalWave : IScalarFunction {
@@ -62,7 +62,7 @@ namespace Example.Experiments {
             }
         }
 
-        public static void Surface() {
+        public static void WaveSurface() {
             int n = 2;
 
             IScalarFunction alpha = new SphericalWave();

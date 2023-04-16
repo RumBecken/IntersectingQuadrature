@@ -42,10 +42,10 @@ namespace IntersectingQuadrature {
             return sets;
         }
 
-        void Decompose(IIntegralMapping subdivision, IScalarFunction alpha, LinkedList<Decomposition> sets) {
+        void Decompose(IIntegralMapping subdivisionMap, IScalarFunction alpha, LinkedList<Decomposition> sets) {
             if(Scanner.TryDecompose(alpha, new UnitCube(alpha.M), out NestedSet body)) {
                 Decomposition decomposition = new Decomposition {
-                    Subdivision = subdivision,
+                    Subdivision = subdivisionMap,
                     Graph = body
                 };
                 sets.AddLast(decomposition);
@@ -54,7 +54,7 @@ namespace IntersectingQuadrature {
                 List<Map> maps = Subdivide(alpha, new UnitCube(alpha.M), body);
                 foreach (Map T in maps) {
                     IScalarFunction alphaT = new ScalarComposition(alpha, T.Mapping);
-                    IIntegralMapping mm = new MappingComposition(subdivision, T.Mapping);
+                    IIntegralMapping mm = new MappingComposition(subdivisionMap, T.Mapping);
                     Decompose(mm, alphaT, sets);
                 }
             }
