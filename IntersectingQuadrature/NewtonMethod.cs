@@ -31,8 +31,7 @@ namespace IntersectingQuadrature {
                 double x0 = x1;
                 Tensor1 v0 = (1 - x0) * a + x0 * b;
                 (double phi0, Tensor1 gradient0) = phi.EvaluateAndGradient(v0);
-                x1 = x0 - stepSize * phi0 / (gradient0 * dv0);
-
+                
                 ++minCounter;
                 if (Math.Abs(phi0) < minPhi) {
                     minPhi = Math.Abs(phi0);
@@ -41,6 +40,11 @@ namespace IntersectingQuadrature {
                 } else {
                     stepSize = 0.2;
                 }
+                double dxPhi = gradient0 * dv0;
+                double step = phi0 / dxPhi;
+                x1 = x0 - stepSize * step;
+                x1 = Math.Min(Math.Max(x1, 0), 1);
+
                 if (Double.IsNaN(x1)) {
                     throw new Exception("Ill-posed root");
                 }
