@@ -26,6 +26,7 @@ namespace IntersectingQuadrature {
                 try {
                     QuadratureRule rule = Map(A.Mapping, gauss);
                     rules.AddRange(rule);
+                    Console.WriteLine("1 is done!");
                 } catch (Exception e) {
                     Console.WriteLine(e);
                 };
@@ -39,9 +40,14 @@ namespace IntersectingQuadrature {
             List <Map> setAB = hunter.FindMappings(alpha, signAlpha, beta, signBeta, domain);
             foreach (Map T in setAB) {
                 //QuadratureRule gauss = QuadratureRules.Plot(3, B.Domain.Dimension);
-                QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.BodyDimension);
-                QuadratureRule Q = Map(T.Mapping, gauss);
-                rules.AddRange(Q);
+                try {
+                    QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.BodyDimension);
+                    QuadratureRule Q = Map(T.Mapping, gauss);
+                    rules.AddRange(Q);
+                    Console.WriteLine("1 is done!");
+                } catch (Exception e) {
+                    Console.WriteLine(e);
+                };
             }
             Subdivisions += NestedGrapher.Subdivisions;
             return rules;

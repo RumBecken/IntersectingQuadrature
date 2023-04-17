@@ -8,7 +8,7 @@ Console.WriteLine();
 //*/
 
 //Example.Experiments.SingleCell.SphericSheet();
-Example.Experiments.SingleCell.CylindricSheet();
+//Example.Experiments.SingleCell.TorusCap();
 //Example.Experiments.SphericalWaveSheet.Surface();
 //Example.Experiments.SingleCell.Sphere();
 //Example.Experiments.SlantedSheet.Subdivision();
@@ -22,6 +22,7 @@ Example.Experiments.SingleCell.CylindricSheet();
 
 //Example.Experiments.Ufo.LineAdaptive(0.1,1);
 //Example.Experiments.TrilinearTunnel.Exact();
+//Example.Experiments.SphericalSheet.TorusSurface();
 //Example.Experiments.SphericalSheet.WaveSurface();
 /*
 for (int n = 1; n < 5; ++n) {
@@ -29,10 +30,10 @@ for (int n = 1; n < 5; ++n) {
 }
 //*/
 
-/*
+//*
 for (int n = 1; n < 5; ++n) {
-    Example.Experiments.ToricSection.Line(n);
-    //Example.Experiments.ToricSection.Surface(n);
+    //Example.Experiments.ToricSection.Line(n);
+    Example.Experiments.ToricSection.Surface(n);
 }
 //*/
 //Example.Experiments.Ufo.LineAdaptive(0.001, 2);

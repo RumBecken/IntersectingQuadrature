@@ -26,7 +26,7 @@ namespace IntersectingQuadrature {
             double stepSize = 1;
 
             int iterationCounter = 0;
-            while (minCounter < 5) {
+            while (minCounter < 3) {
                 ++iterationCounter;
                 double x0 = x1;
                 Tensor1 v0 = (1 - x0) * a + x0 * b;
@@ -37,16 +37,22 @@ namespace IntersectingQuadrature {
                     minPhi = Math.Abs(phi0);
                     minCounter = 0;
                     X = x0;
+                    stepSize = 1;
                 } else {
-                    stepSize = 0.2;
+                    stepSize = 0.4;
                 }
                 double dxPhi = gradient0 * dv0;
                 double step = phi0 / dxPhi;
+                
                 x1 = x0 - stepSize * step;
-                x1 = Math.Min(Math.Max(x1, 0), 1);
+                if( x1 > 1) {
+                    x1 = (1 + x0) / 2;
+                }else if(x1 < 0) {
+                    x1 = (x0 + 0) / 2;
+                }
 
                 if (Double.IsNaN(x1)) {
-                    throw new Exception("Ill-posed root");
+                    break;
                 }
             };
             //Console.WriteLine(iterationCounter);

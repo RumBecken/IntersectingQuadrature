@@ -8,6 +8,17 @@ using IntersectingQuadrature.Tensor;
 
 namespace Example.Experiments {
     internal static class Grid {
+
+        public static void Torus() {
+            IScalarFunction alpha = new Torus(Tensor1.Vector(0.00, 0, 0), 0.7, 0.2);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitCube(3);
+            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 3, 7);
+
+            IO.Write("nodesTorus.txt", rule);
+        }
+
         public static void Cylinder(int cells = 5) {
             IScalarFunction beta = Plane3D.XY(0.2);
             IScalarFunction alpha = new Cylinder(Tensor1.Vector(-1,-1,0), 0.8);
