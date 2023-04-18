@@ -5,7 +5,7 @@ A package that offers methods to create quadrature rules for domains defined by 
 It is used in the discontinuous Galerkin framework [BoSSS](https://github.com/FDYdarmstadt/BoSSS) developed by the chair of fluid dynamics, Technical University of Darmstadt.
 
 ## Quick Start 
-Create a .dotNet project and simply include the NuGet package in your .Net project through nuget.org.
+Create a .Net project and simply include the NuGet package in your .Net project through nuget.org.
 
 Place this code in program.cs and run it :
 ```cs
