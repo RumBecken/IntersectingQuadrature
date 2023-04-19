@@ -21,11 +21,11 @@ namespace Example.Experiments {
         }
 
         public static void TorusCap() {
-            IScalarFunction alpha = new Torus(Tensor1.Vector(0.01, -4.01, -2.9), 4, 2);
+            IScalarFunction torus = new Torus(Tensor1.Vector(0.01, -4.01, -2.9), 4, 2);
 
             Quadrater ruler = new Quadrater();
             HyperRectangle cube = new UnitCube(3);
-            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+            QuadratureRule rule = ruler.FindRule(torus, Symbol.Zero, cube, 3, 0);
 
             IO.Write("nodesTorus.txt", rule);
         }
@@ -49,26 +49,17 @@ namespace Example.Experiments {
 
         public static void SphericSheet() {
 
-            Tensor2 A = Tensor2.Zeros(3);
-            A[0, 0] = 1;
-            double d = 0.2;
-            IScalarFunction a = new QuadraticPolynomial(-d * d, Tensor1.Zeros(3), A);
+            double d = 0.1;
+            double r = 2;
+            double cx = 2.9;
+            double cy = 0;
+            IScalarFunction sphere = new Sphere(Tensor1.Vector(-cx, -cy, 0), r);
 
-            double r = 3;
-            double c = 3;
-            Tensor2 B = Tensor2.Zeros(3);
-            B[0, 0] = 2 * c;
-            Tensor3 C = Tensor3.Zeros(3);
-            C[0, 0, 0] = 1;
-            C[1, 0, 1] = 1;
-            C[2, 0, 2] = 1;
-            IVectorFunction b = new QuadraticVectorPolynomial(Tensor1.Vector(-r * r + c * c, 0, 0), B, C);
-
-            IScalarFunction alpha = new ScalarComposition(a, b);
+            IScalarFunction alpha = new Sheet(sphere, d);
 
             Quadrater ruler = new Quadrater();
             HyperRectangle cube = new UnitCube(3);
-            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
+            QuadratureRule rule = ruler.FindRule(sphere, Symbol.Zero, cube, 1, 0);
 
             IO.Write("nodesSheet.txt", rule);
         }

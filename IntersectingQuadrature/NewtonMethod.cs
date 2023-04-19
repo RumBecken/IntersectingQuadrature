@@ -26,7 +26,7 @@ namespace IntersectingQuadrature {
             double stepSize = 1;
 
             int iterationCounter = 0;
-            while (minCounter < 3) {
+            while (minCounter < 5) {
                 ++iterationCounter;
                 double x0 = x1;
                 Tensor1 v0 = (1 - x0) * a + x0 * b;

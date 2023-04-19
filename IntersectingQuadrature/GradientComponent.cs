@@ -30,7 +30,7 @@ namespace IntersectingQuadrature {
 
         public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x) {
             (double evaluation, Tensor1 gradient) = EvaluateAndGradient(x);
-            double d = 1e-8;
+            double d = 1e-6;
             Tensor2 hessian = Tensor2.Zeros(x.M);
             for(int i = 0; i < x.M; ++i) {
                 Tensor1 delta = Tensor1.Zeros(x.M);

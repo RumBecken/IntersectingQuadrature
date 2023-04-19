@@ -36,37 +36,65 @@ namespace IntersectingQuadrature {
             }
             LinearMapping selfmap = new LinearMapping(geometry.Center, B);
             IScalarFunction subAlpha = new ScalarComposition(alpha, selfmap);
-            
+
+            NestedSet body = new NestedSet(subAlpha, new UnitCube(geometry.SpaceDimension));
             LinkedList<Decomposition> sets = new LinkedList<Decomposition>();
-            Decompose(selfmap, subAlpha, sets);
+            Decompose(selfmap, body, sets);
             return sets;
         }
 
-        void Decompose(IIntegralMapping subdivisionMap, IScalarFunction alpha, LinkedList<Decomposition> sets) {
-            if(Scanner.TryDecompose(alpha, new UnitCube(alpha.M), out NestedSet body)) {
+        void Decompose(IIntegralMapping subdivisionMap, NestedSet body, LinkedList<Decomposition> sets) {
+            int h = body.Height();
+            if(Scanner.TryDecompose(body)) {
                 Decomposition decomposition = new Decomposition {
                     Subdivision = subdivisionMap,
                     Graph = body
                 };
                 sets.AddLast(decomposition);
             } else {
-                Subdivisions += 1;
-                List<Map> maps = Subdivide(alpha, new UnitCube(alpha.M), body);
-                foreach (Map T in maps) {
-                    IScalarFunction alphaT = new ScalarComposition(alpha, T.Mapping);
-                    IIntegralMapping mm = new MappingComposition(subdivisionMap, T.Mapping);
-                    Decompose(mm, alphaT, sets);
+                if (body.Height() > h) {
+                    Subdivisions += 1;
+                    List<Map> maps = Subdivide(body.Alpha, new UnitCube(body.Alpha.M), body, out Axis heightDirection);
+
+                    foreach (Map T in maps) {
+                        IScalarFunction alphaT = new ScalarComposition(body.Alpha, T.Mapping);
+                        IIntegralMapping mm = new MappingComposition(subdivisionMap, T.Mapping);
+                        NestedSet subBody = body.Clone();
+                        AddFaceLayerTo(subBody.LowestLeafs(), heightDirection);
+                        subBody.Alpha = alphaT;
+                        Decompose(mm, subBody, sets);
+                    }
+                } else {
+                    Console.WriteLine("Hhahsafsdjlahfkghadfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavhk");
                 }
+                
             }
         }
 
-        List<Map> Subdivide(IScalarFunction alpha, HyperRectangle geometry, NestedSet body) {
-            IScalarFunction dAlpha = GradientComponentLevelSet(alpha, body);
+        static void AddFaceLayerTo(SetList space, Axis heightDirection) {
+            SetList subspace = new SetList(space.Dimension - 1);
+            foreach (BinaryNode<Set> face in space) {
+                Set topDomain = face.Value.Face(heightDirection, Symbol.Plus);
+                BinaryNode<Set> top = new BinaryNode<Set>(topDomain);
+                top.Parent = face;
+                face.SecondChild = top;
+                subspace.AddLast(top);
+
+                Set bottomDomain = face.Value.Face(heightDirection, Symbol.Minus);
+                BinaryNode<Set> bottom = new BinaryNode<Set>(bottomDomain);
+                face.FirstChild = bottom;
+                bottom.Parent = face;
+                subspace.AddLast(bottom);
+            }
+        }
+
+        List<Map> Subdivide(IScalarFunction alpha, HyperRectangle geometry, NestedSet body, out Axis heightDirection) {
+            IScalarFunction dAlpha = GradientComponentLevelSet(alpha, body, out heightDirection);
             List<Map> maps = hunter.FindMappings(dAlpha, geometry);
             return maps;
         }
 
-        IScalarFunction GradientComponentLevelSet(IScalarFunction alpha, NestedSet body) {
+        IScalarFunction GradientComponentLevelSet(IScalarFunction alpha, NestedSet body, out Axis heightDirection) {
             SetList lowestLeafs = body.LowestLeafs();
             LinkedListNode<BinaryNode<Set>> leaf = lowestLeafs.First;
             while(leaf.Value.Value.Graphable == true) {
@@ -74,7 +102,7 @@ namespace IntersectingQuadrature {
             }
             Set a = leaf.Value.Value;
             Restriction restriction = new Restriction(a.Geometry);
-            Axis heightDirection = a.HeightDirection;
+            heightDirection = a.HeightDirection;
             GradientComponent dAlpha = new GradientComponent(alpha, (int)heightDirection);
             ScalarComposition dAlphaK = new ScalarComposition(dAlpha, restriction);
             return dAlphaK;

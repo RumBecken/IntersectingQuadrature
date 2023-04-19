@@ -7,14 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Example.Experiments {
-    internal class SphericalSheet {
+    internal class Sheets {
 
-        class SphericalWave : IScalarFunction {
+        class Potato : IScalarFunction {
             public int M => 3;
 
             int p = 10;
 
-            public SphericalWave() {
+            public Potato() {
 
             }
 
@@ -63,10 +63,10 @@ namespace Example.Experiments {
 
         public static void WaveSurface() {
             int n = 1;
+            IScalarFunction potato = new Potato();
+            IScalarFunction alpha = new Sheet(potato, 0.04);
 
-            IScalarFunction alpha = new Sheet(new SphericalWave(), 0.01);
-
-            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, n, 60);
+            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, n, 30);
 
             IO.Write("nodes.txt", rule);
             //double s = Math.Abs(Quadrature.Evaluate(f, rule));
@@ -81,6 +81,15 @@ namespace Example.Experiments {
             QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 12);
 
             IO.Write("nodesTorus.txt", rule);
+        }
+
+        public static void SphereSurface() {
+            IScalarFunction sphere = new Sphere(Tensor1.Vector(0.00, 0, 0), 0.8);
+            IScalarFunction alpha = new Sheet(sphere, 0.04);
+
+            QuadratureRule[,,] rule = Grid.FindRule(sphere, Symbol.Zero, 1, 5);
+
+            IO.Write("nodesSphere.txt", rule);
         }
     }
 }

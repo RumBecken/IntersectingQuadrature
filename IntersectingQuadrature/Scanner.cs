@@ -19,6 +19,11 @@ namespace IntersectingQuadrature {
             return graphable;
         }
 
+        public static bool TryDecompose(NestedSet body) {
+            bool graphable = FindFaces(body.LowestLeafs(), body.Alpha);
+            return graphable;
+        }
+
         static Axis FindHeightDirection(SetList space, IScalarFunction alpha) {
             Tensor1 averageGradient = Tensor1.Zeros(alpha.M);
             foreach (BinaryNode<Set> face in space) {
@@ -48,7 +53,7 @@ namespace IntersectingQuadrature {
             if (faces.Dimension > 0) {
                 foreach (BinaryNode<Set> faceNode in faces) {
                     Set face = faceNode.Value;
-                    face.Alpha = Interpolation.Interpolator.Quadratic(alpha, face.Geometry);
+                    face.Alpha = Interpolation.Interpolator.Cubic(alpha, face.Geometry);
                     TrySetSign(face);
                 }
                 RemoveFacesWithSignFrom(faces);
@@ -169,7 +174,7 @@ namespace IntersectingQuadrature {
         static bool IsMonotoneIn(IScalarFunction alpha, Axis heightDirection, Set face) {
 
             GradientComponent grad_h = new GradientComponent(alpha, (int)heightDirection);
-            Interpolation.Bezier bz = Interpolation.Interpolator.Quadratic(grad_h, face.Geometry);
+            Interpolation.Bezier bz = Interpolation.Interpolator.Cubic(grad_h, face.Geometry);
             Tensor1 P = bz.P;
             (Symbol maxSign, Symbol minSign) = decider.MaxMinSign(P);
 

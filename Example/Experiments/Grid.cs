@@ -14,7 +14,7 @@ namespace Example.Experiments {
 
             Quadrater ruler = new Quadrater();
             HyperRectangle cube = new UnitCube(3);
-            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 3, 7);
+            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 12);
 
             IO.Write("nodesTorus.txt", rule);
         }
@@ -81,6 +81,7 @@ namespace Example.Experiments {
                     for (int k = 0; k < cells; ++k) {
                         HyperRectangle cell = grid[i, j, k];
                         QuadratureRule rule;
+                        Console.WriteLine($"Working on cell{i},{j},{k}");
                         rule = finder.FindRule(alpha, signAlpha, beta, signBeta, cell, n, subdivisions);
                         rules[i, j, k] = rule;
                         ++c;
@@ -100,6 +101,7 @@ namespace Example.Experiments {
                     for (int k = 0; k < cells; ++k) {
                         HyperRectangle cell = grid[i, j, k];
                         QuadratureRule rule;
+                        Console.WriteLine($"Working on cell{i},{j},{k}");
                         rule = finder.FindRule(alpha, signAlpha, beta, signBeta, cell, n);
                         rules[i, j, k] = rule;
                     }
@@ -116,9 +118,9 @@ namespace Example.Experiments {
                 for (int j = 0; j < cells; ++j) {
                     for (int k = 0; k < cells; ++k) {
                         HyperRectangle cell = grid[i, j, k];
+                        Console.WriteLine($"Working on cell{i},{j},{k}");
                         QuadratureRule rule = finder.FindRule(alpha, signAlpha, cell, n);
                         rules[i, j, k] = rule;
-                        Console.WriteLine($"Working on cell{i},{j},{k}");
                     }
                 }
             }

@@ -20,17 +20,16 @@ namespace IntersectingQuadrature {
 
         public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, HyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(10);
-            List<Map> setA = hunter.FindMappings(alpha, sign, domain);
-            foreach (Map A in setA) {
-                QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, A.Domain.BodyDimension);
-                try {
+            try {
+                List<Map> setA = hunter.FindMappings(alpha, sign, domain);
+                foreach (Map A in setA) {
+                    QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, A.Domain.BodyDimension);
                     QuadratureRule rule = Map(A.Mapping, gauss);
                     rules.AddRange(rule);
-                    Console.WriteLine("1 is done!");
-                } catch (Exception e) {
-                    Console.WriteLine(e);
-                };
-            }
+                }
+            } catch (Exception e) {
+                Console.WriteLine(e);
+            };
             return rules;
         }
 
@@ -44,7 +43,6 @@ namespace IntersectingQuadrature {
                     QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.BodyDimension);
                     QuadratureRule Q = Map(T.Mapping, gauss);
                     rules.AddRange(Q);
-                    Console.WriteLine("1 is done!");
                 } catch (Exception e) {
                     Console.WriteLine(e);
                 };
