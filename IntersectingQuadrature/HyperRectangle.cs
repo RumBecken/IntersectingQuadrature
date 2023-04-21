@@ -27,44 +27,5 @@ namespace IntersectingQuadrature {
             Diameters = Tensor1.Zeros(spaceDimension);
         }
 
-        public HyperRectangle Face(int direction, Symbol sign) {
-            if (ActiveDimensions[direction] == false) {
-                throw new ArgumentException("Height direction not active.");
-            }
-            HyperRectangle face = Clone();
-            --face.BodyDimension;
-            face.Center[direction] = (int)sign * Diameters[direction] / 2.0 + Center[direction];
-            face.Diameters[direction] = 0;
-            face.ActiveDimensions[direction] = false;
-
-            return face;
-        }
-
-        public void Resize(double coordinate, int direction, Symbol side) {
-            if (ActiveDimensions[direction] == true) {
-                double a = Center[direction] - (int)side * Diameters[direction] / 2.0;
-                double b = coordinate;
-
-                Center[direction] = (a + b) / 2;
-                Diameters[direction] = Math.Abs(a - b);
-            } else {
-                throw new ArgumentException("Only active dimension can be resized");
-            }
-        }
-
-        public void Relocate(double coordinate, int direction) {
-            Center[direction] = coordinate;
-        }
-
-        public HyperRectangle Clone() {
-            HyperRectangle clone = new HyperRectangle(SpaceDimension);
-            clone.BodyDimension = BodyDimension;
-            for(int i = 0; i < clone.SpaceDimension; ++i) {
-                clone.ActiveDimensions[i] = ActiveDimensions[i];
-                clone.Center[i] = Center[i];
-                clone.Diameters[i] = Diameters[i];
-            }
-            return clone;
-        }
     }
 }
