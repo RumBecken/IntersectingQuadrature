@@ -17,7 +17,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(-1, -1, -0.49), R);
             IScalarFunction f = new ConstantPolynomial(1);
             //https://en.wikipedia.org/wiki/Spherical_cap
-            double exact = Math.PI * MathUtility.Pow(h, 2) / 3 * (3 * R - h) * 2 / 4;
+            double exact = Math.PI * Algebra.Pow(h, 2) / 3 * (3 * R - h) * 2 / 4;
             List<double[]> results = new List<double[]>();
             for (int i = 8; i < 65; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, n, i);
@@ -41,7 +41,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(-1, -1, -0.49), R);
             IScalarFunction f = new ConstantPolynomial(1);
             //https://en.wikipedia.org/wiki/Spherical_cap
-            double exact = Math.PI * MathUtility.Pow(h, 2) / 3 * (3 * R - h) * 2 / 4;
+            double exact = Math.PI * Algebra.Pow(h, 2) / 3 * (3 * R - h) * 2 / 4;
             List<double[]> results = new List<double[]>();
             for (int i = 8; i < 65; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, n, i);
@@ -64,7 +64,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(-1, -1, -0.49), R);
             IScalarFunction f = new ConstantPolynomial(1);
             //https://en.wikipedia.org/wiki/Spherical_cap
-            double exact = Math.PI * MathUtility.Pow(h, 2) / 3 * (3 * R - h) * 2 / 4;
+            double exact = Math.PI * Algebra.Pow(h, 2) / 3 * (3 * R - h) * 2 / 4;
             List<double[]> results = new List<double[]>();
             int cells = 10;
             for (int i = 0; i < 5; ++i) {
@@ -72,7 +72,7 @@ namespace Example.Experiments
                 //IO.Write($"nodesVolume{n}_{i}.txt", rules);
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 Console.WriteLine($"{i}, {s}");
-                results.Add(new[] { MathUtility.Pow(2, i), s });
+                results.Add(new[] { Algebra.Pow(2, i), s });
             }
             IO.Write($"volumeConvergence{n}.txt", results);
         }
@@ -140,7 +140,7 @@ namespace Example.Experiments
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 //IO.Write($"nodesSurface{n}_{i}.txt", rules);
                 Console.WriteLine($"{i},{s}");
-                results.Add(new[] { MathUtility.Pow(2, i), s });
+                results.Add(new[] { Algebra.Pow(2, i), s });
             }
             IO.Write($"surfaceConvergence{n}.txt", results);
         }
@@ -207,7 +207,7 @@ namespace Example.Experiments
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 Console.WriteLine($"{i},{s}");
                 IO.Write($"nodesLine{n}_{i}.txt", rules);
-                results.Add(new[] { MathUtility.Pow(2, i), s});
+                results.Add(new[] { Algebra.Pow(2, i), s});
             }
             IO.Write($"lineConvergence{n}.txt", results);
         }

@@ -36,7 +36,7 @@ namespace Example.Experiments {
         static (double f, Tensor1 df, Tensor2 ddf) AnalyticF(Tensor1 X, double r, double d) {
             double x = X[0];
             double y = X[1];
-            double f = MathUtility.Pow(x * x + y * y - r * r, 2) - d * d;
+            double f = Algebra.Pow(x * x + y * y - r * r, 2) - d * d;
             Tensor1 df = Tensor1.Zeros(2);
             df[0] = (x * x + y * y - r * r) * 4 * x;
             df[1] = (x * x + y * y - r * r) * 4 * y;

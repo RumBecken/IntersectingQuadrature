@@ -43,7 +43,7 @@ namespace IntersectingQuadrature {
         }
 
         static QuadratureRule Subdivide(QuadratureRule rule, int subdivisions) {
-            QuadratureRule subRule = new QuadratureRule(rule.Count * MathUtility.Pow(2, subdivisions));
+            QuadratureRule subRule = new QuadratureRule(rule.Count * Algebra.Pow(2, subdivisions));
             double h = 1 / Math.Pow(2, subdivisions);
             for (int i = 0; i < Math.Pow(2, subdivisions); ++i) {
                 for (int j = 0; j < rule.Count; ++j) {
@@ -60,7 +60,7 @@ namespace IntersectingQuadrature {
         }
 
         static QuadratureRule Tensorize(QuadratureRule oneDimensional, int dimension) {
-            int count = MathUtility.Pow(oneDimensional.Count, dimension);
+            int count = Algebra.Pow(oneDimensional.Count, dimension);
             QuadratureRule rule = QuadratureRule.Allocate(count, dimension);
             foreach (QuadratureNode node in rule) {
                 node.Weight = 1.0;
@@ -69,7 +69,7 @@ namespace IntersectingQuadrature {
             for (int d = 0; d < dimension; ++d) {
                 int i = 0;
                 foreach (QuadratureNode node in rule) {
-                    int j = (i / MathUtility.Pow(oneDimensional.Count, d)) % oneDimensional.Count;
+                    int j = (i / Algebra.Pow(oneDimensional.Count, d)) % oneDimensional.Count;
                     node.Point[d] = oneDimensional[j].Point[0];
                     node.Weight *= oneDimensional[j].Weight;
                     ++i;

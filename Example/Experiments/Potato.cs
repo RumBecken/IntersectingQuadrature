@@ -19,7 +19,7 @@ namespace Example.Experiments {
             double x = X[0];
             double y = X[1];
             double z = X[2];
-            return x * x + y * y + z * z - MathUtility.Pow(r + 0.1 * Math.Sin(p * x) * Math.Sin(p * y) * Math.Sin(p * z), 2);
+            return x * x + y * y + z * z - Algebra.Pow(r + 0.1 * Math.Sin(p * x) * Math.Sin(p * y) * Math.Sin(p * z), 2);
         }
 
         public (double evaluation, Tensor1 gradient) EvaluateAndGradient(Tensor1 X) {

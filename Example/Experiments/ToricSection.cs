@@ -26,7 +26,7 @@ namespace Example.Experiments
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 IO.Write($"nodesLine{n}_{i}.txt", rules);
                 Console.WriteLine($"{i},{s}");
-                results.Add(new[] { MathUtility.Pow(2, i), s });
+                results.Add(new[] { Algebra.Pow(2, i), s });
             }
             IO.Write($"lineConvergence{n}.txt", results);
         }
@@ -47,7 +47,7 @@ namespace Example.Experiments
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 IO.Write($"nodesSurface{n}_{i}.txt", rules);
                 Console.WriteLine($"{i},{s}");
-                results.Add(new[] { MathUtility.Pow(2, i), s });
+                results.Add(new[] { Algebra.Pow(2, i), s });
             }
             IO.Write($"surfaceConvergence{n}.txt", results);
         }

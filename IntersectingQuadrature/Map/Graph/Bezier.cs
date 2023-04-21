@@ -82,7 +82,7 @@ namespace IntersectingQuadrature.Map.Decompose
 
         static Tensor1 Probe(IScalarFunction f, HyperRectangle domain, int n)
         {
-            Tensor1 y = Tensor1.Zeros(MathUtility.Pow(n, domain.BodyDimension));
+            Tensor1 y = Tensor1.Zeros(Algebra.Pow(n, domain.BodyDimension));
             Tensor1 center = domain.Center;
             Tensor1 x = Tensor1.Zeros(domain.SpaceDimension);
 

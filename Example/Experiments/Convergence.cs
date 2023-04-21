@@ -17,7 +17,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, 0.0), R);
             int cells = 5;
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = 4.0 / 3.0 * Math.PI * MathUtility.Pow(R, 3);
+            double exact = 4.0 / 3.0 * Math.PI * Algebra.Pow(R, 3);
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 4; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, n, cells);
@@ -53,7 +53,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, 0), R);
             int cells = 5;
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = 4.0 * Math.PI * MathUtility.Pow(R, 2);
+            double exact = 4.0 * Math.PI * Algebra.Pow(R, 2);
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 4; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Zero, n, cells);
@@ -76,7 +76,7 @@ namespace Example.Experiments
 
             //https://en.wikipedia.org/wiki/Circular_segment
             double h = r - 1;
-            double exact = 2 * (r * r * Math.Acos(1 - h / r) - (r - h) * Math.Sqrt(r * r - MathUtility.Pow(r - h, 2)));
+            double exact = 2 * (r * r * Math.Acos(1 - h / r) - (r - h) * Math.Sqrt(r * r - Algebra.Pow(r - h, 2)));
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 4; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, n, cells);
@@ -133,7 +133,7 @@ namespace Example.Experiments
             int cells = 5;
             IScalarFunction beta = new Sphere(Tensor1.Zeros(3), 0.7);
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = 2.0 / 3.0 * Math.PI * MathUtility.Pow(0.7, 3);
+            double exact = 2.0 / 3.0 * Math.PI * Algebra.Pow(0.7, 3);
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 50; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, n, cells);
@@ -150,7 +150,7 @@ namespace Example.Experiments
             int cells = 6;
             IScalarFunction beta = new Sphere(Tensor1.Zeros(3), 0.7);
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = 2.0 * Math.PI * MathUtility.Pow(0.7, 2);
+            double exact = 2.0 * Math.PI * Algebra.Pow(0.7, 2);
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 4; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, beta, Symbol.Zero, n, cells);
@@ -167,7 +167,7 @@ namespace Example.Experiments
             int cells = 6;
             IScalarFunction beta = new Sphere(Tensor1.Zeros(3), 0.7);
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = 2.0 * Math.PI * MathUtility.Pow(0.7, 1);
+            double exact = 2.0 * Math.PI * Algebra.Pow(0.7, 1);
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 4; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Zero, beta, Symbol.Zero, n, cells);
@@ -204,7 +204,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Cylinder(Tensor1.Vector(-1.0, -1.0, 0), r);
             int cells = 4;
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = Math.PI * MathUtility.Pow(r, 2) * 2.0 / 4.0;
+            double exact = Math.PI * Algebra.Pow(r, 2) * 2.0 / 4.0;
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 4; ++i) {
                 QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, n, cells);
@@ -257,7 +257,7 @@ namespace Example.Experiments
         public static void Plane(int n = 2) {
             IScalarFunction alpha = new Plane(Tensor1.Vector(0, 0.3, 1), Tensor1.Zeros(3));
             IScalarFunction f = new ConstantPolynomial(1);
-            double exact = 2 * 2 * Math.Sqrt(MathUtility.Pow(1, 2) + MathUtility.Pow(0.3, 2));
+            double exact = 2 * 2 * Math.Sqrt(Algebra.Pow(1, 2) + Algebra.Pow(0.3, 2));
 
             int cells = 10;
             List<double[]> results = new List<double[]>();

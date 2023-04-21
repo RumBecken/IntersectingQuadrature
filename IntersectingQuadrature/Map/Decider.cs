@@ -57,8 +57,8 @@ namespace IntersectingQuadrature.Map
             {
                 throw new ArgumentException("Length must be greater than 0");
             }
-            double max = MathUtility.Max(x);
-            double min = MathUtility.Min(x);
+            double max = Algebra.Max(x);
+            double min = Algebra.Min(x);
 
             return (Sign(max), Sign(min));
         }

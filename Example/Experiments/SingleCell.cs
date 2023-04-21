@@ -170,7 +170,7 @@ namespace Example.Experiments
 
             IScalarFunction f = new ConstantPolynomial(1);
 
-            double exact = MathUtility.Pow(scale * 2.0, 2);
+            double exact = Algebra.Pow(scale * 2.0, 2);
             double s = Quadrature.Evaluate(f, rule);
             double e = Math.Abs(s - exact);
             Console.WriteLine($"1,{e}");
@@ -190,7 +190,7 @@ namespace Example.Experiments
 
             IScalarFunction f = new ConstantPolynomial(1);
 
-            double exact = MathUtility.Pow(scale * 2,2)/2;
+            double exact = Algebra.Pow(scale * 2,2)/2;
             double s = Quadrature.Evaluate(f, rule);
             double e = Math.Abs(s - exact);
             Console.WriteLine($"TwoPlaneSurface Error: ,{e}");
@@ -211,7 +211,7 @@ namespace Example.Experiments
 
             IScalarFunction f = new ConstantPolynomial(1);
 
-            double exact = MathUtility.Pow(scale * 2, 3) / 4 + scale * scale * 2 * (scale * a);
+            double exact = Algebra.Pow(scale * 2, 3) / 4 + scale * scale * 2 * (scale * a);
             double s = Quadrature.Evaluate(f, rule);
             double e = Math.Abs(s - exact);
             Console.WriteLine($"1,{e}");

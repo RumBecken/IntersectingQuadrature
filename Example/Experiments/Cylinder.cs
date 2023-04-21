@@ -22,7 +22,7 @@ namespace Example.Experiments {
         public double Evaluate(Tensor1 x) {
             double xl = x[0] - center[0];
             double yl = x[1] - center[1];
-            double f = MathUtility.Pow(xl, 2) + MathUtility.Pow(yl, 2) - MathUtility.Pow(radius, 2);
+            double f = Algebra.Pow(xl, 2) + Algebra.Pow(yl, 2) - Algebra.Pow(radius, 2);
             return f;
         }
 

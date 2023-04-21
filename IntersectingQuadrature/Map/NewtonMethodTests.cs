@@ -21,9 +21,9 @@ namespace IntersectingQuadrature.Map
             public double Evaluate(Tensor1 X)
             {
                 double x = X[0];
-                double p = -0.2 * MathUtility.Pow(x, 5) + 0.45 * MathUtility.Pow(x, 4) - 0.32 * MathUtility.Pow(x, 3) + 0.08 * MathUtility.Pow(x, 2);
-                double c = -0.2 * MathUtility.Pow(Root, 5) + 0.45 * MathUtility.Pow(Root, 4)
-                    - 0.32 * MathUtility.Pow(Root, 3) + 0.08 * MathUtility.Pow(Root, 2);
+                double p = -0.2 * Algebra.Pow(x, 5) + 0.45 * Algebra.Pow(x, 4) - 0.32 * Algebra.Pow(x, 3) + 0.08 * Algebra.Pow(x, 2);
+                double c = -0.2 * Algebra.Pow(Root, 5) + 0.45 * Algebra.Pow(Root, 4)
+                    - 0.32 * Algebra.Pow(Root, 3) + 0.08 * Algebra.Pow(Root, 2);
                 return p - c;
 
 
@@ -33,8 +33,8 @@ namespace IntersectingQuadrature.Map
             {
                 double x = X[0];
                 double evaluation = Evaluate(X);
-                Tensor1 gradient = Tensor1.Vector(-MathUtility.Pow(x, 4)
-                    + 1.8 * MathUtility.Pow(x, 3) - 0.96 * MathUtility.Pow(x, 2) + 0.16 * x);
+                Tensor1 gradient = Tensor1.Vector(-Algebra.Pow(x, 4)
+                    + 1.8 * Algebra.Pow(x, 3) - 0.96 * Algebra.Pow(x, 2) + 0.16 * x);
                 return (evaluation, gradient);
             }
 

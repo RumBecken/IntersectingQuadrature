@@ -57,7 +57,7 @@ namespace IntersectingQuadrature
         }
 
         static HyperRectangle[] Split(HyperRectangle domain) {
-            int n = MathUtility.Pow(2, domain.BodyDimension);
+            int n = Algebra.Pow(2, domain.BodyDimension);
             HyperRectangle[] subdomains = new HyperRectangle[n];
             for(int i = 0; i < n; ++i) {
                 HyperRectangle subdomain = new HyperRectangle(domain.BodyDimension);

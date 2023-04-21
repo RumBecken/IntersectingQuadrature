@@ -26,8 +26,8 @@ namespace Example.Experiments {
             double yl = x[1] - center[1];
             double zl = x[2] - center[2];
 
-            double f = Math.Sqrt(MathUtility.Pow(xl, 2) + MathUtility.Pow(yl, 2)) - R;
-            f = MathUtility.Pow(f, 2) + MathUtility.Pow(zl, 2) - MathUtility.Pow(r, 2);
+            double f = Math.Sqrt(Algebra.Pow(xl, 2) + Algebra.Pow(yl, 2)) - R;
+            f = Algebra.Pow(f, 2) + Algebra.Pow(zl, 2) - Algebra.Pow(r, 2);
             return f;
         }
 
@@ -36,7 +36,7 @@ namespace Example.Experiments {
             double yl = x[1] - center[1];
             double zl = x[2] - center[2];
 
-            double sqrxy = Math.Sqrt(MathUtility.Pow(xl, 2) + MathUtility.Pow(yl, 2));
+            double sqrxy = Math.Sqrt(Algebra.Pow(xl, 2) + Algebra.Pow(yl, 2));
 
             double dx = 2 * xl * ( 1 -  R / (sqrxy));
             double dy = 2 * yl * (1 - R / (sqrxy));
@@ -51,7 +51,7 @@ namespace Example.Experiments {
             double yl = x[1] - center[1];
             double zl = x[2] - center[2];
 
-            double sqrxy = Math.Pow(MathUtility.Pow(xl, 2) + MathUtility.Pow(yl, 2), 1.5);
+            double sqrxy = Math.Pow(Algebra.Pow(xl, 2) + Algebra.Pow(yl, 2), 1.5);
             Tensor2 hessian = Tensor2.Zeros(3,3);
             
             //x
