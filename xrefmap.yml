@@ -121,19 +121,6 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.Center
   nameWithType: HyperRectangle.Center
-- uid: IntersectingQuadrature.HyperRectangle.Clone
-  name: Clone()
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Clone
-  commentId: M:IntersectingQuadrature.HyperRectangle.Clone
-  fullName: IntersectingQuadrature.HyperRectangle.Clone()
-  nameWithType: HyperRectangle.Clone()
-- uid: IntersectingQuadrature.HyperRectangle.Clone*
-  name: Clone
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Clone_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.Clone
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.Clone
-  nameWithType: HyperRectangle.Clone
 - uid: IntersectingQuadrature.HyperRectangle.Diameters
   name: Diameters
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Diameters
@@ -147,54 +134,6 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.Diameters
   nameWithType: HyperRectangle.Diameters
-- uid: IntersectingQuadrature.HyperRectangle.Face(System.Int32,IntersectingQuadrature.Symbol)
-  name: Face(int, Symbol)
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Face_System_Int32_IntersectingQuadrature_Symbol_
-  commentId: M:IntersectingQuadrature.HyperRectangle.Face(System.Int32,IntersectingQuadrature.Symbol)
-  name.vb: Face(Integer, Symbol)
-  fullName: IntersectingQuadrature.HyperRectangle.Face(int, IntersectingQuadrature.Symbol)
-  fullName.vb: IntersectingQuadrature.HyperRectangle.Face(Integer, IntersectingQuadrature.Symbol)
-  nameWithType: HyperRectangle.Face(int, Symbol)
-  nameWithType.vb: HyperRectangle.Face(Integer, Symbol)
-- uid: IntersectingQuadrature.HyperRectangle.Face*
-  name: Face
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Face_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.Face
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.Face
-  nameWithType: HyperRectangle.Face
-- uid: IntersectingQuadrature.HyperRectangle.Relocate(System.Double,System.Int32)
-  name: Relocate(double, int)
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Relocate_System_Double_System_Int32_
-  commentId: M:IntersectingQuadrature.HyperRectangle.Relocate(System.Double,System.Int32)
-  name.vb: Relocate(Double, Integer)
-  fullName: IntersectingQuadrature.HyperRectangle.Relocate(double, int)
-  fullName.vb: IntersectingQuadrature.HyperRectangle.Relocate(Double, Integer)
-  nameWithType: HyperRectangle.Relocate(double, int)
-  nameWithType.vb: HyperRectangle.Relocate(Double, Integer)
-- uid: IntersectingQuadrature.HyperRectangle.Relocate*
-  name: Relocate
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Relocate_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.Relocate
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.Relocate
-  nameWithType: HyperRectangle.Relocate
-- uid: IntersectingQuadrature.HyperRectangle.Resize(System.Double,System.Int32,IntersectingQuadrature.Symbol)
-  name: Resize(double, int, Symbol)
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Resize_System_Double_System_Int32_IntersectingQuadrature_Symbol_
-  commentId: M:IntersectingQuadrature.HyperRectangle.Resize(System.Double,System.Int32,IntersectingQuadrature.Symbol)
-  name.vb: Resize(Double, Integer, Symbol)
-  fullName: IntersectingQuadrature.HyperRectangle.Resize(double, int, IntersectingQuadrature.Symbol)
-  fullName.vb: IntersectingQuadrature.HyperRectangle.Resize(Double, Integer, IntersectingQuadrature.Symbol)
-  nameWithType: HyperRectangle.Resize(double, int, Symbol)
-  nameWithType.vb: HyperRectangle.Resize(Double, Integer, Symbol)
-- uid: IntersectingQuadrature.HyperRectangle.Resize*
-  name: Resize
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Resize_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.Resize
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.Resize
-  nameWithType: HyperRectangle.Resize
 - uid: IntersectingQuadrature.HyperRectangle.SpaceDimension
   name: SpaceDimension
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_SpaceDimension
