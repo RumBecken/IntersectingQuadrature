@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Map.Graph
 {
     internal static class Resizer
     {

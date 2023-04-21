@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using IntersectingQuadrature.Tensor;
 
 
-namespace IntersectingQuadrature.Map.Decompose
-{
+namespace IntersectingQuadrature.Map.Graph {
 
-    internal class NestedGrapher
-    {
+    internal class NestedGrapher : IGrapher {
 
         Finder hunter;
 
-        public NestedGrapher(Finder hunter)
-        {
+        int maxSubdivisions = 100;
+
+        public NestedGrapher(Finder hunter) {
             this.hunter = hunter;
         }
 
-        public LinkedList<Decomposition> Decompose(IScalarFunction alpha, HyperRectangle geometry)
+        public LinkedList<Decomposition> Decompose(IScalarFunction alpha, IHyperRectangle geometry)
         {
             LinearMapping selfmap = FromUnitCubeTo(geometry);
             IScalarFunction subAlpha = new ScalarComposition(alpha, selfmap);
@@ -27,7 +26,7 @@ namespace IntersectingQuadrature.Map.Decompose
             return sets;
         }
 
-        static LinearMapping FromUnitCubeTo(HyperRectangle geometry)
+        static LinearMapping FromUnitCubeTo(IHyperRectangle geometry)
         {
             Tensor2 B = Tensor2.Zeros(geometry.SpaceDimension);
             for (int i = 0; i < geometry.SpaceDimension; ++i)
@@ -51,38 +50,37 @@ namespace IntersectingQuadrature.Map.Decompose
             }
             else
             {
-                if (body.Height() > h)
-                {
+                if(h == 0) {
                     List<IntegralMapping> maps = InsertGradientRoot(body.Alpha, new UnitHyperCube(body.Alpha.M), body, out Axis heightDirection);
 
-                    foreach (IntegralMapping T in maps)
-                    {
+                    foreach (IntegralMapping T in maps) {
                         IScalarFunction alphaT = new ScalarComposition(body.Alpha, T.Transformation);
                         IIntegralTransformation mm = new MappingComposition(subdivisionMap, T.Transformation);
                         NestedSet subBody = new NestedSet(alphaT, new UnitHyperCube(body.Alpha.M));
                         Decompose(mm, subBody, sets, h + 1);
                     }
-                }
-                else
-                {
-                    bool subdivide = true;
-                    if (subdivide)
-                    {
+                } else {
+                    if (h < maxSubdivisions) {
                         (HyperRectangle A, HyperRectangle B) = Split(body.Root.Value.Geometry, subdivisionMap);
 
                         LinearMapping mapA = FromUnitCubeTo(A);
                         IScalarFunction alpha = new ScalarComposition(body.Alpha, mapA);
                         NestedSet setA = new NestedSet(alpha, new UnitHyperCube(alpha.M));
-                        Decompose(new MappingComposition(subdivisionMap, mapA), setA, sets, h);
+                        Decompose(new MappingComposition(subdivisionMap, mapA), setA, sets, h + 1);
 
                         LinearMapping mapB = FromUnitCubeTo(B);
                         IScalarFunction beta = new ScalarComposition(body.Alpha, mapB);
                         NestedSet setB = new NestedSet(beta, new UnitHyperCube(beta.M));
-                        Decompose(new MappingComposition(subdivisionMap, mapB), setB, sets, h);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Brute Force");
+                        Decompose(new MappingComposition(subdivisionMap, mapB), setB, sets, h + 1);
+                    } else {
+                        Tensor1 center = body.Root.Value.Geometry.Center;
+                        (double a, Tensor1 b) = body.Alpha.EvaluateAndGradient(center);
+                        a -= b * center;
+                        body.Alpha = new LinearPolynomial(a, b);
+                        body.Root.RemoveChildren();
+                        body.Root.Value.Sign = Symbol.None;
+                        body.Root.Value.HeightDirection = Axis.None;
+                        Decompose(subdivisionMap, body, sets, h+1);
                     }
                 }
             }
@@ -110,7 +108,7 @@ namespace IntersectingQuadrature.Map.Decompose
         List<IntegralMapping> InsertGradientRoot(IScalarFunction alpha, HyperRectangle geometry, NestedSet body, out Axis heightDirection)
         {
             IScalarFunction dAlpha = GradientComponentLevelSet(alpha, body, out heightDirection);
-            List<IntegralMapping> maps = hunter.FindMappings(dAlpha, geometry);
+            List<IntegralMapping> maps = hunter.FindMappings(dAlpha, new UnitHyperCube(body.Alpha.M));
             return maps;
         }
 
@@ -127,7 +125,7 @@ namespace IntersectingQuadrature.Map.Decompose
             heightDirection = a.HeightDirection;
             GradientComponent dAlpha = new GradientComponent(alpha, (int)heightDirection);
             ScalarComposition dAlphaK = new ScalarComposition(dAlpha, restriction);
-            return dAlphaK;
+            return dAlpha;
         }
     }
 }

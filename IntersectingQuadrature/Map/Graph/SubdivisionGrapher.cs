@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using IntersectingQuadrature.Tensor;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Map.Graph
 {
-    internal class SubdivisionGrapher
+    internal class SubdivisionGrapher : IGrapher
     {
 
         int maxSubdivisions = 4;

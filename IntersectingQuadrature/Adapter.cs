@@ -6,7 +6,7 @@ namespace IntersectingQuadrature
 {
     internal class Adapter {
 
-        double tau = 0.0001;
+        double tau;
 
         public Adapter(double tau) {
             this.tau = tau;

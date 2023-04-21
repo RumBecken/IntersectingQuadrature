@@ -2,7 +2,7 @@
 using System;
 using System.Globalization;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Map.Graph
 {
     internal class Bezier
     {

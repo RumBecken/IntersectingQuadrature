@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Map.Graph
 {
     class Restriction : IVectorFunction
     {

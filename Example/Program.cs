@@ -2,8 +2,8 @@
 using IntersectingQuadrature.Tensor;
 
 
-//*/
-Example.Experiments.Grid.Torus();
+Example.Experiments.Grid.WigglyCylinderSubdivision();
+//Example.Experiments.Grid.WigglyCylinder();
 //Example.Experiments.Sheets.SphereSurface();
 //Example.Experiments.Sheets.WaveSurface();
 //Example.Experiments.SingleCell.CylindricSheet();
@@ -32,8 +32,8 @@ for (int n = 1; n < 5; ++n) {
     Example.Experiments.OscillatingEdge.Volume(n);
 }
 //*/
-Example.Experiments.SingleCell.Line();
-//Example.Experiments.ToricSection.Line(1);
+//Example.Experiments.SingleCell.Line();
+//Example.Experiments.ToricSection.Surface(1);
 /*
 for (int n = 1; n < 5; ++n) {
     //Example.Experiments.ToricSection.Line(n);

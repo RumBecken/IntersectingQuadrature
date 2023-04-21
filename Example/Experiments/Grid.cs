@@ -12,9 +12,9 @@ namespace Example.Experiments
 
         public static void Potato() {
             int n = 1;
-            IScalarFunction potato = new Potato(0.8);
+            IScalarFunction potato = new Potato(0.5);
 
-            QuadratureRule[,,] rule = Grid.FindRule(potato, Symbol.Zero, n, 31);
+            QuadratureRule[,,] rule = Grid.FindRule(potato, Symbol.Zero, n, 10);
 
             IO.Write("nodes.txt", rule);
             //double s = Math.Abs(Quadrature.Evaluate(f, rule));
@@ -22,12 +22,26 @@ namespace Example.Experiments
 
         public static void Torus() {
             IScalarFunction alpha = new Torus(Tensor1.Vector(0.00, 0, 0), 0.7, 0.2);
-
-            Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitHyperCube(3);
             QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 12);
 
             IO.Write("nodesTorus.txt", rule);
+        }
+
+        public static void WigglyCylinderSubdivision() {
+            double gap = 0.0001;
+            IScalarFunction alpha = new WigglyCylinder(Tensor1.Vector(gap, 0, 0), 2.0/3, 0.2);
+            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 6);
+
+            IO.Write("nodesWigglyCylinder.txt", rule);
+        }
+
+        public static void WigglyCylinder() {
+            double gap = 0.0001;
+            IScalarFunction alpha = new WigglyCylinder(Tensor1.Vector(0.00, 0, 0), 2.0 / 3 + gap, 0.2);
+            IScalarFunction beta = new GradientComponent(alpha, 1);
+            QuadratureRule[,,] rule = Grid.FindRule(beta, Symbol.Minus, alpha, Symbol.Zero, 1, 6);
+            QuadratureRule[,,] rule1 = Grid.FindRule(beta, Symbol.Plus, alpha, Symbol.Zero, 1, 6);
+            IO.Write("nodesWigglyCylinder.txt", rule, rule1);
         }
 
         public static void Cylinder(int cells = 5) {

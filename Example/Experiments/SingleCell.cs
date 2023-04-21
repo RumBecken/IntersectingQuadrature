@@ -43,7 +43,7 @@ namespace Example.Experiments
         }
 
         public static void TorusCap() {
-            IScalarFunction torus = new Torus(Tensor1.Vector(0.01, -4.01, -2.9), 4, 2);
+            IScalarFunction torus = new Torus(Tensor1.Vector(0.01, -2.01, -1.999), 2, 1);
 
             Quadrater ruler = new Quadrater();
             HyperRectangle cube = new UnitHyperCube(3);
@@ -180,7 +180,7 @@ namespace Example.Experiments
         public static void TwoPlaneSurface(int n) {
 
             IScalarFunction alpha = new Plane(Tensor1.Vector(1, 0, 0), Tensor1.Zeros(3));
-            IScalarFunction beta = new Plane(Tensor1.Vector(1, 0, 0.9), Tensor1.Zeros(3));
+            IScalarFunction beta = new Plane(Tensor1.Vector(1, 0,0), Tensor1.Zeros(3));
 
             Quadrater finder = new Quadrater();
             HyperRectangle cell = new UnitHyperCube(3);

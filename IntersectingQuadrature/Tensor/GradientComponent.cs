@@ -1,40 +1,34 @@
-﻿using IntersectingQuadrature.Tensor;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Tensor
 {
-    class GradientComponent : IScalarFunction
-    {
+    public class GradientComponent : IScalarFunction {
 
         IScalarFunction alpha;
 
         Tensor1 normal;
 
-        public GradientComponent(IScalarFunction alpha, int h)
-        {
+        public GradientComponent(IScalarFunction alpha, int component) {
             this.alpha = alpha;
             normal = Tensor1.Zeros(alpha.M);
-            normal[h] = 1;
+            normal[component] = 1;
         }
 
         public int M => alpha.M;
 
-        public double Evaluate(Tensor1 x)
-        {
+        public double Evaluate(Tensor1 x) {
             (double evaluation, Tensor1 gradient) = alpha.EvaluateAndGradient(x);
             return gradient * normal;
         }
 
-        public (double evaluation, Tensor1 gradient) EvaluateAndGradient(Tensor1 x)
-        {
+        public (double evaluation, Tensor1 gradient) EvaluateAndGradient(Tensor1 x) {
             (double evaluation, Tensor1 gradient, Tensor2 hessian) = alpha.EvaluateAndGradientAndHessian(x);
             return (normal * gradient, normal * hessian);
         }
 
-        public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x)
-        {
+        public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x) {
             (double evaluation, Tensor1 gradient) = EvaluateAndGradient(x);
             double d = 1e-6;
             Tensor2 hessian = Tensor2.Zeros(x.M);

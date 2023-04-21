@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using IntersectingQuadrature.Tensor;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Map.Graph
 {
     internal static class ResizerTests
     {

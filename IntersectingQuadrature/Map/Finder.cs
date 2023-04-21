@@ -4,12 +4,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IntersectingQuadrature.Map.Decompose;
+using IntersectingQuadrature.Map.Graph;
 using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature.Map
 {
-
     internal class Finder
     {
 
@@ -19,14 +18,24 @@ namespace IntersectingQuadrature.Map
 
         Converter mapper;
 
-        SubdivisionGrapher grapher;
+        IGrapher grapher;
 
         public Finder()
         {
+            IGrapher grapher = new SubdivisionGrapher();
+            //grapher = new NestedGrapher(new Finder(new SubdivisionGrapher()));
+            Initialize(grapher);
+        }
+
+        Finder(IGrapher grapher) {
+            Initialize(grapher);
+        }
+
+        void Initialize(IGrapher grapher) {
+            this.grapher = grapher;
             newton = new NewtonMethod(Environment.Epsilon);
             organizer = new Tesselater(newton);
             mapper = new Converter(newton);
-            grapher = new SubdivisionGrapher();
         }
 
         public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, IHyperRectangle domain)

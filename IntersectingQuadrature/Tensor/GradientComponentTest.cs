@@ -1,10 +1,9 @@
-﻿using IntersectingQuadrature.Tensor;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IntersectingQuadrature.Map.Decompose
+namespace IntersectingQuadrature.Tensor
 {
     internal class GradientComponentTest
     {

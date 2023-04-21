@@ -14,19 +14,21 @@ namespace IntersectingQuadrature{
             }
         }
 
-        public static void Write(string file, QuadratureRule[,,] rules) {
+        public static void Write(string file, params QuadratureRule[][,,] rulesList) {
             System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("en-US");
             using (StreamWriter f = new StreamWriter(file)) {
                 int c = 0;
-                foreach(QuadratureRule rule in rules) {
-                    foreach (QuadratureNode node in rule) {
-                        string point = "";
-                        for(int i = 0; i < node.Point.M; ++i) {
-                            point += $"{node.Point[i]},";
+                foreach (QuadratureRule[,,] rules in rulesList) {
+                    foreach (QuadratureRule rule in rules) {
+                        foreach (QuadratureNode node in rule) {
+                            string point = "";
+                            for (int i = 0; i < node.Point.M; ++i) {
+                                point += $"{node.Point[i]},";
+                            }
+                            f.WriteLine(point + $"{node.Weight}," + $"{c}");
                         }
-                        f.WriteLine(point + $"{node.Weight}," + $"{c}");
+                        ++c;
                     }
-                    ++c;
                 }
             }
         }
