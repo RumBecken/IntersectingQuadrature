@@ -10,7 +10,7 @@ Create a .Net project and simply include the NuGet package in your .Net project 
 Place this code in program.cs and run it :
 ```cs
 using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace Example {
 
@@ -21,7 +21,7 @@ namespace Example {
       IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
 
       Quadrater finder = new Quadrater();
-      HyperRectangle cell = new UnitCube(3);
+      HyperRectangle cell = new UnitHyperCube(3);
       QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
     }
   }

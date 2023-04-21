@@ -10,7 +10,7 @@ Create a .dotNet project and simply include the NuGet package in your .Net proje
 Place this code in program.cs and run it :
 ```cs
 using IntersectingQuadrature;
-using IntersectingQuadrature.TensorAnalysis;
+using IntersectingQuadrature.Tensor;
 
 namespace Example {
 
@@ -21,7 +21,7 @@ namespace Example {
       IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
 
       Quadrater finder = new Quadrater();
-      HyperRectangle cell = new UnitCube(3);
+      HyperRectangle cell = new UnitHyperCube(3);
       QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
     }
   }
@@ -37,7 +37,7 @@ add IntersectingQuadrature.csproj to your project.
 To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule.yml) : 
 - Implement level sets [`IScalarFunction Alpha`](api/TensorAnalysis.IScalarFunction.yml) 
   and [`IScalarFunction Beta`](api/TensorAnalysis.IScalarFunction.yml). 
-- Create [`HyperRectangle K`](api/IntersectingQuadrature.HyperRectangle.yml) of dimension *d* which confines the domain of integration.
+- Create [`IHyperRectangle K`](api/IntersectingQuadrature.HyperRectangle.yml) of dimension *d* which confines the domain of integration.
 - Determine the domain of integration by selecting 
   [`Symbol signAlpha`](api/IntersectingQuadrature.Symbol.yml) and [`Symbol signBeta`](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for `Alpha` and `Beta` respectively. 
   You will receive a quadrature rule for the set {x &isin; K | sign(Alpha(x)) = signAlpha &and; sign(Beta(x)) = signBeta}.

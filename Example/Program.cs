@@ -1,8 +1,14 @@
 ﻿using IntersectingQuadrature;
+using IntersectingQuadrature.Tensor;
 
-Console.WriteLine();
 
-//*
+IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
+IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
+
+Quadrater finder = new Quadrater();
+HyperRectangle cell = new UnitHyperCube(3);
+QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
+
 
 
 //*/
