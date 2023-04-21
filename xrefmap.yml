@@ -223,12 +223,6 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Quadrater.FindRule
   nameWithType: Quadrater.FindRule
-- uid: IntersectingQuadrature.Quadrater.Subdivisions
-  name: Subdivisions
-  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_Subdivisions
-  commentId: F:IntersectingQuadrature.Quadrater.Subdivisions
-  fullName: IntersectingQuadrature.Quadrater.Subdivisions
-  nameWithType: Quadrater.Subdivisions
 - uid: IntersectingQuadrature.Quadrature
   name: Quadrature
   href: api/IntersectingQuadrature.Quadrature.html
@@ -1885,28 +1879,28 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.VectorComposition.N
   nameWithType: VectorComposition.N
-- uid: IntersectingQuadrature.UnitCube
-  name: UnitCube
-  href: api/IntersectingQuadrature.UnitCube.html
-  commentId: T:IntersectingQuadrature.UnitCube
-  fullName: IntersectingQuadrature.UnitCube
-  nameWithType: UnitCube
-- uid: IntersectingQuadrature.UnitCube.#ctor(System.Int32)
-  name: UnitCube(int)
-  href: api/IntersectingQuadrature.UnitCube.html#IntersectingQuadrature_UnitCube__ctor_System_Int32_
-  commentId: M:IntersectingQuadrature.UnitCube.#ctor(System.Int32)
+- uid: IntersectingQuadrature.UnitHyperCube
+  name: UnitHyperCube
+  href: api/IntersectingQuadrature.UnitHyperCube.html
+  commentId: T:IntersectingQuadrature.UnitHyperCube
+  fullName: IntersectingQuadrature.UnitHyperCube
+  nameWithType: UnitHyperCube
+- uid: IntersectingQuadrature.UnitHyperCube.#ctor(System.Int32)
+  name: UnitHyperCube(int)
+  href: api/IntersectingQuadrature.UnitHyperCube.html#IntersectingQuadrature_UnitHyperCube__ctor_System_Int32_
+  commentId: M:IntersectingQuadrature.UnitHyperCube.#ctor(System.Int32)
   name.vb: New(Integer)
-  fullName: IntersectingQuadrature.UnitCube.UnitCube(int)
-  fullName.vb: IntersectingQuadrature.UnitCube.New(Integer)
-  nameWithType: UnitCube.UnitCube(int)
-  nameWithType.vb: UnitCube.New(Integer)
-- uid: IntersectingQuadrature.UnitCube.#ctor*
-  name: UnitCube
-  href: api/IntersectingQuadrature.UnitCube.html#IntersectingQuadrature_UnitCube__ctor_
-  commentId: Overload:IntersectingQuadrature.UnitCube.#ctor
+  fullName: IntersectingQuadrature.UnitHyperCube.UnitHyperCube(int)
+  fullName.vb: IntersectingQuadrature.UnitHyperCube.New(Integer)
+  nameWithType: UnitHyperCube.UnitHyperCube(int)
+  nameWithType.vb: UnitHyperCube.New(Integer)
+- uid: IntersectingQuadrature.UnitHyperCube.#ctor*
+  name: UnitHyperCube
+  href: api/IntersectingQuadrature.UnitHyperCube.html#IntersectingQuadrature_UnitHyperCube__ctor_
+  commentId: Overload:IntersectingQuadrature.UnitHyperCube.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: IntersectingQuadrature.UnitCube.UnitCube
-  fullName.vb: IntersectingQuadrature.UnitCube.New
-  nameWithType: UnitCube.UnitCube
-  nameWithType.vb: UnitCube.New
+  fullName: IntersectingQuadrature.UnitHyperCube.UnitHyperCube
+  fullName.vb: IntersectingQuadrature.UnitHyperCube.New
+  nameWithType: UnitHyperCube.UnitHyperCube
+  nameWithType.vb: UnitHyperCube.New

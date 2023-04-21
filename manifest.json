@@ -225,10 +225,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.UnitCube.yml",
+      "source_relative_path": "api/IntersectingQuadrature.UnitHyperCube.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.UnitCube.html"
+          "relative_path": "api/IntersectingQuadrature.UnitHyperCube.html"
         }
       },
       "version": ""
