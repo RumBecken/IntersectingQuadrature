@@ -1,57 +1,43 @@
-﻿using System;
+﻿using IntersectingQuadrature.Tensor;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IntersectingQuadrature.Mapper;
-using IntersectingQuadrature.Tensor;
+using IntersectingQuadrature.Map;
 
-namespace IntersectingQuadrature {
+namespace IntersectingQuadrature
+{
     public class Quadrater {
 
-        MapFinder hunter;
+        Finder hunter;
 
         public Quadrater() {
-            hunter = new MapFinder();
+            hunter = new Finder();
         }
-
-        public int Subdivisions = 0;
 
         public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, HyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(10);
-            try {
-                List<Map> setA = hunter.FindMappings(alpha, sign, domain);
-                foreach (Map A in setA) {
-                    QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, A.Domain.BodyDimension);
-                    QuadratureRule rule = Map(A.Mapping, gauss);
-                    rules.AddRange(rule);
-                }
-            } catch (Exception e) {
-                Console.WriteLine(e);
-            };
+            List<IntegralMapping> setA = hunter.FindMappings(alpha, sign, domain);
+            foreach (IntegralMapping A in setA) {
+                QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, A.Domain.BodyDimension);
+                QuadratureRule rule = Map(A.Transformation, gauss);
+                rules.AddRange(rule);
+            }
             return rules;
         }
 
         public QuadratureRule FindRule(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, HyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(20);
-            NestedGrapher.Subdivisions = 0;
-            List <Map> setAB = hunter.FindMappings(alpha, signAlpha, beta, signBeta, domain);
-            foreach (Map T in setAB) {
+            List <IntegralMapping> setAB = hunter.FindMappings(alpha, signAlpha, beta, signBeta, domain);
+            foreach (IntegralMapping T in setAB) {
                 //QuadratureRule gauss = QuadratureRules.Plot(3, B.Domain.Dimension);
-                try {
-                    QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.BodyDimension);
-                    QuadratureRule Q = Map(T.Mapping, gauss);
-                    rules.AddRange(Q);
-                } catch (Exception e) {
-                    Console.WriteLine(e);
-                };
+                
+                QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.BodyDimension);
+                QuadratureRule Q = Map(T.Transformation, gauss);
+                rules.AddRange(Q);
+                
             }
-            Subdivisions += NestedGrapher.Subdivisions;
             return rules;
         }
 
-        static QuadratureRule Map(IIntegralMapping map, QuadratureRule source) {
+        static QuadratureRule Map(IIntegralTransformation map, QuadratureRule source) {
             QuadratureRule target = new QuadratureRule(source.Count);
             for (int i = 0; i < source.Count; ++i) {
                 QuadratureNode targeNode = Map(map, source[i]);
@@ -60,7 +46,7 @@ namespace IntersectingQuadrature {
             return target;
         }
 
-        static QuadratureNode Map(IIntegralMapping map, QuadratureNode source) {
+        static QuadratureNode Map(IIntegralTransformation map, QuadratureNode source) {
             QuadratureNode target = new QuadratureNode();
             (double J, Tensor1 x) = map.EvaluateAndDeterminant(source.Point);
             target.Point = x;

@@ -1,9 +1,5 @@
-﻿using System;
+﻿using IntersectingQuadrature.Tensor;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
 

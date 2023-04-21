@@ -6,7 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature.Tensor;
 
-namespace IntersectingQuadrature {
+namespace IntersectingQuadrature
+{
 
     public class HyperRectangle {
 

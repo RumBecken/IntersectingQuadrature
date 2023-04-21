@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
-    
+namespace Example.Experiments
+{
+
 
     internal static class Convergence {
 

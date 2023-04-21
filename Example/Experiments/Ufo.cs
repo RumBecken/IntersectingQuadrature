@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
+namespace Example.Experiments
+{
     internal class Ufo {
         public static void VolumeH(int n = 2) {
             double R = 0.9;

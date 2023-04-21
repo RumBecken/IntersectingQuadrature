@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
+namespace Example.Experiments
+{
     internal class ToricSection {
 
         public static void Line(int n = 2) {
@@ -17,7 +18,6 @@ namespace Example.Experiments {
             IScalarFunction beta = new ScalarComposition(section, new Rotation(Tensor1.Vector(0, 0, 1), Tensor1.Vector(0, 0.5, 1)));
             IScalarFunction sine = new TensorSine(0.2, 1.1);
             IScalarFunction f = new ScalarComposition(sine, new Rotation(Tensor1.Vector(0, 0, 1), Tensor1.Vector(0, 0.5, 1)));
-            //https://en.wikipedia.org/wiki/Spherical_cap
             int cells = 30;
             double exact = 0;
             List<double[]> results = new List<double[]>();
@@ -39,12 +39,11 @@ namespace Example.Experiments {
             IScalarFunction beta = new ScalarComposition(section, new Rotation(Tensor1.Vector(0, 0, 1), Tensor1.Vector(0, 0.5, 1)));
             IScalarFunction sine = new TensorSine(0.2, 1.1);
             IScalarFunction f = new ScalarComposition(sine, new Rotation(Tensor1.Vector(0, 0, 1), Tensor1.Vector(0, 0.5, 1)));
-            //https://en.wikipedia.org/wiki/Spherical_cap
-            int cells = 30;
+            int cells = 10;
             double exact = 0;
             List<double[]> results = new List<double[]>();
             for (int i = 0; i < 5; ++i) {
-                QuadratureRule[,,] rules = Grid.FindRule(alpha, Symbol.Minus, beta, Symbol.Zero, n, cells, i);
+                QuadratureRule[,,] rules = Grid.FindRule(beta, Symbol.Zero, alpha, Symbol.Minus, n, cells, i);
                 double s = Math.Abs(Quadrature.Evaluate(f, rules) - exact);
                 IO.Write($"nodesSurface{n}_{i}.txt", rules);
                 Console.WriteLine($"{i},{s}");

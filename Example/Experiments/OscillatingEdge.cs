@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
+namespace Example.Experiments
+{
     internal class OscillatingEdge {
         public static void Line(int n) {
             int cells = 8;

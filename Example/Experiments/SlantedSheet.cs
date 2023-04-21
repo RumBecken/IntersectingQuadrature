@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
+namespace Example.Experiments
+{
     internal class SlantedSheet {
         public static void Subdivision() {
             int n = 1;

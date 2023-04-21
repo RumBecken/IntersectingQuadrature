@@ -6,14 +6,25 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
+namespace Example.Experiments
+{
     internal static class Grid {
+
+        public static void Potato() {
+            int n = 1;
+            IScalarFunction potato = new Potato(0.8);
+
+            QuadratureRule[,,] rule = Grid.FindRule(potato, Symbol.Zero, n, 31);
+
+            IO.Write("nodes.txt", rule);
+            //double s = Math.Abs(Quadrature.Evaluate(f, rule));
+        }
 
         public static void Torus() {
             IScalarFunction alpha = new Torus(Tensor1.Vector(0.00, 0, 0), 0.7, 0.2);
 
             Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitCube(3);
+            HyperRectangle cube = new UnitHyperCube(3);
             QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 12);
 
             IO.Write("nodesTorus.txt", rule);
@@ -88,7 +99,6 @@ namespace Example.Experiments {
                     }
                 }
             }
-            Console.WriteLine(finder.Subdivisions);
             return rules;
         }
 

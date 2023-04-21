@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using IntersectingQuadrature.Map;
 using IntersectingQuadrature.Tensor;
 
-namespace IntersectingQuadrature {
+namespace IntersectingQuadrature
+{
     internal class Adapter {
 
         double tau = 0.0001;
@@ -16,7 +12,7 @@ namespace IntersectingQuadrature {
             this.tau = tau;
         }
 
-        public QuadratureRule FindRule(IScalarFunction g, IIntegralMapping map, HyperRectangle domain, QuadratureRule rule) {
+        public QuadratureRule FindRule(IScalarFunction g, IIntegralTransformation map, HyperRectangle domain, QuadratureRule rule) {
             QuadratureRule rule0 = Map(map, rule);
             double s0 = Math.Abs(Quadrature.Evaluate(g, rule0));
             QuadratureRule result = new QuadratureRule(rule.Count);
@@ -27,7 +23,7 @@ namespace IntersectingQuadrature {
         }
 
 
-        bool Adapt(IScalarFunction g, IIntegralMapping map, HyperRectangle domain, double s0, QuadratureRule baseRule, QuadratureRule result, int subdivs) {
+        bool Adapt(IScalarFunction g, IIntegralTransformation map, HyperRectangle domain, double s0, QuadratureRule baseRule, QuadratureRule result, int subdivs) {
             if(subdivs < 0) {
                 return true;
             }
@@ -77,7 +73,7 @@ namespace IntersectingQuadrature {
             return subdomains;
         }
 
-        static QuadratureRule Rule(IIntegralMapping map, QuadratureRule source, HyperRectangle domain) {
+        static QuadratureRule Rule(IIntegralTransformation map, QuadratureRule source, HyperRectangle domain) {
             Tensor2 scales = Tensor2.Zeros(domain.BodyDimension);
             for(int i = 0; i < domain.BodyDimension; ++i) {
                 scales[i, i] = domain.Diameters[i] / 2;
@@ -87,7 +83,7 @@ namespace IntersectingQuadrature {
             return Map(map, gaussT);
         }
 
-        static QuadratureRule Map(IIntegralMapping map, QuadratureRule source) {
+        static QuadratureRule Map(IIntegralTransformation map, QuadratureRule source) {
             QuadratureRule target = new QuadratureRule(source.Count);
             for (int i = 0; i < source.Count; ++i) {
                 QuadratureNode targeNode = Map(map, source[i]);
@@ -96,7 +92,7 @@ namespace IntersectingQuadrature {
             return target;
         }
 
-        static QuadratureNode Map(IIntegralMapping map, QuadratureNode source) {
+        static QuadratureNode Map(IIntegralTransformation map, QuadratureNode source) {
             QuadratureNode target = new QuadratureNode();
             (double J, Tensor1 x) = map.EvaluateAndDeterminant(source.Point);
             target.Point = x;

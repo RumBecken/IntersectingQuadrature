@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using IntersectingQuadrature.Tensor;
+using System;
 using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
     internal static class QuadratureRules {

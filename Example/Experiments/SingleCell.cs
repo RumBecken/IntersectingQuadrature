@@ -7,14 +7,36 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
+namespace Example.Experiments
+{
     internal static class SingleCell {
+
+        public static void Line() {
+            IScalarFunction alpha = new Sphere(Tensor1.Vector(-1), 1.5);
+            IScalarFunction beta = new Sphere(Tensor1.Vector(1), 1.5);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitHyperCube(1);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cube, 3, 0);
+
+            IO.Write("nodesLine.txt", rule);
+        }
+
+        public static void Circle() {
+            IScalarFunction alpha = new Sphere(Tensor1.Vector(0,0), 0.5);
+
+            Quadrater ruler = new Quadrater();
+            HyperRectangle cube = new UnitHyperCube(2);
+            QuadratureRule rule = ruler.FindRule(alpha, Symbol.Minus, cube, 3, 0);
+
+            IO.Write("nodesCircle.txt", rule);
+        }
 
         public static void Sphere() {
             IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, 0), 0.5);
 
             Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitCube(3);
+            HyperRectangle cube = new UnitHyperCube(3);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
 
             IO.Write("nodesSphere.txt", rule);
@@ -24,7 +46,7 @@ namespace Example.Experiments {
             IScalarFunction torus = new Torus(Tensor1.Vector(0.01, -4.01, -2.9), 4, 2);
 
             Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitCube(3);
+            HyperRectangle cube = new UnitHyperCube(3);
             QuadratureRule rule = ruler.FindRule(torus, Symbol.Zero, cube, 3, 0);
 
             IO.Write("nodesTorus.txt", rule);
@@ -41,7 +63,7 @@ namespace Example.Experiments {
             IScalarFunction alpha = new Sheet(a, 0.2);
 
             Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitCube(3);
+            HyperRectangle cube = new UnitHyperCube(3);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
 
             IO.Write("nodesSheet.txt", rule);
@@ -58,7 +80,7 @@ namespace Example.Experiments {
             IScalarFunction alpha = new Sheet(sphere, d);
 
             Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitCube(3);
+            HyperRectangle cube = new UnitHyperCube(3);
             QuadratureRule rule = ruler.FindRule(sphere, Symbol.Zero, cube, 1, 0);
 
             IO.Write("nodesSheet.txt", rule);
@@ -71,7 +93,7 @@ namespace Example.Experiments {
 
 
             Quadrater finder = new Quadrater();
-            HyperRectangle unitDomain = new UnitCube(3);
+            HyperRectangle unitDomain = new UnitHyperCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, unitDomain, 2);
 
             IO.Write("nodes.txt", rule);
@@ -83,7 +105,7 @@ namespace Example.Experiments {
 
 
             Quadrater finder = new Quadrater();
-            HyperRectangle unitDomain = new UnitCube(3);
+            HyperRectangle unitDomain = new UnitHyperCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, unitDomain, 4);
 
             IO.Write("nodes.txt", rule);
@@ -94,7 +116,7 @@ namespace Example.Experiments {
             IScalarFunction beta = new Cylinder(Tensor1.Vector(-1, -0.5, 0), 1);
 
             Quadrater finder = new Quadrater();
-            HyperRectangle unitDomain = new UnitCube(3);
+            HyperRectangle unitDomain = new UnitHyperCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, unitDomain, n);
 
             IO.Write("nodes.txt", rule);
@@ -141,7 +163,7 @@ namespace Example.Experiments {
             IScalarFunction alpha = new Plane(Tensor1.Vector(1, 0, 0 ), Tensor1.Zeros(3));
 
             Quadrater finder = new Quadrater();
-            HyperRectangle cell = new UnitCube(3);
+            HyperRectangle cell = new UnitHyperCube(3);
             double scale = 0.1;
             Algebra.Scale(cell.Diameters, scale);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Zero, cell, n);
@@ -161,7 +183,7 @@ namespace Example.Experiments {
             IScalarFunction beta = new Plane(Tensor1.Vector(1, 0, 0.9), Tensor1.Zeros(3));
 
             Quadrater finder = new Quadrater();
-            HyperRectangle cell = new UnitCube(3);
+            HyperRectangle cell = new UnitHyperCube(3);
             double scale = 1;
             Algebra.Scale(cell.Diameters, scale);
             QuadratureRule rule = finder.FindRule(beta, Symbol.Minus, alpha, Symbol.Zero, cell, n);
@@ -182,7 +204,7 @@ namespace Example.Experiments {
             IScalarFunction beta = new Plane(Tensor1.Vector(a, 0, 1), Tensor1.Zeros(3));
 
             Quadrater finder = new Quadrater();
-            HyperRectangle cell = new UnitCube(3);
+            HyperRectangle cell = new UnitHyperCube(3);
             double scale = 1;
             Algebra.Scale(cell.Diameters, scale);
             QuadratureRule rule = finder.FindRule(beta, Symbol.Minus, alpha, Symbol.Minus, cell, n);
