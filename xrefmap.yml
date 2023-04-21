@@ -32,24 +32,24 @@ references:
   fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.New
   nameWithType: AdaptiveQuadrater.AdaptiveQuadrater
   nameWithType.vb: AdaptiveQuadrater.New
-- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name: FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name.vb: FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
-  nameWithType: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
-  nameWithType.vb: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name.vb: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
-  nameWithType: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
-  nameWithType.vb: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
+- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name: FindRule(IScalarFunction, Symbol, IHyperRectangle, int, int)
+  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name.vb: FindRule(IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, Integer, Integer)
+  nameWithType: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IHyperRectangle, int, int)
+  nameWithType.vb: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
+- uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, int, int)
+  href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name.vb: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.AdaptiveQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, Integer, Integer)
+  nameWithType: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, int, int)
+  nameWithType.vb: AdaptiveQuadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
 - uid: IntersectingQuadrature.AdaptiveQuadrater.FindRule*
   name: FindRule
   href: api/IntersectingQuadrature.AdaptiveQuadrater.html#IntersectingQuadrature_AdaptiveQuadrater_FindRule_
@@ -85,19 +85,40 @@ references:
 - uid: IntersectingQuadrature.HyperRectangle.ActiveDimensions
   name: ActiveDimensions
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_ActiveDimensions
-  commentId: F:IntersectingQuadrature.HyperRectangle.ActiveDimensions
+  commentId: P:IntersectingQuadrature.HyperRectangle.ActiveDimensions
+  fullName: IntersectingQuadrature.HyperRectangle.ActiveDimensions
+  nameWithType: HyperRectangle.ActiveDimensions
+- uid: IntersectingQuadrature.HyperRectangle.ActiveDimensions*
+  name: ActiveDimensions
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_ActiveDimensions_
+  commentId: Overload:IntersectingQuadrature.HyperRectangle.ActiveDimensions
+  isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.ActiveDimensions
   nameWithType: HyperRectangle.ActiveDimensions
 - uid: IntersectingQuadrature.HyperRectangle.BodyDimension
   name: BodyDimension
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_BodyDimension
-  commentId: F:IntersectingQuadrature.HyperRectangle.BodyDimension
+  commentId: P:IntersectingQuadrature.HyperRectangle.BodyDimension
+  fullName: IntersectingQuadrature.HyperRectangle.BodyDimension
+  nameWithType: HyperRectangle.BodyDimension
+- uid: IntersectingQuadrature.HyperRectangle.BodyDimension*
+  name: BodyDimension
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_BodyDimension_
+  commentId: Overload:IntersectingQuadrature.HyperRectangle.BodyDimension
+  isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.BodyDimension
   nameWithType: HyperRectangle.BodyDimension
 - uid: IntersectingQuadrature.HyperRectangle.Center
   name: Center
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Center
-  commentId: F:IntersectingQuadrature.HyperRectangle.Center
+  commentId: P:IntersectingQuadrature.HyperRectangle.Center
+  fullName: IntersectingQuadrature.HyperRectangle.Center
+  nameWithType: HyperRectangle.Center
+- uid: IntersectingQuadrature.HyperRectangle.Center*
+  name: Center
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Center_
+  commentId: Overload:IntersectingQuadrature.HyperRectangle.Center
+  isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.Center
   nameWithType: HyperRectangle.Center
 - uid: IntersectingQuadrature.HyperRectangle.Clone
@@ -116,7 +137,14 @@ references:
 - uid: IntersectingQuadrature.HyperRectangle.Diameters
   name: Diameters
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Diameters
-  commentId: F:IntersectingQuadrature.HyperRectangle.Diameters
+  commentId: P:IntersectingQuadrature.HyperRectangle.Diameters
+  fullName: IntersectingQuadrature.HyperRectangle.Diameters
+  nameWithType: HyperRectangle.Diameters
+- uid: IntersectingQuadrature.HyperRectangle.Diameters*
+  name: Diameters
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Diameters_
+  commentId: Overload:IntersectingQuadrature.HyperRectangle.Diameters
+  isSpec: "True"
   fullName: IntersectingQuadrature.HyperRectangle.Diameters
   nameWithType: HyperRectangle.Diameters
 - uid: IntersectingQuadrature.HyperRectangle.Face(System.Int32,IntersectingQuadrature.Symbol)
@@ -170,9 +198,87 @@ references:
 - uid: IntersectingQuadrature.HyperRectangle.SpaceDimension
   name: SpaceDimension
   href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_SpaceDimension
-  commentId: F:IntersectingQuadrature.HyperRectangle.SpaceDimension
+  commentId: P:IntersectingQuadrature.HyperRectangle.SpaceDimension
   fullName: IntersectingQuadrature.HyperRectangle.SpaceDimension
   nameWithType: HyperRectangle.SpaceDimension
+- uid: IntersectingQuadrature.HyperRectangle.SpaceDimension*
+  name: SpaceDimension
+  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_SpaceDimension_
+  commentId: Overload:IntersectingQuadrature.HyperRectangle.SpaceDimension
+  isSpec: "True"
+  fullName: IntersectingQuadrature.HyperRectangle.SpaceDimension
+  nameWithType: HyperRectangle.SpaceDimension
+- uid: IntersectingQuadrature.IHyperRectangle
+  name: IHyperRectangle
+  href: api/IntersectingQuadrature.IHyperRectangle.html
+  commentId: T:IntersectingQuadrature.IHyperRectangle
+  fullName: IntersectingQuadrature.IHyperRectangle
+  nameWithType: IHyperRectangle
+- uid: IntersectingQuadrature.IHyperRectangle.ActiveDimensions
+  name: ActiveDimensions
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_ActiveDimensions
+  commentId: P:IntersectingQuadrature.IHyperRectangle.ActiveDimensions
+  fullName: IntersectingQuadrature.IHyperRectangle.ActiveDimensions
+  nameWithType: IHyperRectangle.ActiveDimensions
+- uid: IntersectingQuadrature.IHyperRectangle.ActiveDimensions*
+  name: ActiveDimensions
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_ActiveDimensions_
+  commentId: Overload:IntersectingQuadrature.IHyperRectangle.ActiveDimensions
+  isSpec: "True"
+  fullName: IntersectingQuadrature.IHyperRectangle.ActiveDimensions
+  nameWithType: IHyperRectangle.ActiveDimensions
+- uid: IntersectingQuadrature.IHyperRectangle.BodyDimension
+  name: BodyDimension
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_BodyDimension
+  commentId: P:IntersectingQuadrature.IHyperRectangle.BodyDimension
+  fullName: IntersectingQuadrature.IHyperRectangle.BodyDimension
+  nameWithType: IHyperRectangle.BodyDimension
+- uid: IntersectingQuadrature.IHyperRectangle.BodyDimension*
+  name: BodyDimension
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_BodyDimension_
+  commentId: Overload:IntersectingQuadrature.IHyperRectangle.BodyDimension
+  isSpec: "True"
+  fullName: IntersectingQuadrature.IHyperRectangle.BodyDimension
+  nameWithType: IHyperRectangle.BodyDimension
+- uid: IntersectingQuadrature.IHyperRectangle.Center
+  name: Center
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Center
+  commentId: P:IntersectingQuadrature.IHyperRectangle.Center
+  fullName: IntersectingQuadrature.IHyperRectangle.Center
+  nameWithType: IHyperRectangle.Center
+- uid: IntersectingQuadrature.IHyperRectangle.Center*
+  name: Center
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Center_
+  commentId: Overload:IntersectingQuadrature.IHyperRectangle.Center
+  isSpec: "True"
+  fullName: IntersectingQuadrature.IHyperRectangle.Center
+  nameWithType: IHyperRectangle.Center
+- uid: IntersectingQuadrature.IHyperRectangle.Diameters
+  name: Diameters
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Diameters
+  commentId: P:IntersectingQuadrature.IHyperRectangle.Diameters
+  fullName: IntersectingQuadrature.IHyperRectangle.Diameters
+  nameWithType: IHyperRectangle.Diameters
+- uid: IntersectingQuadrature.IHyperRectangle.Diameters*
+  name: Diameters
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Diameters_
+  commentId: Overload:IntersectingQuadrature.IHyperRectangle.Diameters
+  isSpec: "True"
+  fullName: IntersectingQuadrature.IHyperRectangle.Diameters
+  nameWithType: IHyperRectangle.Diameters
+- uid: IntersectingQuadrature.IHyperRectangle.SpaceDimension
+  name: SpaceDimension
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_SpaceDimension
+  commentId: P:IntersectingQuadrature.IHyperRectangle.SpaceDimension
+  fullName: IntersectingQuadrature.IHyperRectangle.SpaceDimension
+  nameWithType: IHyperRectangle.SpaceDimension
+- uid: IntersectingQuadrature.IHyperRectangle.SpaceDimension*
+  name: SpaceDimension
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_SpaceDimension_
+  commentId: Overload:IntersectingQuadrature.IHyperRectangle.SpaceDimension
+  isSpec: "True"
+  fullName: IntersectingQuadrature.IHyperRectangle.SpaceDimension
+  nameWithType: IHyperRectangle.SpaceDimension
 - uid: IntersectingQuadrature.Quadrater
   name: Quadrater
   href: api/IntersectingQuadrature.Quadrater.html
@@ -198,24 +304,24 @@ references:
   fullName.vb: IntersectingQuadrature.Quadrater.New
   nameWithType: Quadrater.Quadrater
   nameWithType.vb: Quadrater.New
-- uid: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name: FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name.vb: FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
-  nameWithType: Quadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, int, int)
-  nameWithType.vb: Quadrater.FindRule(IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-- uid: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
-  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_HyperRectangle_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.HyperRectangle,System.Int32,System.Int32)
-  name.vb: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
-  fullName: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, int, int)
-  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.HyperRectangle, Integer, Integer)
-  nameWithType: Quadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, int, int)
-  nameWithType.vb: Quadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, HyperRectangle, Integer, Integer)
+- uid: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name: FindRule(IScalarFunction, Symbol, IHyperRectangle, int, int)
+  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name.vb: FindRule(IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, Integer, Integer)
+  nameWithType: Quadrater.FindRule(IScalarFunction, Symbol, IHyperRectangle, int, int)
+  nameWithType.vb: Quadrater.FindRule(IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
+- uid: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, int, int)
+  href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)
+  name.vb: FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
+  fullName: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, int, int)
+  fullName.vb: IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.Tensor.IScalarFunction, IntersectingQuadrature.Symbol, IntersectingQuadrature.IHyperRectangle, Integer, Integer)
+  nameWithType: Quadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, int, int)
+  nameWithType.vb: Quadrater.FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, Integer, Integer)
 - uid: IntersectingQuadrature.Quadrater.FindRule*
   name: FindRule
   href: api/IntersectingQuadrature.Quadrater.html#IntersectingQuadrature_Quadrater_FindRule_

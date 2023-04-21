@@ -81,6 +81,10 @@
     <div class="level1"><span class="xref">HyperRectangle</span></div>
       <div class="level2"><a class="xref" href="IntersectingQuadrature.UnitHyperCube.html">UnitHyperCube</a></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="IntersectingQuadrature.IHyperRectangle.html">IHyperRectangle</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -109,7 +113,7 @@
   <h6><strong>Assembly</strong>: IntersectingQuadrature.dll</h6>
   <h5 id="IntersectingQuadrature_HyperRectangle_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HyperRectangle</code></pre>
+    <pre><code class="lang-csharp hljs">public class HyperRectangle : IHyperRectangle</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -118,7 +122,7 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.%23ctor(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L24">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L23">View Source</a>
   </span>
   <a id="IntersectingQuadrature_HyperRectangle__ctor_" data-uid="IntersectingQuadrature.HyperRectangle.#ctor*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle__ctor_System_Int32_" data-uid="IntersectingQuadrature.HyperRectangle.#ctor(System.Int32)">HyperRectangle(int)</h4>
@@ -126,7 +130,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HyperRectangle(int codimension)</code></pre>
+    <pre><code class="lang-csharp hljs">public HyperRectangle(int spaceDimension)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -140,28 +144,29 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">codimension</span></td>
+        <td><span class="parametername">spaceDimension</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_ActiveDimensions.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.ActiveDimensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L22">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L21">View Source</a>
   </span>
+  <a id="IntersectingQuadrature_HyperRectangle_ActiveDimensions_" data-uid="IntersectingQuadrature.HyperRectangle.ActiveDimensions*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_ActiveDimensions" data-uid="IntersectingQuadrature.HyperRectangle.ActiveDimensions">ActiveDimensions</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BitArray ActiveDimensions</code></pre>
+    <pre><code class="lang-csharp hljs">public BitArray ActiveDimensions { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -181,16 +186,17 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_BodyDimension.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.BodyDimension%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L16">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L15">View Source</a>
   </span>
+  <a id="IntersectingQuadrature_HyperRectangle_BodyDimension_" data-uid="IntersectingQuadrature.HyperRectangle.BodyDimension*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_BodyDimension" data-uid="IntersectingQuadrature.HyperRectangle.BodyDimension">BodyDimension</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int BodyDimension</code></pre>
+    <pre><code class="lang-csharp hljs">public int BodyDimension { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -210,16 +216,17 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_Center.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.Center%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L18">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L17">View Source</a>
   </span>
+  <a id="IntersectingQuadrature_HyperRectangle_Center_" data-uid="IntersectingQuadrature.HyperRectangle.Center*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_Center" data-uid="IntersectingQuadrature.HyperRectangle.Center">Center</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Tensor1 Center</code></pre>
+    <pre><code class="lang-csharp hljs">public Tensor1 Center { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -239,16 +246,17 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_Diameters.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.Diameters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L20">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L19">View Source</a>
   </span>
+  <a id="IntersectingQuadrature_HyperRectangle_Diameters_" data-uid="IntersectingQuadrature.HyperRectangle.Diameters*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_Diameters" data-uid="IntersectingQuadrature.HyperRectangle.Diameters">Diameters</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Tensor1 Diameters</code></pre>
+    <pre><code class="lang-csharp hljs">public Tensor1 Diameters { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -268,16 +276,17 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_SpaceDimension.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.SpaceDimension%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L14">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L13">View Source</a>
   </span>
+  <a id="IntersectingQuadrature_HyperRectangle_SpaceDimension_" data-uid="IntersectingQuadrature.HyperRectangle.SpaceDimension*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_SpaceDimension" data-uid="IntersectingQuadrature.HyperRectangle.SpaceDimension">SpaceDimension</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int SpaceDimension</code></pre>
+    <pre><code class="lang-csharp hljs">public int SpaceDimension { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -299,7 +308,7 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_Clone.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.Clone%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L60">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L59">View Source</a>
   </span>
   <a id="IntersectingQuadrature_HyperRectangle_Clone_" data-uid="IntersectingQuadrature.HyperRectangle.Clone*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_Clone" data-uid="IntersectingQuadrature.HyperRectangle.Clone">Clone()</h4>
@@ -329,7 +338,7 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_Face_System_Int32_IntersectingQuadrature_Symbol_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.Face(System.Int32%2CIntersectingQuadrature.Symbol)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L31">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L30">View Source</a>
   </span>
   <a id="IntersectingQuadrature_HyperRectangle_Face_" data-uid="IntersectingQuadrature.HyperRectangle.Face*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_Face_System_Int32_IntersectingQuadrature_Symbol_" data-uid="IntersectingQuadrature.HyperRectangle.Face(System.Int32,IntersectingQuadrature.Symbol)">Face(int, Symbol)</h4>
@@ -381,7 +390,7 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_Relocate_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.Relocate(System.Double%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L56">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L55">View Source</a>
   </span>
   <a id="IntersectingQuadrature_HyperRectangle_Relocate_" data-uid="IntersectingQuadrature.HyperRectangle.Relocate*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_Relocate_System_Double_System_Int32_" data-uid="IntersectingQuadrature.HyperRectangle.Relocate(System.Double,System.Int32)">Relocate(double, int)</h4>
@@ -418,7 +427,7 @@
     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle_Resize_System_Double_System_Int32_IntersectingQuadrature_Symbol_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle.Resize(System.Double%2CSystem.Int32%2CIntersectingQuadrature.Symbol)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L44">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L43">View Source</a>
   </span>
   <a id="IntersectingQuadrature_HyperRectangle_Resize_" data-uid="IntersectingQuadrature.HyperRectangle.Resize*"></a>
   <h4 id="IntersectingQuadrature_HyperRectangle_Resize_System_Double_System_Int32_IntersectingQuadrature_Symbol_" data-uid="IntersectingQuadrature.HyperRectangle.Resize(System.Double,System.Int32,IntersectingQuadrature.Symbol)">Resize(double, int, Symbol)</h4>
@@ -455,6 +464,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="IntersectingQuadrature.IHyperRectangle.html">IHyperRectangle</a>
+  </div>
 
 </article>
           </div>
@@ -467,7 +480,7 @@
                     <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_HyperRectangle.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.HyperRectangle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/HyperRectangle.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
