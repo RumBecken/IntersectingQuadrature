@@ -467,6 +467,25 @@ references:
   commentId: T:IntersectingQuadrature.Tensor.Algebra
   fullName: IntersectingQuadrature.Tensor.Algebra
   nameWithType: Algebra
+- uid: IntersectingQuadrature.Tensor.Algebra.Abs(IntersectingQuadrature.Tensor.Tensor1)
+  name: Abs(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Abs_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.Algebra.Abs(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.Algebra.Abs(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: Algebra.Abs(Tensor1)
+- uid: IntersectingQuadrature.Tensor.Algebra.Abs(IntersectingQuadrature.Tensor.Tensor2)
+  name: Abs(Tensor2)
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Abs_IntersectingQuadrature_Tensor_Tensor2_
+  commentId: M:IntersectingQuadrature.Tensor.Algebra.Abs(IntersectingQuadrature.Tensor.Tensor2)
+  fullName: IntersectingQuadrature.Tensor.Algebra.Abs(IntersectingQuadrature.Tensor.Tensor2)
+  nameWithType: Algebra.Abs(Tensor2)
+- uid: IntersectingQuadrature.Tensor.Algebra.Abs*
+  name: Abs
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Abs_
+  commentId: Overload:IntersectingQuadrature.Tensor.Algebra.Abs
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Algebra.Abs
+  nameWithType: Algebra.Abs
 - uid: IntersectingQuadrature.Tensor.Algebra.Determinant(IntersectingQuadrature.Tensor.Tensor2)
   name: Determinant(Tensor2)
   href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Determinant_IntersectingQuadrature_Tensor_Tensor2_
@@ -493,6 +512,57 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.Algebra.Dyadic
   nameWithType: Algebra.Dyadic
+- uid: IntersectingQuadrature.Tensor.Algebra.Max(IntersectingQuadrature.Tensor.Tensor1)
+  name: Max(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Max_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.Algebra.Max(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.Algebra.Max(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: Algebra.Max(Tensor1)
+- uid: IntersectingQuadrature.Tensor.Algebra.Max*
+  name: Max
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Max_
+  commentId: Overload:IntersectingQuadrature.Tensor.Algebra.Max
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Algebra.Max
+  nameWithType: Algebra.Max
+- uid: IntersectingQuadrature.Tensor.Algebra.Min(IntersectingQuadrature.Tensor.Tensor1)
+  name: Min(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Min_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.Algebra.Min(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.Algebra.Min(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: Algebra.Min(Tensor1)
+- uid: IntersectingQuadrature.Tensor.Algebra.Min*
+  name: Min
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Min_
+  commentId: Overload:IntersectingQuadrature.Tensor.Algebra.Min
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Algebra.Min
+  nameWithType: Algebra.Min
+- uid: IntersectingQuadrature.Tensor.Algebra.Pow(System.Double,System.Int32)
+  name: Pow(double, int)
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Pow_System_Double_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Algebra.Pow(System.Double,System.Int32)
+  name.vb: Pow(Double, Integer)
+  fullName: IntersectingQuadrature.Tensor.Algebra.Pow(double, int)
+  fullName.vb: IntersectingQuadrature.Tensor.Algebra.Pow(Double, Integer)
+  nameWithType: Algebra.Pow(double, int)
+  nameWithType.vb: Algebra.Pow(Double, Integer)
+- uid: IntersectingQuadrature.Tensor.Algebra.Pow(System.Int32,System.Int32)
+  name: Pow(int, int)
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Pow_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Algebra.Pow(System.Int32,System.Int32)
+  name.vb: Pow(Integer, Integer)
+  fullName: IntersectingQuadrature.Tensor.Algebra.Pow(int, int)
+  fullName.vb: IntersectingQuadrature.Tensor.Algebra.Pow(Integer, Integer)
+  nameWithType: Algebra.Pow(int, int)
+  nameWithType.vb: Algebra.Pow(Integer, Integer)
+- uid: IntersectingQuadrature.Tensor.Algebra.Pow*
+  name: Pow
+  href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Pow_
+  commentId: Overload:IntersectingQuadrature.Tensor.Algebra.Pow
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Algebra.Pow
+  nameWithType: Algebra.Pow
 - uid: IntersectingQuadrature.Tensor.Algebra.Scale(IntersectingQuadrature.Tensor.Tensor1,System.Double)
   name: Scale(Tensor1, double)
   href: api/IntersectingQuadrature.Tensor.Algebra.html#IntersectingQuadrature_Tensor_Algebra_Scale_IntersectingQuadrature_Tensor_Tensor1_System_Double_
@@ -953,82 +1023,6 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.LinearVectorPolynomial.N
   nameWithType: LinearVectorPolynomial.N
-- uid: IntersectingQuadrature.Tensor.MathUtility
-  name: MathUtility
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html
-  commentId: T:IntersectingQuadrature.Tensor.MathUtility
-  fullName: IntersectingQuadrature.Tensor.MathUtility
-  nameWithType: MathUtility
-- uid: IntersectingQuadrature.Tensor.MathUtility.Abs(IntersectingQuadrature.Tensor.Tensor1)
-  name: Abs(Tensor1)
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Abs_IntersectingQuadrature_Tensor_Tensor1_
-  commentId: M:IntersectingQuadrature.Tensor.MathUtility.Abs(IntersectingQuadrature.Tensor.Tensor1)
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Abs(IntersectingQuadrature.Tensor.Tensor1)
-  nameWithType: MathUtility.Abs(Tensor1)
-- uid: IntersectingQuadrature.Tensor.MathUtility.Abs(IntersectingQuadrature.Tensor.Tensor2)
-  name: Abs(Tensor2)
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Abs_IntersectingQuadrature_Tensor_Tensor2_
-  commentId: M:IntersectingQuadrature.Tensor.MathUtility.Abs(IntersectingQuadrature.Tensor.Tensor2)
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Abs(IntersectingQuadrature.Tensor.Tensor2)
-  nameWithType: MathUtility.Abs(Tensor2)
-- uid: IntersectingQuadrature.Tensor.MathUtility.Abs*
-  name: Abs
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Abs_
-  commentId: Overload:IntersectingQuadrature.Tensor.MathUtility.Abs
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Abs
-  nameWithType: MathUtility.Abs
-- uid: IntersectingQuadrature.Tensor.MathUtility.Max(IntersectingQuadrature.Tensor.Tensor1)
-  name: Max(Tensor1)
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Max_IntersectingQuadrature_Tensor_Tensor1_
-  commentId: M:IntersectingQuadrature.Tensor.MathUtility.Max(IntersectingQuadrature.Tensor.Tensor1)
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Max(IntersectingQuadrature.Tensor.Tensor1)
-  nameWithType: MathUtility.Max(Tensor1)
-- uid: IntersectingQuadrature.Tensor.MathUtility.Max*
-  name: Max
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Max_
-  commentId: Overload:IntersectingQuadrature.Tensor.MathUtility.Max
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Max
-  nameWithType: MathUtility.Max
-- uid: IntersectingQuadrature.Tensor.MathUtility.Min(IntersectingQuadrature.Tensor.Tensor1)
-  name: Min(Tensor1)
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Min_IntersectingQuadrature_Tensor_Tensor1_
-  commentId: M:IntersectingQuadrature.Tensor.MathUtility.Min(IntersectingQuadrature.Tensor.Tensor1)
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Min(IntersectingQuadrature.Tensor.Tensor1)
-  nameWithType: MathUtility.Min(Tensor1)
-- uid: IntersectingQuadrature.Tensor.MathUtility.Min*
-  name: Min
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Min_
-  commentId: Overload:IntersectingQuadrature.Tensor.MathUtility.Min
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Min
-  nameWithType: MathUtility.Min
-- uid: IntersectingQuadrature.Tensor.MathUtility.Pow(System.Double,System.Int32)
-  name: Pow(double, int)
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Pow_System_Double_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.MathUtility.Pow(System.Double,System.Int32)
-  name.vb: Pow(Double, Integer)
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Pow(double, int)
-  fullName.vb: IntersectingQuadrature.Tensor.MathUtility.Pow(Double, Integer)
-  nameWithType: MathUtility.Pow(double, int)
-  nameWithType.vb: MathUtility.Pow(Double, Integer)
-- uid: IntersectingQuadrature.Tensor.MathUtility.Pow(System.Int32,System.Int32)
-  name: Pow(int, int)
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Pow_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.MathUtility.Pow(System.Int32,System.Int32)
-  name.vb: Pow(Integer, Integer)
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Pow(int, int)
-  fullName.vb: IntersectingQuadrature.Tensor.MathUtility.Pow(Integer, Integer)
-  nameWithType: MathUtility.Pow(int, int)
-  nameWithType.vb: MathUtility.Pow(Integer, Integer)
-- uid: IntersectingQuadrature.Tensor.MathUtility.Pow*
-  name: Pow
-  href: api/IntersectingQuadrature.Tensor.MathUtility.html#IntersectingQuadrature_Tensor_MathUtility_Pow_
-  commentId: Overload:IntersectingQuadrature.Tensor.MathUtility.Pow
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.MathUtility.Pow
-  nameWithType: MathUtility.Pow
 - uid: IntersectingQuadrature.Tensor.QuadraticPolynomial
   name: QuadraticPolynomial
   href: api/IntersectingQuadrature.Tensor.QuadraticPolynomial.html
