@@ -29,7 +29,7 @@ namespace IntersectingQuadrature.Map
             grapher = new SubdivisionGrapher();
         }
 
-        public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, HyperRectangle domain)
+        public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, IHyperRectangle domain)
         {
             List<IntegralMapping> mappings = new List<IntegralMapping>();
             List<IntegralMapping> setA = FindMappings(alpha, signAlpha, domain);
@@ -50,7 +50,7 @@ namespace IntersectingQuadrature.Map
             return mappings;
         }
 
-        public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol sign, HyperRectangle domain)
+        public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol sign, IHyperRectangle domain)
         {
             Debug.Assert(alpha.M == domain.BodyDimension);
             List<IntegralMapping> mappings = new List<IntegralMapping>();
@@ -71,7 +71,7 @@ namespace IntersectingQuadrature.Map
             return mappings;
         }
 
-        public List<IntegralMapping> FindMappings(IScalarFunction alpha, HyperRectangle domain)
+        public List<IntegralMapping> FindMappings(IScalarFunction alpha, IHyperRectangle domain)
         {
             Debug.Assert(alpha.M == domain.BodyDimension);
             List<IntegralMapping> mappings = new List<IntegralMapping>();

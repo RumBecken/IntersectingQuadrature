@@ -6,26 +6,25 @@ using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature.Tensor;
 
-namespace IntersectingQuadrature
-{
+namespace IntersectingQuadrature {
 
-    public class HyperRectangle {
+    public class HyperRectangle : IHyperRectangle {
 
-        public int SpaceDimension;
+        public int SpaceDimension { get; set; }
 
-        public int BodyDimension;
-        
-        public Tensor1 Center;
+        public int BodyDimension { get; set; }
 
-        public Tensor1 Diameters;
+        public Tensor1 Center { get; set; }
 
-        public BitArray ActiveDimensions;
+        public Tensor1 Diameters { get; set; }
 
-        public HyperRectangle(int codimension) {
-            this.SpaceDimension = codimension;
-            ActiveDimensions = new BitArray(codimension);
-            Center = Tensor1.Zeros(codimension);
-            Diameters = Tensor1.Zeros(codimension);
+        public BitArray ActiveDimensions { get; set; }
+
+        public HyperRectangle(int spaceDimension) {
+            this.SpaceDimension = spaceDimension;
+            ActiveDimensions = new BitArray(spaceDimension);
+            Center = Tensor1.Zeros(spaceDimension);
+            Diameters = Tensor1.Zeros(spaceDimension);
         }
 
         public HyperRectangle Face(int direction, Symbol sign) {

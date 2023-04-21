@@ -12,7 +12,7 @@ namespace IntersectingQuadrature
             hunter = new Finder();
         }
 
-        public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, HyperRectangle domain, int n, int subdivisions = 0) {
+        public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, IHyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(10);
             List<IntegralMapping> setA = hunter.FindMappings(alpha, sign, domain);
             foreach (IntegralMapping A in setA) {
@@ -23,7 +23,7 @@ namespace IntersectingQuadrature
             return rules;
         }
 
-        public QuadratureRule FindRule(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, HyperRectangle domain, int n, int subdivisions = 0) {
+        public QuadratureRule FindRule(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, IHyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(20);
             List <IntegralMapping> setAB = hunter.FindMappings(alpha, signAlpha, beta, signBeta, domain);
             foreach (IntegralMapping T in setAB) {

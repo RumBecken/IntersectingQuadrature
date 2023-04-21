@@ -12,7 +12,7 @@ namespace IntersectingQuadrature.Map.Decompose
         {
         }
 
-        public LinkedList<Decomposition> Decompose(IScalarFunction alpha, HyperRectangle geometry)
+        public LinkedList<Decomposition> Decompose(IScalarFunction alpha, IHyperRectangle geometry)
         {
             LinearMapping selfmap = FromUnitCubeTo(geometry);
             IScalarFunction subAlpha = new ScalarComposition(alpha, selfmap);
@@ -23,7 +23,7 @@ namespace IntersectingQuadrature.Map.Decompose
             return sets;
         }
 
-        static LinearMapping FromUnitCubeTo(HyperRectangle geometry)
+        static LinearMapping FromUnitCubeTo(IHyperRectangle geometry)
         {
             Tensor2 B = Tensor2.Zeros(geometry.SpaceDimension);
             for (int i = 0; i < geometry.SpaceDimension; ++i)
