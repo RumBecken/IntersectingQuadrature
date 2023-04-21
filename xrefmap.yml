@@ -645,6 +645,83 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.ConstantPolynomial.M
   nameWithType: ConstantPolynomial.M
+- uid: IntersectingQuadrature.Tensor.GradientComponent
+  name: GradientComponent
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html
+  commentId: T:IntersectingQuadrature.Tensor.GradientComponent
+  fullName: IntersectingQuadrature.Tensor.GradientComponent
+  nameWithType: GradientComponent
+- uid: IntersectingQuadrature.Tensor.GradientComponent.#ctor(IntersectingQuadrature.Tensor.IScalarFunction,System.Int32)
+  name: GradientComponent(IScalarFunction, int)
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent__ctor_IntersectingQuadrature_Tensor_IScalarFunction_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.GradientComponent.#ctor(IntersectingQuadrature.Tensor.IScalarFunction,System.Int32)
+  name.vb: New(IScalarFunction, Integer)
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.GradientComponent(IntersectingQuadrature.Tensor.IScalarFunction, int)
+  fullName.vb: IntersectingQuadrature.Tensor.GradientComponent.New(IntersectingQuadrature.Tensor.IScalarFunction, Integer)
+  nameWithType: GradientComponent.GradientComponent(IScalarFunction, int)
+  nameWithType.vb: GradientComponent.New(IScalarFunction, Integer)
+- uid: IntersectingQuadrature.Tensor.GradientComponent.#ctor*
+  name: GradientComponent
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent__ctor_
+  commentId: Overload:IntersectingQuadrature.Tensor.GradientComponent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.GradientComponent
+  fullName.vb: IntersectingQuadrature.Tensor.GradientComponent.New
+  nameWithType: GradientComponent.GradientComponent
+  nameWithType.vb: GradientComponent.New
+- uid: IntersectingQuadrature.Tensor.GradientComponent.Evaluate(IntersectingQuadrature.Tensor.Tensor1)
+  name: Evaluate(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_Evaluate_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.GradientComponent.Evaluate(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.Evaluate(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: GradientComponent.Evaluate(Tensor1)
+- uid: IntersectingQuadrature.Tensor.GradientComponent.Evaluate*
+  name: Evaluate
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_Evaluate_
+  commentId: Overload:IntersectingQuadrature.Tensor.GradientComponent.Evaluate
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.Evaluate
+  nameWithType: GradientComponent.Evaluate
+- uid: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradient(IntersectingQuadrature.Tensor.Tensor1)
+  name: EvaluateAndGradient(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_EvaluateAndGradient_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradient(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradient(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: GradientComponent.EvaluateAndGradient(Tensor1)
+- uid: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradient*
+  name: EvaluateAndGradient
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_EvaluateAndGradient_
+  commentId: Overload:IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradient
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradient
+  nameWithType: GradientComponent.EvaluateAndGradient
+- uid: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradientAndHessian(IntersectingQuadrature.Tensor.Tensor1)
+  name: EvaluateAndGradientAndHessian(Tensor1)
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_EvaluateAndGradientAndHessian_IntersectingQuadrature_Tensor_Tensor1_
+  commentId: M:IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradientAndHessian(IntersectingQuadrature.Tensor.Tensor1)
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradientAndHessian(IntersectingQuadrature.Tensor.Tensor1)
+  nameWithType: GradientComponent.EvaluateAndGradientAndHessian(Tensor1)
+- uid: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradientAndHessian*
+  name: EvaluateAndGradientAndHessian
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_EvaluateAndGradientAndHessian_
+  commentId: Overload:IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradientAndHessian
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.EvaluateAndGradientAndHessian
+  nameWithType: GradientComponent.EvaluateAndGradientAndHessian
+- uid: IntersectingQuadrature.Tensor.GradientComponent.M
+  name: M
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_M
+  commentId: P:IntersectingQuadrature.Tensor.GradientComponent.M
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.M
+  nameWithType: GradientComponent.M
+- uid: IntersectingQuadrature.Tensor.GradientComponent.M*
+  name: M
+  href: api/IntersectingQuadrature.Tensor.GradientComponent.html#IntersectingQuadrature_Tensor_GradientComponent_M_
+  commentId: Overload:IntersectingQuadrature.Tensor.GradientComponent.M
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.GradientComponent.M
+  nameWithType: GradientComponent.M
 - uid: IntersectingQuadrature.Tensor.IScalarFunction
   name: IScalarFunction
   href: api/IntersectingQuadrature.Tensor.IScalarFunction.html
