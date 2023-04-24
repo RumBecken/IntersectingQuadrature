@@ -2,7 +2,7 @@
 using IntersectingQuadrature.Tensor;
 
 
-Example.Experiments.Grid.WigglyCylinderSubdivision();
+//Example.Experiments.Grid.WigglyCylinderSubdivision();
 //Example.Experiments.Grid.WigglyCylinder();
 //Example.Experiments.Sheets.SphereSurface();
 //Example.Experiments.Sheets.WaveSurface();
@@ -23,7 +23,7 @@ Example.Experiments.Grid.WigglyCylinderSubdivision();
 //Example.Experiments.Ufo.LineAdaptive(0.1,1);
 //Example.Experiments.TrilinearTunnel.Exact();
 //Example.Experiments.SphericalSheet.TorusSurface();
-//Example.Experiments.SphericalSheet.WaveSurface();
+Example.Experiments.Grid.Volcano();
 
 /*
 for (int n = 1; n < 5; ++n) {

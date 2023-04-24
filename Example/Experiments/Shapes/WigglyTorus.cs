@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 
-namespace Example.Experiments {
-    internal class WigglyCylinder : IScalarFunction {
+namespace Example.Experiments.Shapes
+{
+    internal class WigglyCylinder : IScalarFunction
+    {
 
         double r;
         double w;
@@ -16,14 +18,16 @@ namespace Example.Experiments {
 
         public int M => 3;
 
-        public WigglyCylinder(Tensor1 center, double radius, double wiggle) {
-            this.r = radius;
-            this.w = wiggle;
+        public WigglyCylinder(Tensor1 center, double radius, double wiggle)
+        {
+            r = radius;
+            w = wiggle;
             this.center = center;
             p = Math.PI;
         }
 
-        public double Evaluate(Tensor1 x) {
+        public double Evaluate(Tensor1 x)
+        {
             double xl = x[0] - center[0];
             double yl = x[1] - center[1];
             double zl = x[2] - center[2];
@@ -32,7 +36,8 @@ namespace Example.Experiments {
             return f;
         }
 
-        public (double evaluation, Tensor1 gradient) EvaluateAndGradient(Tensor1 x) {
+        public (double evaluation, Tensor1 gradient) EvaluateAndGradient(Tensor1 x)
+        {
             double xl = x[0] - center[0];
             double yl = x[1] - center[1];
             double zl = x[2] - center[2];
@@ -46,13 +51,14 @@ namespace Example.Experiments {
             return (Evaluate(x), gradient);
         }
 
-        public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x) {
+        public (double evaluation, Tensor1 gradient, Tensor2 hessian) EvaluateAndGradientAndHessian(Tensor1 x)
+        {
             double xl = x[0] - center[0];
             double yl = x[1] - center[1];
             double zl = x[2] - center[2];
 
-            Tensor2 hessian = Tensor2.Zeros(3,3);
-            
+            Tensor2 hessian = Tensor2.Zeros(3, 3);
+
             //x
             hessian[0, 0] = 2;
             hessian[0, 1] = 0;
@@ -65,9 +71,9 @@ namespace Example.Experiments {
 
             //z
             double wy = w * Math.Sin(p * zl);
-            hessian[2, 0] = 0 ;
+            hessian[2, 0] = 0;
             hessian[2, 1] = 2 * w * Math.Cos(p * zl) * p;
-            hessian[2, 2] = - 2 * (yl + wy) * w * Math.Sin(p * zl) * p * p;
+            hessian[2, 2] = -2 * (yl + wy) * w * Math.Sin(p * zl) * p * p;
             (double evaluation, Tensor1 gradient) = EvaluateAndGradient(x);
             return (evaluation, gradient, hessian);
         }

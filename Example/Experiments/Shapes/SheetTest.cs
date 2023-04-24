@@ -8,13 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Example.Experiments {
-    internal class SheetTest {
+namespace Example.Experiments.Shapes
+{
+    internal class SheetTest
+    {
 
         [Test]
-        public static void Sphere() {
+        public static void Sphere()
+        {
             double r = 1;
-            double d = 0.1; 
+            double d = 0.1;
 
             IScalarFunction sphere = new Sphere(Tensor1.Vector(0, 0), r);
             IScalarFunction alpha = new Sheet(sphere, d);
@@ -23,17 +26,18 @@ namespace Example.Experiments {
             Tensor1 X = Tensor1.Vector(2, 3);
             (double F, Tensor1 dF, Tensor2 ddF) = alpha.EvaluateAndGradientAndHessian(X);
             (double f, Tensor1 df, Tensor2 ddf) = AnalyticF(X, r, d);
-            Assert.AreEqual(F, f,1e-10);
+            Assert.AreEqual(F, f, 1e-10);
             Assert.AreEqual(dF[0], df[0], 1e-10);
             Assert.AreEqual(dF[1], df[1], 1e-10);
-            Assert.AreEqual(ddF[0,0], ddf[0,0], 1e-10);
-            Assert.AreEqual(ddF[0,1], ddf[0,1], 1e-10);
-            Assert.AreEqual(ddF[1,0], ddf[1,0], 1e-10);
-            Assert.AreEqual(ddF[1,1], ddf[1,1], 1e-10);
+            Assert.AreEqual(ddF[0, 0], ddf[0, 0], 1e-10);
+            Assert.AreEqual(ddF[0, 1], ddf[0, 1], 1e-10);
+            Assert.AreEqual(ddF[1, 0], ddf[1, 0], 1e-10);
+            Assert.AreEqual(ddF[1, 1], ddf[1, 1], 1e-10);
         }
 
 
-        static (double f, Tensor1 df, Tensor2 ddf) AnalyticF(Tensor1 X, double r, double d) {
+        static (double f, Tensor1 df, Tensor2 ddf) AnalyticF(Tensor1 X, double r, double d)
+        {
             double x = X[0];
             double y = X[1];
             double f = Algebra.Pow(x * x + y * y - r * r, 2) - d * d;

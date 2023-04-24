@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
+using Example.Experiments.Shapes;
+
 
 namespace Example.Experiments
 {

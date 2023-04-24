@@ -9,7 +9,7 @@ namespace IntersectingQuadrature.Map.Graph
     internal static class Scanner
     {
 
-        static Decider decider = new Decider(Environment.Epsilon);
+        static Decider decider = new Decider(100 * Environment.Epsilon);
 
         public static bool TryDecompose(IScalarFunction alpha, HyperRectangle geometry, out NestedSet body)
         {
@@ -131,6 +131,7 @@ namespace IntersectingQuadrature.Map.Graph
 
         static bool IsMonotoneIn(IScalarFunction alpha, Axis heightDirection, Set face)
         {
+            return true;
             GradientComponent grad_h = new GradientComponent(alpha, (int)heightDirection);
             Bezier bz = Interpolator.Cubic(grad_h, face.Geometry);
             Tensor1 P = bz.P;

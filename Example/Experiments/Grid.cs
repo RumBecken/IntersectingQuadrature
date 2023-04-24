@@ -3,12 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Example.Experiments.Shapes;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
+using Example.Experiments.Shapes;
 
 namespace Example.Experiments
 {
     internal static class Grid {
+
+        public static void Volcano() {
+            int n = 1;
+            int cells =6;
+            IScalarFunction volcano = new Volcano();
+
+            //QuadratureRule[,,] rule = Grid.FindRule(volcano, Symbol.Zero, n, cells);
+            QuadratureRule[,,] rule = Grid.FindRule(volcano, Symbol.Minus, new Sheet(volcano, 0.02), Symbol.Zero, n, cells);
+            QuadratureRule[,,] rule1 = Grid.FindRule(volcano, Symbol.Plus, new Sheet(volcano, 0.02), Symbol.Zero, n, cells);
+
+            IO.Write("nodes.txt", rule);
+            IO.Write("nodes1.txt", rule1);
+            //double s = Math.Abs(Quadrature.Evaluate(f, rule));
+        }
+
 
         public static void Potato() {
             int n = 1;

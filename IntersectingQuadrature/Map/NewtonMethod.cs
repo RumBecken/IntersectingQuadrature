@@ -25,7 +25,7 @@ namespace IntersectingQuadrature.Map
             double stepSize = 1;
 
             int iterationCounter = 0;
-            while (minCounter < 4)
+            while (minCounter < 7)
             {
                 ++iterationCounter;
                 double x0 = x1;

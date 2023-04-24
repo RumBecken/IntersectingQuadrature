@@ -9,7 +9,7 @@ namespace IntersectingQuadrature.Map.Graph {
 
         Finder hunter;
 
-        int maxSubdivisions = 100;
+        int maxSubdivisions = 4;
 
         public NestedGrapher(Finder hunter) {
             this.hunter = hunter;
@@ -125,7 +125,7 @@ namespace IntersectingQuadrature.Map.Graph {
             heightDirection = a.HeightDirection;
             GradientComponent dAlpha = new GradientComponent(alpha, (int)heightDirection);
             ScalarComposition dAlphaK = new ScalarComposition(dAlpha, restriction);
-            return dAlpha;
+            return dAlphaK;
         }
     }
 }
