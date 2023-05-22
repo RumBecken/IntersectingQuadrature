@@ -38,7 +38,7 @@ Lauritz Beck, [Chair of Fluid Dynamics](https://www.fdy.tu-darmstadt.de/fdy/inde
 
 [Graduate-School-CE](https://www.ce.tu-darmstadt.de/graduate_school_ce/index.en.jsp), Technical University of Darmstadt 
 
-[![SPP 2171, DFG](https://www.uni-muenster.de/imperia/md/images/SPP2171/_v/logo.svg)](https://www.uni-muenster.de/SPP2171/index.html)
+[![SPP 2171, DFG](Documentation/pictures/sppLogo.svg)](https://www.uni-muenster.de/SPP2171/index.html)
 
 Intersecting Quadrature uses 
 * [NUnit](https://github.com/nunit/nunit) licensed under MIT
