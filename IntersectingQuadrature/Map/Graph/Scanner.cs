@@ -131,7 +131,6 @@ namespace IntersectingQuadrature.Map.Graph
 
         static bool IsMonotoneIn(IScalarFunction alpha, Axis heightDirection, Set face)
         {
-            return true;
             GradientComponent grad_h = new GradientComponent(alpha, (int)heightDirection);
             Bezier bz = Interpolator.Cubic(grad_h, face.Geometry);
             Tensor1 P = bz.P;

@@ -7,7 +7,7 @@ namespace IntersectingQuadrature.Map.Graph
     internal class SubdivisionGrapher : IGrapher
     {
 
-        int maxSubdivisions = 4;
+        int maxSubdivisions = 100;
 
         public SubdivisionGrapher()
         {

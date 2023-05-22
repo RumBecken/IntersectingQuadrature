@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Example.Experiments.Shapes;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
-using Example.Experiments.Shapes;
 
 namespace Example.Experiments
 {
@@ -14,15 +13,15 @@ namespace Example.Experiments
 
         public static void Volcano() {
             int n = 1;
-            int cells =6;
+            int cells =8;
             IScalarFunction volcano = new Volcano();
 
             //QuadratureRule[,,] rule = Grid.FindRule(volcano, Symbol.Zero, n, cells);
             QuadratureRule[,,] rule = Grid.FindRule(volcano, Symbol.Minus, new Sheet(volcano, 0.02), Symbol.Zero, n, cells);
             QuadratureRule[,,] rule1 = Grid.FindRule(volcano, Symbol.Plus, new Sheet(volcano, 0.02), Symbol.Zero, n, cells);
 
-            IO.Write("nodes.txt", rule);
-            IO.Write("nodes1.txt", rule1);
+            IO.Write("nodesVolcano.txt", rule);
+            IO.Write("nodesVolcano1.txt", rule1);
             //double s = Math.Abs(Quadrature.Evaluate(f, rule));
         }
 
@@ -45,19 +44,19 @@ namespace Example.Experiments
         }
 
         public static void WigglyCylinderSubdivision() {
-            double gap = 0.0001;
-            IScalarFunction alpha = new WigglyCylinder(Tensor1.Vector(gap, 0, 0), 2.0/3, 0.2);
-            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 6);
+            double gap = 0.001;
+            IScalarFunction alpha = new WigglyCylinder(Tensor1.Vector(0, 0, 0), 2.0 / 3 + gap, 0.2);
+            QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 2, 6);
 
-            IO.Write("nodesWigglyCylinder.txt", rule);
+            IO.Write("nodesWigglyCylinderSubdivision.txt", rule);
         }
 
         public static void WigglyCylinder() {
-            double gap = 0.0001;
-            IScalarFunction alpha = new WigglyCylinder(Tensor1.Vector(0.00, 0, 0), 2.0 / 3 + gap, 0.2);
+            double gap = 0.001;
+            IScalarFunction alpha = new WigglyCylinder(Tensor1.Vector(0, 0, 0), 2.0 / 3 + gap, 0.2);
             IScalarFunction beta = new GradientComponent(alpha, 1);
-            QuadratureRule[,,] rule = Grid.FindRule(beta, Symbol.Minus, alpha, Symbol.Zero, 1, 6);
-            QuadratureRule[,,] rule1 = Grid.FindRule(beta, Symbol.Plus, alpha, Symbol.Zero, 1, 6);
+            QuadratureRule[,,] rule = Grid.FindRule(beta, Symbol.Minus, alpha, Symbol.Zero, 2, 6);
+            QuadratureRule[,,] rule1 = Grid.FindRule(beta, Symbol.Plus, alpha, Symbol.Zero, 2, 6);
             IO.Write("nodesWigglyCylinder.txt", rule, rule1);
         }
 
