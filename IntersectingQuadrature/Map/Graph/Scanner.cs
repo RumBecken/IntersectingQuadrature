@@ -11,7 +11,7 @@ namespace IntersectingQuadrature.Map.Graph
 
         static Decider decider = new Decider(100 * Environment.Epsilon);
 
-        public static bool TryDecompose(IScalarFunction alpha, HyperRectangle geometry, out NestedSet body)
+        public static bool TryDecompose(IScalarFunction alpha, EmbeddedHyperRectangle geometry, out NestedSet body)
         {
             body = new NestedSet(alpha, geometry);
             bool graphable = FindFaces(body.LowestLeafs(), alpha);

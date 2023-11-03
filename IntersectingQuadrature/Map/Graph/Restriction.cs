@@ -18,7 +18,7 @@ namespace IntersectingQuadrature.Map.Graph
 
         LinearVectorPolynomial affineProjection;
 
-        public Restriction(HyperRectangle face)
+        public Restriction(EmbeddedHyperRectangle face)
         {
             m = face.SpaceDimension;
             n = face.SpaceDimension;

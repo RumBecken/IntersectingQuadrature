@@ -22,7 +22,6 @@ namespace IntersectingQuadrature
             return result;
         }
 
-
         bool Adapt(IScalarFunction g, IIntegralTransformation map, HyperRectangle domain, double s0, QuadratureRule baseRule, QuadratureRule result, int subdivs) {
             if(subdivs < 0) {
                 return true;
@@ -61,7 +60,6 @@ namespace IntersectingQuadrature
             HyperRectangle[] subdomains = new HyperRectangle[n];
             for(int i = 0; i < n; ++i) {
                 HyperRectangle subdomain = new HyperRectangle(domain.Dimension);
-                subdomain.Dimension = domain.Dimension;
                 int k = i;
                 for (int j = 0; j < domain.Dimension; ++j) {
                     subdomain.Diameters[j] = domain.Diameters[j] / 2;

@@ -9,11 +9,11 @@
 
         public bool Graphable = true;
 
-        public HyperRectangle Geometry;
+        public EmbeddedHyperRectangle Geometry;
 
-        public HyperRectangle BoundingBox;
+        public EmbeddedHyperRectangle BoundingBox;
 
-        public Set(HyperRectangle geometry)
+        public Set(EmbeddedHyperRectangle geometry)
         {
             Sign = Symbol.None;
             HeightDirection = Axis.None;
@@ -29,7 +29,7 @@
 
         public Set Face(Axis direction, Symbol sign)
         {
-            HyperRectangle face = Geometry.Face((int)direction, sign);
+            EmbeddedHyperRectangle face = Geometry.Face((int)direction, sign);
             return new Set(face);
         }
 

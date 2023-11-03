@@ -18,7 +18,7 @@ namespace IntersectingQuadrature.Map.Graph
             LinearMapping selfmap = FromUnitCubeTo(geometry);
             IScalarFunction subAlpha = new ScalarComposition(alpha, selfmap);
 
-            NestedSet body = new NestedSet(subAlpha, new UnitHyperCube(geometry.Dimension));
+            NestedSet body = new NestedSet(subAlpha, EmbeddedHyperRectangle.UnitCube(geometry.Dimension));
             LinkedList<Decomposition> sets = new LinkedList<Decomposition>();
             Decompose(selfmap, body, sets, 0);
             return sets;
@@ -50,16 +50,16 @@ namespace IntersectingQuadrature.Map.Graph
             {
                 if (h < maxSubdivisions)
                 {
-                    (HyperRectangle A, HyperRectangle B) = Split(body.Root.Value.Geometry, subdivisionMap);
+                    (EmbeddedHyperRectangle A, EmbeddedHyperRectangle B) = Split(body.Root.Value.Geometry, subdivisionMap);
 
                     LinearMapping mapA = FromUnitCubeTo(A);
                     IScalarFunction alpha = new ScalarComposition(body.Alpha, mapA);
-                    NestedSet setA = new NestedSet(alpha, new UnitHyperCube(alpha.M));
+                    NestedSet setA = new NestedSet(alpha, EmbeddedHyperRectangle.UnitCube(alpha.M));
                     Decompose(new MappingComposition(subdivisionMap, mapA), setA, sets, h + 1);
 
                     LinearMapping mapB = FromUnitCubeTo(B);
                     IScalarFunction beta = new ScalarComposition(body.Alpha, mapB);
-                    NestedSet setB = new NestedSet(beta, new UnitHyperCube(beta.M));
+                    NestedSet setB = new NestedSet(beta, EmbeddedHyperRectangle.UnitCube(beta.M));
                     Decompose(new MappingComposition(subdivisionMap, mapB), setB, sets, h + 1);
                 }
                 else
@@ -76,7 +76,7 @@ namespace IntersectingQuadrature.Map.Graph
             }
         }
 
-        static (HyperRectangle A, HyperRectangle B) Split(HyperRectangle source, IIntegralTransformation subdivisionMap)
+        static (EmbeddedHyperRectangle A, EmbeddedHyperRectangle B) Split(EmbeddedHyperRectangle source, IIntegralTransformation subdivisionMap)
         {
             (Tensor1 f, Tensor2 J) = subdivisionMap.EvaluateAndJacobian(source.Center);
             Tensor1 grad = Tensor1.Zeros(f.M);
@@ -86,10 +86,10 @@ namespace IntersectingQuadrature.Map.Graph
             }
             int direction = Utility.IndexOfMaxEntry(grad);
 
-            HyperRectangle A = source.Clone();
+            EmbeddedHyperRectangle A = source.Clone();
             A.Diameters[direction] = 1;
             A.Center[direction] = -0.5;
-            HyperRectangle B = source.Clone();
+            EmbeddedHyperRectangle B = source.Clone();
             B.Diameters[direction] = 1;
             B.Center[direction] = 0.5;
             return (A, B);

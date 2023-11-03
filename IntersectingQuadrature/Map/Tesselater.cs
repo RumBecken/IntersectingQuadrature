@@ -94,7 +94,7 @@ namespace IntersectingQuadrature.Map
             domain.Sign = sign;
         }
 
-        double Separator(IScalarFunction alpha, HyperRectangle a, HyperRectangle b, Axis direction)
+        double Separator(IScalarFunction alpha, EmbeddedHyperRectangle a, EmbeddedHyperRectangle b, Axis direction)
         {
             Tensor1 root = rooter.Root(alpha, a.Center, b.Center);
             return root[(int)direction];

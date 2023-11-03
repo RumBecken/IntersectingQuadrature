@@ -4,15 +4,14 @@ using System.Text;
 
 namespace IntersectingQuadrature.Map
 {
-    internal static class HyperRectangleExtensions
-    {
-        public static HyperRectangle Face(this HyperRectangle hR, int direction, Symbol sign)
+    internal static class EmbeddedHyperRectangleExtensions {
+        public static EmbeddedHyperRectangle Face(this EmbeddedHyperRectangle hR, int direction, Symbol sign)
         {
             if (hR.ActiveDimensions[direction] == false)
             {
                 throw new ArgumentException("Height direction not active.");
             }
-            HyperRectangle face = hR.Clone();
+            EmbeddedHyperRectangle face = hR.Clone();
             --face.Dimension;
             face.Center[direction] = (int)sign * hR.Diameters[direction] / 2.0 + hR.Center[direction];
             face.Diameters[direction] = 0;
@@ -21,7 +20,7 @@ namespace IntersectingQuadrature.Map
             return face;
         }
 
-        public static void Resize(this HyperRectangle hR, double coordinate, int direction, Symbol side)
+        public static void Resize(this EmbeddedHyperRectangle hR, double coordinate, int direction, Symbol side)
         {
             if (hR.ActiveDimensions[direction] == true)
             {
@@ -37,14 +36,14 @@ namespace IntersectingQuadrature.Map
             }
         }
 
-        public static void Relocate(this HyperRectangle hR, double coordinate, int direction)
+        public static void Relocate(this EmbeddedHyperRectangle hR, double coordinate, int direction)
         {
             hR.Center[direction] = coordinate;
         }
 
-        public static HyperRectangle Clone(this HyperRectangle hR)
+        public static EmbeddedHyperRectangle Clone(this EmbeddedHyperRectangle hR)
         {
-            HyperRectangle clone = new HyperRectangle(hR.SpaceDimension);
+            EmbeddedHyperRectangle clone = new EmbeddedHyperRectangle(hR.SpaceDimension);
             clone.Dimension = hR.Dimension;
             for (int i = 0; i < clone.SpaceDimension; ++i)
             {

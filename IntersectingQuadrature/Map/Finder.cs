@@ -11,7 +11,6 @@ namespace IntersectingQuadrature.Map
 {
     internal class Finder
     {
-
         IRootFinder newton;
 
         Tesselater organizer;
@@ -98,7 +97,7 @@ namespace IntersectingQuadrature.Map
                     IntegralMapping map = new IntegralMapping
                     {
                         Transformation = new MappingComposition(space.Subdivision, mapping),
-                        Domain = new UnitHyperCube(box.Root.Value.Geometry.Dimension)
+                        Domain = HyperRectangle.UnitCube(box.Root.Value.Geometry.Dimension)
                     };
                     mappings.Add(map);
                 }
@@ -114,20 +113,20 @@ namespace IntersectingQuadrature.Map
                 map = new IntegralMapping
                 {
                     Transformation = mapping,
-                    Domain = new UnitHyperCube(box.Root.Value.Geometry.Dimension)
+                    Domain = HyperRectangle.UnitCube(box.Root.Value.Geometry.Dimension)
                 };
                 return true;
             }
             else if (sign == Symbol.Zero)
             {
-                if (box.Root.Value.Sign == Symbol.Plus && TryGetZeroFace(box.Root, out HyperRectangle surface))
+                if (box.Root.Value.Sign == Symbol.Plus && TryGetZeroFace(box.Root, out EmbeddedHyperRectangle surface))
                 {
                     IIntegralTransformation mapping = mapper.ExtractMapping(box);
                     IIntegralTransformation emapping = new MappingComposition(mapping, Plane(surface));
                     map = new IntegralMapping
                     {
                         Transformation = emapping,
-                        Domain = new UnitHyperCube(surface.Dimension)
+                        Domain = HyperRectangle.UnitCube(surface.Dimension)
                     };
                     return true;
                 }
@@ -136,7 +135,7 @@ namespace IntersectingQuadrature.Map
             return false;
         }
 
-        static bool TryGetZeroFace(BinaryNode<Set> domain, out HyperRectangle surface)
+        static bool TryGetZeroFace(BinaryNode<Set> domain, out EmbeddedHyperRectangle surface)
         {
             Debug.Assert(domain.Value.Sign != Symbol.Zero);
 
@@ -156,7 +155,7 @@ namespace IntersectingQuadrature.Map
                 }
                 if (sign != Symbol.None)
                 {
-                    HyperRectangle unit = new UnitHyperCube(domain.Value.Geometry.Dimension);
+                    EmbeddedHyperRectangle unit = EmbeddedHyperRectangle.UnitCube(domain.Value.Geometry.Dimension);
                     surface = unit.Face((int)direction, sign);
                     return true;
                 }
@@ -165,7 +164,7 @@ namespace IntersectingQuadrature.Map
             return false;
         }
 
-        public static Embedding Plane(HyperRectangle face)
+        public static Embedding Plane(EmbeddedHyperRectangle face)
         {
             Tensor2 b = Tensor2.Zeros(face.SpaceDimension, face.Dimension);
             int j = 0;

@@ -28,7 +28,7 @@ namespace IntersectingQuadrature.Map.Graph
     static class Interpolator
     {
 
-        public static Bezier Quadratic(IScalarFunction f, HyperRectangle domain)
+        public static Bezier Quadratic(IScalarFunction f, EmbeddedHyperRectangle domain)
         {
 
             Tensor1 y = Probe(f, domain, 3);
@@ -54,7 +54,7 @@ namespace IntersectingQuadrature.Map.Graph
             return new Bezier(P, 3, domain.Dimension);
         }
 
-        public static Bezier Cubic(IScalarFunction f, HyperRectangle domain)
+        public static Bezier Cubic(IScalarFunction f, EmbeddedHyperRectangle domain)
         {
 
             Tensor1 y = Probe(f, domain, 4);
@@ -80,7 +80,7 @@ namespace IntersectingQuadrature.Map.Graph
             return new Bezier(P, 4, domain.Dimension);
         }
 
-        static Tensor1 Probe(IScalarFunction f, HyperRectangle domain, int n)
+        static Tensor1 Probe(IScalarFunction f, EmbeddedHyperRectangle domain, int n)
         {
             Tensor1 y = Tensor1.Zeros(Algebra.Pow(n, domain.Dimension));
             Tensor1 center = domain.Center;

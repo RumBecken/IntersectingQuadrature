@@ -16,7 +16,7 @@ namespace IntersectingQuadrature.Map
 
         public BinaryNode<Set> Root;
 
-        public NestedSet(IScalarFunction alpha, HyperRectangle geometry)
+        public NestedSet(IScalarFunction alpha, EmbeddedHyperRectangle geometry)
         {
             Set domain = new Set(geometry);
             Root = new BinaryNode<Set>(domain);
