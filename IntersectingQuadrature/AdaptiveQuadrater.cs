@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using IntersectingQuadrature.Map;
+using IntersectingQuadrature.Rules;
 using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature
