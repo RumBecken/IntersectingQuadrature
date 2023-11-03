@@ -16,7 +16,6 @@ namespace IntersectingQuadrature
             hunter = new Finder();
         }
 
-
         public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, IHyperRectangle domain, int n, int subdivisions = 0) {
             QuadratureRule rules = new QuadratureRule(10);
 

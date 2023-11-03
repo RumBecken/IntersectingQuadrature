@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using IntersectingQuadrature.Tensor;
 
 
-namespace IntersectingQuadrature.Map.Graph {
+namespace IntersectingQuadrature.Map.Graph
+{
 
     internal class NestedGrapher : IGrapher {
 

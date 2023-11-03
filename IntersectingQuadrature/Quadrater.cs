@@ -35,7 +35,7 @@ namespace IntersectingQuadrature
                                        Symbol signAlpha, 
                                        IScalarFunction beta, 
                                        Symbol signBeta, 
-                                       IHyperRectangle domain, 
+                                       IHyperRectangle domain,
                                        int n, 
                                        int subdivisions = 0) {
             CheckInput(alpha, signAlpha, beta, signBeta, domain, n, subdivisions);
