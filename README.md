@@ -21,13 +21,13 @@ namespace Example {
       IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
 
       Quadrater finder = new Quadrater();
-      HyperRectangle cell = new UnitHyperCube(3);
+      HyperRectangle cell = HyperRectangle.UnitCube(3);
       QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
     }
   }
 }
 ```
-This simple example creates a quadrature rule over the volume of a 3-dimensional domain with flat surfaces.
+This simple example creates a quadrature rule with $3 \times 3 \times 3 = 27$ nodes over the volume of a 3-dimensional domain with flat surfaces.
 
 ## Usage and documentation 
 Simply include the NuGet package in your .Net project and have a look at the 
