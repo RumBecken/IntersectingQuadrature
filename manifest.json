@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "/home/runner/work/IntersectingQuadrature/IntersectingQuadrature/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -9,16 +8,6 @@
       "output": {
         ".html": {
           "relative_path": "api/IntersectingQuadrature.AdaptiveQuadrater.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.HyperRectangle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/IntersectingQuadrature.HyperRectangle.html"
         }
       },
       "version": ""
@@ -235,16 +224,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.UnitHyperCube.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/IntersectingQuadrature.UnitHyperCube.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/IntersectingQuadrature.yml",
       "output": {
         ".html": {
@@ -269,6 +248,9 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -289,6 +271,9 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
       "version": ""
@@ -312,12 +297,14 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

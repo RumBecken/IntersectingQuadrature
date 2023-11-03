@@ -92,7 +92,7 @@ add IntersectingQuadrature.csproj to your project.</p>
 <ul>
 <li>Implement level sets <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Alpha</code></a>
 and <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Beta</code></a>.</li>
-<li>Create <a href="api/IntersectingQuadrature.HyperRectangle.html"><code>IHyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
+<li>Create <a href="api/IntersectingQuadrature.HyperRectangle.yml"><code>IHyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
 <li>Determine the domain of integration by selecting
 <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signAlpha</code></a> and <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signBeta</code></a> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
 You will receive a quadrature rule for the set {x ∈ K | sign(Alpha(x)) = signAlpha ∧ sign(Beta(x)) = signBeta}.</li>
@@ -112,6 +112,7 @@ QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivi
 </code></pre>
 <h2 id="examples">Examples</h2>
 <p>To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.</p>
+
 </article>
           </div>
 
@@ -120,12 +121,12 @@ QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivi
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/Documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/Documentation/index.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>

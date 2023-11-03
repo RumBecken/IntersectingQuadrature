@@ -57,128 +57,12 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.AdaptiveQuadrater.FindRule
   nameWithType: AdaptiveQuadrater.FindRule
-- uid: IntersectingQuadrature.HyperRectangle
-  name: HyperRectangle
-  href: api/IntersectingQuadrature.HyperRectangle.html
-  commentId: T:IntersectingQuadrature.HyperRectangle
-  fullName: IntersectingQuadrature.HyperRectangle
-  nameWithType: HyperRectangle
-- uid: IntersectingQuadrature.HyperRectangle.#ctor(System.Int32)
-  name: HyperRectangle(int)
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle__ctor_System_Int32_
-  commentId: M:IntersectingQuadrature.HyperRectangle.#ctor(System.Int32)
-  name.vb: New(Integer)
-  fullName: IntersectingQuadrature.HyperRectangle.HyperRectangle(int)
-  fullName.vb: IntersectingQuadrature.HyperRectangle.New(Integer)
-  nameWithType: HyperRectangle.HyperRectangle(int)
-  nameWithType.vb: HyperRectangle.New(Integer)
-- uid: IntersectingQuadrature.HyperRectangle.#ctor*
-  name: HyperRectangle
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle__ctor_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: IntersectingQuadrature.HyperRectangle.HyperRectangle
-  fullName.vb: IntersectingQuadrature.HyperRectangle.New
-  nameWithType: HyperRectangle.HyperRectangle
-  nameWithType.vb: HyperRectangle.New
-- uid: IntersectingQuadrature.HyperRectangle.ActiveDimensions
-  name: ActiveDimensions
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_ActiveDimensions
-  commentId: P:IntersectingQuadrature.HyperRectangle.ActiveDimensions
-  fullName: IntersectingQuadrature.HyperRectangle.ActiveDimensions
-  nameWithType: HyperRectangle.ActiveDimensions
-- uid: IntersectingQuadrature.HyperRectangle.ActiveDimensions*
-  name: ActiveDimensions
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_ActiveDimensions_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.ActiveDimensions
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.ActiveDimensions
-  nameWithType: HyperRectangle.ActiveDimensions
-- uid: IntersectingQuadrature.HyperRectangle.BodyDimension
-  name: BodyDimension
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_BodyDimension
-  commentId: P:IntersectingQuadrature.HyperRectangle.BodyDimension
-  fullName: IntersectingQuadrature.HyperRectangle.BodyDimension
-  nameWithType: HyperRectangle.BodyDimension
-- uid: IntersectingQuadrature.HyperRectangle.BodyDimension*
-  name: BodyDimension
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_BodyDimension_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.BodyDimension
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.BodyDimension
-  nameWithType: HyperRectangle.BodyDimension
-- uid: IntersectingQuadrature.HyperRectangle.Center
-  name: Center
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Center
-  commentId: P:IntersectingQuadrature.HyperRectangle.Center
-  fullName: IntersectingQuadrature.HyperRectangle.Center
-  nameWithType: HyperRectangle.Center
-- uid: IntersectingQuadrature.HyperRectangle.Center*
-  name: Center
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Center_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.Center
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.Center
-  nameWithType: HyperRectangle.Center
-- uid: IntersectingQuadrature.HyperRectangle.Diameters
-  name: Diameters
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Diameters
-  commentId: P:IntersectingQuadrature.HyperRectangle.Diameters
-  fullName: IntersectingQuadrature.HyperRectangle.Diameters
-  nameWithType: HyperRectangle.Diameters
-- uid: IntersectingQuadrature.HyperRectangle.Diameters*
-  name: Diameters
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_Diameters_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.Diameters
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.Diameters
-  nameWithType: HyperRectangle.Diameters
-- uid: IntersectingQuadrature.HyperRectangle.SpaceDimension
-  name: SpaceDimension
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_SpaceDimension
-  commentId: P:IntersectingQuadrature.HyperRectangle.SpaceDimension
-  fullName: IntersectingQuadrature.HyperRectangle.SpaceDimension
-  nameWithType: HyperRectangle.SpaceDimension
-- uid: IntersectingQuadrature.HyperRectangle.SpaceDimension*
-  name: SpaceDimension
-  href: api/IntersectingQuadrature.HyperRectangle.html#IntersectingQuadrature_HyperRectangle_SpaceDimension_
-  commentId: Overload:IntersectingQuadrature.HyperRectangle.SpaceDimension
-  isSpec: "True"
-  fullName: IntersectingQuadrature.HyperRectangle.SpaceDimension
-  nameWithType: HyperRectangle.SpaceDimension
 - uid: IntersectingQuadrature.IHyperRectangle
   name: IHyperRectangle
   href: api/IntersectingQuadrature.IHyperRectangle.html
   commentId: T:IntersectingQuadrature.IHyperRectangle
   fullName: IntersectingQuadrature.IHyperRectangle
   nameWithType: IHyperRectangle
-- uid: IntersectingQuadrature.IHyperRectangle.ActiveDimensions
-  name: ActiveDimensions
-  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_ActiveDimensions
-  commentId: P:IntersectingQuadrature.IHyperRectangle.ActiveDimensions
-  fullName: IntersectingQuadrature.IHyperRectangle.ActiveDimensions
-  nameWithType: IHyperRectangle.ActiveDimensions
-- uid: IntersectingQuadrature.IHyperRectangle.ActiveDimensions*
-  name: ActiveDimensions
-  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_ActiveDimensions_
-  commentId: Overload:IntersectingQuadrature.IHyperRectangle.ActiveDimensions
-  isSpec: "True"
-  fullName: IntersectingQuadrature.IHyperRectangle.ActiveDimensions
-  nameWithType: IHyperRectangle.ActiveDimensions
-- uid: IntersectingQuadrature.IHyperRectangle.BodyDimension
-  name: BodyDimension
-  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_BodyDimension
-  commentId: P:IntersectingQuadrature.IHyperRectangle.BodyDimension
-  fullName: IntersectingQuadrature.IHyperRectangle.BodyDimension
-  nameWithType: IHyperRectangle.BodyDimension
-- uid: IntersectingQuadrature.IHyperRectangle.BodyDimension*
-  name: BodyDimension
-  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_BodyDimension_
-  commentId: Overload:IntersectingQuadrature.IHyperRectangle.BodyDimension
-  isSpec: "True"
-  fullName: IntersectingQuadrature.IHyperRectangle.BodyDimension
-  nameWithType: IHyperRectangle.BodyDimension
 - uid: IntersectingQuadrature.IHyperRectangle.Center
   name: Center
   href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Center
@@ -205,19 +89,19 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.IHyperRectangle.Diameters
   nameWithType: IHyperRectangle.Diameters
-- uid: IntersectingQuadrature.IHyperRectangle.SpaceDimension
-  name: SpaceDimension
-  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_SpaceDimension
-  commentId: P:IntersectingQuadrature.IHyperRectangle.SpaceDimension
-  fullName: IntersectingQuadrature.IHyperRectangle.SpaceDimension
-  nameWithType: IHyperRectangle.SpaceDimension
-- uid: IntersectingQuadrature.IHyperRectangle.SpaceDimension*
-  name: SpaceDimension
-  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_SpaceDimension_
-  commentId: Overload:IntersectingQuadrature.IHyperRectangle.SpaceDimension
+- uid: IntersectingQuadrature.IHyperRectangle.Dimension
+  name: Dimension
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Dimension
+  commentId: P:IntersectingQuadrature.IHyperRectangle.Dimension
+  fullName: IntersectingQuadrature.IHyperRectangle.Dimension
+  nameWithType: IHyperRectangle.Dimension
+- uid: IntersectingQuadrature.IHyperRectangle.Dimension*
+  name: Dimension
+  href: api/IntersectingQuadrature.IHyperRectangle.html#IntersectingQuadrature_IHyperRectangle_Dimension_
+  commentId: Overload:IntersectingQuadrature.IHyperRectangle.Dimension
   isSpec: "True"
-  fullName: IntersectingQuadrature.IHyperRectangle.SpaceDimension
-  nameWithType: IHyperRectangle.SpaceDimension
+  fullName: IntersectingQuadrature.IHyperRectangle.Dimension
+  nameWithType: IHyperRectangle.Dimension
 - uid: IntersectingQuadrature.Quadrater
   name: Quadrater
   href: api/IntersectingQuadrature.Quadrater.html
@@ -1386,6 +1270,56 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.Tensor1.Ones
   nameWithType: Tensor1.Ones
+- uid: IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double)
+  name: Vector(double)
+  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_System_Double_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double)
+  name.vb: Vector(Double)
+  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector(double)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Vector(Double)
+  nameWithType: Tensor1.Vector(double)
+  nameWithType.vb: Tensor1.Vector(Double)
+- uid: IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double)
+  name: Vector(double, double)
+  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_System_Double_System_Double_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double)
+  name.vb: Vector(Double, Double)
+  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector(double, double)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Vector(Double, Double)
+  nameWithType: Tensor1.Vector(double, double)
+  nameWithType.vb: Tensor1.Vector(Double, Double)
+- uid: IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double,System.Double)
+  name: Vector(double, double, double)
+  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_System_Double_System_Double_System_Double_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double,System.Double)
+  name.vb: Vector(Double, Double, Double)
+  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector(double, double, double)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Vector(Double, Double, Double)
+  nameWithType: Tensor1.Vector(double, double, double)
+  nameWithType.vb: Tensor1.Vector(Double, Double, Double)
+- uid: IntersectingQuadrature.Tensor.Tensor1.Vector*
+  name: Vector
+  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_
+  commentId: Overload:IntersectingQuadrature.Tensor.Tensor1.Vector
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector
+  nameWithType: Tensor1.Vector
+- uid: IntersectingQuadrature.Tensor.Tensor1.Zeros(System.Int32)
+  name: Zeros(int)
+  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Zeros_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Zeros(System.Int32)
+  name.vb: Zeros(Integer)
+  fullName: IntersectingQuadrature.Tensor.Tensor1.Zeros(int)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Zeros(Integer)
+  nameWithType: Tensor1.Zeros(int)
+  nameWithType.vb: Tensor1.Zeros(Integer)
+- uid: IntersectingQuadrature.Tensor.Tensor1.Zeros*
+  name: Zeros
+  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Zeros_
+  commentId: Overload:IntersectingQuadrature.Tensor.Tensor1.Zeros
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Tensor1.Zeros
+  nameWithType: Tensor1.Zeros
 - uid: IntersectingQuadrature.Tensor.Tensor1.op_Addition(IntersectingQuadrature.Tensor.Tensor1,IntersectingQuadrature.Tensor.Tensor1)
   name: operator +(Tensor1, Tensor1)
   href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_op_Addition_IntersectingQuadrature_Tensor_Tensor1_IntersectingQuadrature_Tensor_Tensor1_
@@ -1498,56 +1432,6 @@ references:
   fullName.vb: IntersectingQuadrature.Tensor.Tensor1.-
   nameWithType: Tensor1.operator -
   nameWithType.vb: Tensor1.-
-- uid: IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double,System.Double)
-  name: Vector(double, double, double)
-  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_System_Double_System_Double_System_Double_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double,System.Double)
-  name.vb: Vector(Double, Double, Double)
-  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector(double, double, double)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Vector(Double, Double, Double)
-  nameWithType: Tensor1.Vector(double, double, double)
-  nameWithType.vb: Tensor1.Vector(Double, Double, Double)
-- uid: IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double)
-  name: Vector(double, double)
-  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_System_Double_System_Double_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double,System.Double)
-  name.vb: Vector(Double, Double)
-  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector(double, double)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Vector(Double, Double)
-  nameWithType: Tensor1.Vector(double, double)
-  nameWithType.vb: Tensor1.Vector(Double, Double)
-- uid: IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double)
-  name: Vector(double)
-  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_System_Double_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Vector(System.Double)
-  name.vb: Vector(Double)
-  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector(double)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Vector(Double)
-  nameWithType: Tensor1.Vector(double)
-  nameWithType.vb: Tensor1.Vector(Double)
-- uid: IntersectingQuadrature.Tensor.Tensor1.Vector*
-  name: Vector
-  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Vector_
-  commentId: Overload:IntersectingQuadrature.Tensor.Tensor1.Vector
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.Tensor1.Vector
-  nameWithType: Tensor1.Vector
-- uid: IntersectingQuadrature.Tensor.Tensor1.Zeros(System.Int32)
-  name: Zeros(int)
-  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Zeros_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor1.Zeros(System.Int32)
-  name.vb: Zeros(Integer)
-  fullName: IntersectingQuadrature.Tensor.Tensor1.Zeros(int)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor1.Zeros(Integer)
-  nameWithType: Tensor1.Zeros(int)
-  nameWithType.vb: Tensor1.Zeros(Integer)
-- uid: IntersectingQuadrature.Tensor.Tensor1.Zeros*
-  name: Zeros
-  href: api/IntersectingQuadrature.Tensor.Tensor1.html#IntersectingQuadrature_Tensor_Tensor1_Zeros_
-  commentId: Overload:IntersectingQuadrature.Tensor.Tensor1.Zeros
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.Tensor1.Zeros
-  nameWithType: Tensor1.Zeros
 - uid: IntersectingQuadrature.Tensor.Tensor2
   name: Tensor2
   href: api/IntersectingQuadrature.Tensor.Tensor2.html
@@ -1612,6 +1496,47 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.Tensor2.N
   nameWithType: Tensor2.N
+- uid: IntersectingQuadrature.Tensor.Tensor2.Unit(System.Int32)
+  name: Unit(int)
+  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Unit_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor2.Unit(System.Int32)
+  name.vb: Unit(Integer)
+  fullName: IntersectingQuadrature.Tensor.Tensor2.Unit(int)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor2.Unit(Integer)
+  nameWithType: Tensor2.Unit(int)
+  nameWithType.vb: Tensor2.Unit(Integer)
+- uid: IntersectingQuadrature.Tensor.Tensor2.Unit*
+  name: Unit
+  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Unit_
+  commentId: Overload:IntersectingQuadrature.Tensor.Tensor2.Unit
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Tensor2.Unit
+  nameWithType: Tensor2.Unit
+- uid: IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32)
+  name: Zeros(int)
+  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Zeros_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32)
+  name.vb: Zeros(Integer)
+  fullName: IntersectingQuadrature.Tensor.Tensor2.Zeros(int)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor2.Zeros(Integer)
+  nameWithType: Tensor2.Zeros(int)
+  nameWithType.vb: Tensor2.Zeros(Integer)
+- uid: IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32,System.Int32)
+  name: Zeros(int, int)
+  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Zeros_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32,System.Int32)
+  name.vb: Zeros(Integer, Integer)
+  fullName: IntersectingQuadrature.Tensor.Tensor2.Zeros(int, int)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor2.Zeros(Integer, Integer)
+  nameWithType: Tensor2.Zeros(int, int)
+  nameWithType.vb: Tensor2.Zeros(Integer, Integer)
+- uid: IntersectingQuadrature.Tensor.Tensor2.Zeros*
+  name: Zeros
+  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Zeros_
+  commentId: Overload:IntersectingQuadrature.Tensor.Tensor2.Zeros
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Tensor2.Zeros
+  nameWithType: Tensor2.Zeros
 - uid: IntersectingQuadrature.Tensor.Tensor2.op_Addition(IntersectingQuadrature.Tensor.Tensor2,IntersectingQuadrature.Tensor.Tensor2)
   name: operator +(Tensor2, Tensor2)
   href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_op_Addition_IntersectingQuadrature_Tensor_Tensor2_IntersectingQuadrature_Tensor_Tensor2_
@@ -1669,47 +1594,6 @@ references:
   fullName.vb: IntersectingQuadrature.Tensor.Tensor2.-
   nameWithType: Tensor2.operator -
   nameWithType.vb: Tensor2.-
-- uid: IntersectingQuadrature.Tensor.Tensor2.Unit(System.Int32)
-  name: Unit(int)
-  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Unit_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor2.Unit(System.Int32)
-  name.vb: Unit(Integer)
-  fullName: IntersectingQuadrature.Tensor.Tensor2.Unit(int)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor2.Unit(Integer)
-  nameWithType: Tensor2.Unit(int)
-  nameWithType.vb: Tensor2.Unit(Integer)
-- uid: IntersectingQuadrature.Tensor.Tensor2.Unit*
-  name: Unit
-  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Unit_
-  commentId: Overload:IntersectingQuadrature.Tensor.Tensor2.Unit
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.Tensor2.Unit
-  nameWithType: Tensor2.Unit
-- uid: IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32,System.Int32)
-  name: Zeros(int, int)
-  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Zeros_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32,System.Int32)
-  name.vb: Zeros(Integer, Integer)
-  fullName: IntersectingQuadrature.Tensor.Tensor2.Zeros(int, int)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor2.Zeros(Integer, Integer)
-  nameWithType: Tensor2.Zeros(int, int)
-  nameWithType.vb: Tensor2.Zeros(Integer, Integer)
-- uid: IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32)
-  name: Zeros(int)
-  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Zeros_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor2.Zeros(System.Int32)
-  name.vb: Zeros(Integer)
-  fullName: IntersectingQuadrature.Tensor.Tensor2.Zeros(int)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor2.Zeros(Integer)
-  nameWithType: Tensor2.Zeros(int)
-  nameWithType.vb: Tensor2.Zeros(Integer)
-- uid: IntersectingQuadrature.Tensor.Tensor2.Zeros*
-  name: Zeros
-  href: api/IntersectingQuadrature.Tensor.Tensor2.html#IntersectingQuadrature_Tensor_Tensor2_Zeros_
-  commentId: Overload:IntersectingQuadrature.Tensor.Tensor2.Zeros
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.Tensor2.Zeros
-  nameWithType: Tensor2.Zeros
 - uid: IntersectingQuadrature.Tensor.Tensor3
   name: Tensor3
   href: api/IntersectingQuadrature.Tensor.Tensor3.html
@@ -1787,6 +1671,31 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.Tensor3.O
   nameWithType: Tensor3.O
+- uid: IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32)
+  name: Zeros(int)
+  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_Zeros_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32)
+  name.vb: Zeros(Integer)
+  fullName: IntersectingQuadrature.Tensor.Tensor3.Zeros(int)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor3.Zeros(Integer)
+  nameWithType: Tensor3.Zeros(int)
+  nameWithType.vb: Tensor3.Zeros(Integer)
+- uid: IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32,System.Int32,System.Int32)
+  name: Zeros(int, int, int)
+  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_Zeros_System_Int32_System_Int32_System_Int32_
+  commentId: M:IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32,System.Int32,System.Int32)
+  name.vb: Zeros(Integer, Integer, Integer)
+  fullName: IntersectingQuadrature.Tensor.Tensor3.Zeros(int, int, int)
+  fullName.vb: IntersectingQuadrature.Tensor.Tensor3.Zeros(Integer, Integer, Integer)
+  nameWithType: Tensor3.Zeros(int, int, int)
+  nameWithType.vb: Tensor3.Zeros(Integer, Integer, Integer)
+- uid: IntersectingQuadrature.Tensor.Tensor3.Zeros*
+  name: Zeros
+  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_Zeros_
+  commentId: Overload:IntersectingQuadrature.Tensor.Tensor3.Zeros
+  isSpec: "True"
+  fullName: IntersectingQuadrature.Tensor.Tensor3.Zeros
+  nameWithType: Tensor3.Zeros
 - uid: IntersectingQuadrature.Tensor.Tensor3.op_Addition(IntersectingQuadrature.Tensor.Tensor3,IntersectingQuadrature.Tensor.Tensor3)
   name: operator +(Tensor3, Tensor3)
   href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_op_Addition_IntersectingQuadrature_Tensor_Tensor3_IntersectingQuadrature_Tensor_Tensor3_
@@ -1880,31 +1789,6 @@ references:
   fullName.vb: IntersectingQuadrature.Tensor.Tensor3.-
   nameWithType: Tensor3.operator -
   nameWithType.vb: Tensor3.-
-- uid: IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32,System.Int32,System.Int32)
-  name: Zeros(int, int, int)
-  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_Zeros_System_Int32_System_Int32_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32,System.Int32,System.Int32)
-  name.vb: Zeros(Integer, Integer, Integer)
-  fullName: IntersectingQuadrature.Tensor.Tensor3.Zeros(int, int, int)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor3.Zeros(Integer, Integer, Integer)
-  nameWithType: Tensor3.Zeros(int, int, int)
-  nameWithType.vb: Tensor3.Zeros(Integer, Integer, Integer)
-- uid: IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32)
-  name: Zeros(int)
-  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_Zeros_System_Int32_
-  commentId: M:IntersectingQuadrature.Tensor.Tensor3.Zeros(System.Int32)
-  name.vb: Zeros(Integer)
-  fullName: IntersectingQuadrature.Tensor.Tensor3.Zeros(int)
-  fullName.vb: IntersectingQuadrature.Tensor.Tensor3.Zeros(Integer)
-  nameWithType: Tensor3.Zeros(int)
-  nameWithType.vb: Tensor3.Zeros(Integer)
-- uid: IntersectingQuadrature.Tensor.Tensor3.Zeros*
-  name: Zeros
-  href: api/IntersectingQuadrature.Tensor.Tensor3.html#IntersectingQuadrature_Tensor_Tensor3_Zeros_
-  commentId: Overload:IntersectingQuadrature.Tensor.Tensor3.Zeros
-  isSpec: "True"
-  fullName: IntersectingQuadrature.Tensor.Tensor3.Zeros
-  nameWithType: Tensor3.Zeros
 - uid: IntersectingQuadrature.Tensor.VectorComposition
   name: VectorComposition
   href: api/IntersectingQuadrature.Tensor.VectorComposition.html
@@ -1995,28 +1879,3 @@ references:
   isSpec: "True"
   fullName: IntersectingQuadrature.Tensor.VectorComposition.N
   nameWithType: VectorComposition.N
-- uid: IntersectingQuadrature.UnitHyperCube
-  name: UnitHyperCube
-  href: api/IntersectingQuadrature.UnitHyperCube.html
-  commentId: T:IntersectingQuadrature.UnitHyperCube
-  fullName: IntersectingQuadrature.UnitHyperCube
-  nameWithType: UnitHyperCube
-- uid: IntersectingQuadrature.UnitHyperCube.#ctor(System.Int32)
-  name: UnitHyperCube(int)
-  href: api/IntersectingQuadrature.UnitHyperCube.html#IntersectingQuadrature_UnitHyperCube__ctor_System_Int32_
-  commentId: M:IntersectingQuadrature.UnitHyperCube.#ctor(System.Int32)
-  name.vb: New(Integer)
-  fullName: IntersectingQuadrature.UnitHyperCube.UnitHyperCube(int)
-  fullName.vb: IntersectingQuadrature.UnitHyperCube.New(Integer)
-  nameWithType: UnitHyperCube.UnitHyperCube(int)
-  nameWithType.vb: UnitHyperCube.New(Integer)
-- uid: IntersectingQuadrature.UnitHyperCube.#ctor*
-  name: UnitHyperCube
-  href: api/IntersectingQuadrature.UnitHyperCube.html#IntersectingQuadrature_UnitHyperCube__ctor_
-  commentId: Overload:IntersectingQuadrature.UnitHyperCube.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: IntersectingQuadrature.UnitHyperCube.UnitHyperCube
-  fullName.vb: IntersectingQuadrature.UnitHyperCube.New
-  nameWithType: UnitHyperCube.UnitHyperCube
-  nameWithType.vb: UnitHyperCube.New
