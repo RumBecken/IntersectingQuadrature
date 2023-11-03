@@ -27,7 +27,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sheet(torus, 0.04);
 
             Quadrater ruler = new Quadrater();
-            HyperRectangle cube = new UnitHyperCube(3);
+            HyperRectangle cube = HyperRectangle.UnitCube(3);
             QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 12);
 
             IO.Write("nodesTorus.txt", rule);

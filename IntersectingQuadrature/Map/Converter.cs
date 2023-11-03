@@ -21,11 +21,11 @@ namespace IntersectingQuadrature.Map
 
         public IIntegralTransformation ExtractMapping(NestedSet set1)
         {
-            Debug.Assert(set1.Alpha.M == set1.Root.Value.Geometry.BodyDimension);
+            Debug.Assert(set1.Alpha.M == set1.Root.Value.Geometry.Dimension);
             NestedSet set = set1.Clone();
 
             Axis[] order = Order(set.Root);
-            Tensor2 perturbationMatrix = Tensor2.Zeros(set.Root.Value.Geometry.BodyDimension);
+            Tensor2 perturbationMatrix = Tensor2.Zeros(set.Root.Value.Geometry.Dimension);
             for (int i = 0; i < order.Length; ++i)
             {
                 perturbationMatrix[i, (int)order[i]] = 1;
@@ -64,14 +64,14 @@ namespace IntersectingQuadrature.Map
             Heights mPlus = CubeSide(box.Root.Value, Symbol.Plus);
             SetZero(mPlus, box, alpha, rooter, Symbol.Plus);
 
-            int d = box.Root.Value.Geometry.BodyDimension;
+            int d = box.Root.Value.Geometry.Dimension;
             IIntegralTransformation map = NestedMapping.Dimension(d, mPlus, mMinus);
             return map;
         }
 
         static Axis[] Order(BinaryNode<Set> root)
         {
-            int dim = root.Value.Geometry.BodyDimension;
+            int dim = root.Value.Geometry.Dimension;
             int[] position = new int[dim];
             Axis[] order = new Axis[dim];
             for (int i = 0; i < dim; ++i)
@@ -109,7 +109,7 @@ namespace IntersectingQuadrature.Map
 
         static Heights CubeSide(Set box, Symbol side)
         {
-            int d = box.Geometry.BodyDimension;
+            int d = box.Geometry.Dimension;
             Heights cubeSide = new Heights();
             for (int i = 0; i < d; ++i)
             {
@@ -158,14 +158,14 @@ namespace IntersectingQuadrature.Map
                             throw new ArgumentException();
                         }
 
-                        if (sign == Symbol.Zero && bottomChild.Value.Geometry.BodyDimension > 0)
+                        if (sign == Symbol.Zero && bottomChild.Value.Geometry.Dimension > 0)
                         {
                             Tensor1 top = topChild.Value.Geometry.Center;
                             top = topChild.Value.BoundingBox.Center;
                             Tensor1 bottom = bottomChild.Value.Geometry.Center;
                             bottom = bottomChild.Value.BoundingBox.Center;
 
-                            switch (bottomChild.Value.Geometry.BodyDimension)
+                            switch (bottomChild.Value.Geometry.Dimension)
                             {
                                 case 1:
                                     ZeroLine y = new ZeroLine(rooter, alpha, top, bottom);

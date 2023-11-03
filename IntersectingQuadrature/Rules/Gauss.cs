@@ -113,10 +113,11 @@ namespace IntersectingQuadrature.Rules {
 			int n = nodes.Length;
             QuadratureRule gaussRule = new QuadratureRule(n);
 			for(int i = 0; i < n; ++i) {
-				gaussRule[i] = new QuadratureNode() {
+				QuadratureNode node = new QuadratureNode() {
 					Point = Tensor1.Vector(nodes[i]),
 					Weight = weights[i]
 				};
+                gaussRule.Add( node);
             }
 			return gaussRule;
         }

@@ -13,7 +13,7 @@ namespace IntersectingQuadrature.Map
                 throw new ArgumentException("Height direction not active.");
             }
             HyperRectangle face = hR.Clone();
-            --face.BodyDimension;
+            --face.Dimension;
             face.Center[direction] = (int)sign * hR.Diameters[direction] / 2.0 + hR.Center[direction];
             face.Diameters[direction] = 0;
             face.ActiveDimensions[direction] = false;
@@ -45,7 +45,7 @@ namespace IntersectingQuadrature.Map
         public static HyperRectangle Clone(this HyperRectangle hR)
         {
             HyperRectangle clone = new HyperRectangle(hR.SpaceDimension);
-            clone.BodyDimension = hR.BodyDimension;
+            clone.Dimension = hR.Dimension;
             for (int i = 0; i < clone.SpaceDimension; ++i)
             {
                 clone.ActiveDimensions[i] = hR.ActiveDimensions[i];

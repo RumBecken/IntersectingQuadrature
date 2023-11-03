@@ -57,13 +57,13 @@ namespace IntersectingQuadrature
         }
 
         static HyperRectangle[] Split(HyperRectangle domain) {
-            int n = Algebra.Pow(2, domain.BodyDimension);
+            int n = Algebra.Pow(2, domain.Dimension);
             HyperRectangle[] subdomains = new HyperRectangle[n];
             for(int i = 0; i < n; ++i) {
-                HyperRectangle subdomain = new HyperRectangle(domain.BodyDimension);
-                subdomain.BodyDimension = domain.BodyDimension;
+                HyperRectangle subdomain = new HyperRectangle(domain.Dimension);
+                subdomain.Dimension = domain.Dimension;
                 int k = i;
-                for (int j = 0; j < domain.BodyDimension; ++j) {
+                for (int j = 0; j < domain.Dimension; ++j) {
                     subdomain.Diameters[j] = domain.Diameters[j] / 2;
                     subdomain.Center[j] = domain.Center[j] - domain.Diameters[j] / 4 + (k%2) * domain.Diameters[j] / 2;
                     k /= 2;
@@ -74,8 +74,8 @@ namespace IntersectingQuadrature
         }
 
         static QuadratureRule Rule(IIntegralTransformation map, QuadratureRule source, HyperRectangle domain) {
-            Tensor2 scales = Tensor2.Zeros(domain.BodyDimension);
-            for(int i = 0; i < domain.BodyDimension; ++i) {
+            Tensor2 scales = Tensor2.Zeros(domain.Dimension);
+            for(int i = 0; i < domain.Dimension; ++i) {
                 scales[i, i] = domain.Diameters[i] / 2;
             }
             LinearMapping t = new LinearMapping(domain.Center, scales);

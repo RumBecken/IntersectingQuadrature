@@ -20,7 +20,7 @@ namespace IntersectingQuadrature.Map.Graph {
             LinearMapping selfmap = FromUnitCubeTo(geometry);
             IScalarFunction subAlpha = new ScalarComposition(alpha, selfmap);
 
-            NestedSet body = new NestedSet(subAlpha, new UnitHyperCube(geometry.SpaceDimension));
+            NestedSet body = new NestedSet(subAlpha, new UnitHyperCube(geometry.Dimension));
             LinkedList<Decomposition> sets = new LinkedList<Decomposition>();
             Decompose(selfmap, body, sets, 0);
             return sets;
@@ -28,8 +28,8 @@ namespace IntersectingQuadrature.Map.Graph {
 
         static LinearMapping FromUnitCubeTo(IHyperRectangle geometry)
         {
-            Tensor2 B = Tensor2.Zeros(geometry.SpaceDimension);
-            for (int i = 0; i < geometry.SpaceDimension; ++i)
+            Tensor2 B = Tensor2.Zeros(geometry.Dimension);
+            for (int i = 0; i < geometry.Dimension; ++i)
             {
                 B[i, i] = geometry.Diameters[i] / 2.0;
             }

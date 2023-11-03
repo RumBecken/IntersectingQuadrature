@@ -61,7 +61,9 @@ namespace IntersectingQuadrature.Map
 
         public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol sign, IHyperRectangle domain)
         {
-            Debug.Assert(alpha.M == domain.BodyDimension);
+            if(alpha.M != domain.Dimension) {
+                throw new NotSupportedException("Level Set and Body dimension do not match");
+            }
             List<IntegralMapping> mappings = new List<IntegralMapping>();
             LinkedList<Decomposition> spaces = grapher.Decompose(alpha, domain);
             foreach (Decomposition space in spaces)
@@ -82,7 +84,9 @@ namespace IntersectingQuadrature.Map
 
         public List<IntegralMapping> FindMappings(IScalarFunction alpha, IHyperRectangle domain)
         {
-            Debug.Assert(alpha.M == domain.BodyDimension);
+            if (alpha.M != domain.Dimension) {
+                throw new NotSupportedException("Level Set and Body dimension do not match");
+            }
             List<IntegralMapping> mappings = new List<IntegralMapping>();
             LinkedList<Decomposition> spaces = grapher.Decompose(alpha, domain);
             foreach (Decomposition space in spaces)
@@ -94,7 +98,7 @@ namespace IntersectingQuadrature.Map
                     IntegralMapping map = new IntegralMapping
                     {
                         Transformation = new MappingComposition(space.Subdivision, mapping),
-                        Domain = new UnitHyperCube(box.Root.Value.Geometry.BodyDimension)
+                        Domain = new UnitHyperCube(box.Root.Value.Geometry.Dimension)
                     };
                     mappings.Add(map);
                 }
@@ -110,7 +114,7 @@ namespace IntersectingQuadrature.Map
                 map = new IntegralMapping
                 {
                     Transformation = mapping,
-                    Domain = new UnitHyperCube(box.Root.Value.Geometry.BodyDimension)
+                    Domain = new UnitHyperCube(box.Root.Value.Geometry.Dimension)
                 };
                 return true;
             }
@@ -123,7 +127,7 @@ namespace IntersectingQuadrature.Map
                     map = new IntegralMapping
                     {
                         Transformation = emapping,
-                        Domain = new UnitHyperCube(surface.BodyDimension)
+                        Domain = new UnitHyperCube(surface.Dimension)
                     };
                     return true;
                 }
@@ -152,7 +156,7 @@ namespace IntersectingQuadrature.Map
                 }
                 if (sign != Symbol.None)
                 {
-                    HyperRectangle unit = new UnitHyperCube(domain.Value.Geometry.BodyDimension);
+                    HyperRectangle unit = new UnitHyperCube(domain.Value.Geometry.Dimension);
                     surface = unit.Face((int)direction, sign);
                     return true;
                 }
@@ -163,7 +167,7 @@ namespace IntersectingQuadrature.Map
 
         public static Embedding Plane(HyperRectangle face)
         {
-            Tensor2 b = Tensor2.Zeros(face.SpaceDimension, face.BodyDimension);
+            Tensor2 b = Tensor2.Zeros(face.SpaceDimension, face.Dimension);
             int j = 0;
             for (int i = 0; i < face.SpaceDimension; ++i)
             {

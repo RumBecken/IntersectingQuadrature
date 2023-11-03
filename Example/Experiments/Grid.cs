@@ -197,8 +197,6 @@ namespace Example.Experiments
             cell.Diameters[0] = (-xMinus + xPlus);
             cell.Diameters[1] = (-yMinus + yPlus);
             cell.Diameters[2] = (-zMinus + zPlus);
-            cell.ActiveDimensions.SetAll(true);
-            cell.BodyDimension = 3;
             return cell;
         }
     }

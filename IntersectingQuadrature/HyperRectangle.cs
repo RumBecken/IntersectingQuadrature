@@ -8,11 +8,11 @@ using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
 
-    public class HyperRectangle : IHyperRectangle {
+    class HyperRectangle : IHyperRectangle {
 
         public int SpaceDimension { get; set; }
 
-        public int BodyDimension { get; set; }
+        public int Dimension { get; set; }
 
         public Tensor1 Center { get; set; }
 
@@ -26,6 +26,5 @@ namespace IntersectingQuadrature {
             Center = Tensor1.Zeros(spaceDimension);
             Diameters = Tensor1.Zeros(spaceDimension);
         }
-
     }
 }

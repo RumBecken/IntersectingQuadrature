@@ -10,6 +10,7 @@ using IntersectingQuadrature.Tensor;
 //Example.Experiments.SingleCell.TorusCap();
 //Example.Experiments.SingleCell.SphericSheet();
 
+Example.Experiments.SingleCell.Sphere();
 
 //Example.Experiments.Grid.Potato();
 //Example.Experiments.SlantedSheet.Subdivision();
@@ -23,7 +24,7 @@ using IntersectingQuadrature.Tensor;
 //Example.Experiments.Ufo.LineAdaptive(0.1,1);
 //Example.Experiments.TrilinearTunnel.Exact();
 //Example.Experiments.SphericalSheet.TorusSurface();
-Example.Experiments.Grid.Volcano();
+//Example.Experiments.Grid.Volcano();
 
 /*
 for (int n = 1; n < 5; ++n) {

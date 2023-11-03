@@ -63,7 +63,7 @@ namespace Example.Experiments
             IScalarFunction f = new ConstantPolynomial(1);
 
             Quadrater finder = new Quadrater();
-            HyperRectangle cube = new UnitHyperCube(3);
+            HyperRectangle cube = HyperRectangle.UnitCube(3);
             cube.Diameters = Tensor1.Vector(1, 1, 1);
             cube.Center = Tensor1.Vector(0.5, 0.5, 0.5);
             QuadratureRule rule = finder.FindRule(beta, Symbol.Minus, cube, n);

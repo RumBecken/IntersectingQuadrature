@@ -22,7 +22,7 @@ namespace IntersectingQuadrature
 
             List<IntegralMapping> setA = hunter.FindMappings(alpha, sign, domain);
             foreach (IntegralMapping A in setA) {
-                QuadratureRule gauss = QuadratureRules.Gauss(n, A.Domain.BodyDimension);
+                QuadratureRule gauss = QuadratureRules.Gauss(n, A.Domain.Dimension);
                 QuadratureRule rule = Map(A.Transformation, gauss);
                 rules.AddRange(rule);
             }
@@ -35,7 +35,7 @@ namespace IntersectingQuadrature
             IScalarFunction f = new ConstantPolynomial(1);
             
             foreach (IntegralMapping T in setAB) {
-                QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.BodyDimension);
+                QuadratureRule gauss = QuadratureRules.GaussSubdivided(n, subdivisions, T.Domain.Dimension);
                 //QuadratureRule gauss = QuadratureRules.Plot(3, B.Domain.Dimension);
                 QuadratureRule Q = adapter.FindRule(f, T.Transformation, T.Domain, gauss);
                 rules.AddRange(Q);
