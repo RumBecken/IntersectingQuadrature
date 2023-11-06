@@ -1,6 +1,7 @@
-# ![Intersecting Quadrature](Documentation/pictures/logo.svg)
 ![Test status](https://github.com/RumBecken/IntersectingQuadrature/actions/workflows/Test.yml/badge.svg)
 ![Docs status](https://github.com/RumBecken/IntersectingQuadrature/actions/workflows/Docs.yml/badge.svg)
+# ![Intersecting Quadrature](Documentation/pictures/logo.svg)
+
 ## Description
 A package that offers methods to create quadrature rules for domains defined by one or two intersecting level sets.
 It is used in the discontinuous Galerkin framework [BoSSS](https://github.com/FDYdarmstadt/BoSSS) developed by the chair of fluid dynamics, Technical University of Darmstadt.
