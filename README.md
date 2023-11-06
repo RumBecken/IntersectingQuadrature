@@ -34,8 +34,7 @@ This simple example creates a quadrature rule with $3 \times 3 \times 3 = 27$ no
 Simply include the NuGet package in your .Net project and have a look at the 
 [documentation](https://rumbecken.github.io/IntersectingQuadrature/).
 
-If you want to learn about the method you can find a detailed explanation in this [paper](https://www.researchgate.net/publication/373262922_High-Order_Numerical_Integration_on_Domains_Bounded_by_Intersecting_Level_Sets).
-
+If you want to learn about the method you can find a detailed explanation in this [paper](https://doi.org/10.48550/arXiv.2308.10698).
 
 ## Authors and acknowledgment
 Lauritz Beck, [Chair of Fluid Dynamics](https://www.fdy.tu-darmstadt.de/fdy/index.en.jsp), Technical University of Darmstadt

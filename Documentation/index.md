@@ -1,7 +1,7 @@
 # Intersecting Quadrature 
 
 A package that offers methods to create quadrature rules for domains defined by one or two intersecting level sets.
-It is used in the discontinuous Galerkin framework [BoSSS](https://github.com/FDYdarmstadt/BoSSS) developed by the chair of fluid dynamics, Technical University of Darmstadt. A detailed description of the method can be found on [ResearchGate](https://www.researchgate.net/publication/373262922_High-Order_Numerical_Integration_on_Domains_Bounded_by_Intersecting_Level_Sets).
+It is used in the discontinuous Galerkin framework [BoSSS](https://github.com/FDYdarmstadt/BoSSS) developed by the chair of fluid dynamics, Technical University of Darmstadt. A detailed description of the method can be found on [arXiv](https://doi.org/10.48550/arXiv.2308.10698).
 
 ## Quick Start
 
@@ -63,5 +63,5 @@ QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivi
 To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.  
 
 ## Related publications
-- [*High-Order Numerical Integration on Domains Bounded by Intersecting Level Sets*](https://www.researchgate.net/publication/373262922_High-Order_Numerical_Integration_on_Domains_Bounded_by_Intersecting_Level_Sets)  
+- [*High-Order Numerical Integration on Domains Bounded by Intersecting Level Sets*](https://doi.org/10.48550/arXiv.2308.10698)
   We present a high-order method that provides numerical integration on volumes, surfaces, and lines defined implicitly by two smooth intersecting level sets. To approximate the integrals, the method maps quadrature rules defined on hypercubes to the curved domains of the integrals. This enables the numerical integration of a wide range of integrands since integration on hypercubes is a well known problem. The mappings are constructed by treating the isocontours of the level sets as graphs of height functions. Numerical experiments with smooth integrands indicate a high-order of convergence for transformed Gauss quadrature rules on domains defined by polynomial, rational, and trigonometric level sets. We show that the approach we have used can be combined readily with adaptive quadrature methods. Moreover, we apply the approach to numerically integrate on difficult geometries without requiring a low-order fallback method.
