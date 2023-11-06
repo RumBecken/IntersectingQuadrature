@@ -3,8 +3,10 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using IntersectingQuadrature.Map;
+using IntersectingQuadrature.Map.Nested;
 
-namespace IntersectingQuadrature.Map.Nested
+namespace Tests.Map
 {
     internal class HeightFunctionTest
     {
@@ -21,9 +23,9 @@ namespace IntersectingQuadrature.Map.Nested
             double x = 0.5;
             (double y, double dxY, double dxxY) = line.YdYddY(x);
 
-            Assert.AreEqual(y, Math.Sqrt(1 - x * x), 1e-10);
-            Assert.AreEqual(dxY, -x / y, 1e-10);
-            Assert.AreEqual(dxxY, -1.0 / Math.Pow(1 - x * x, 1.5), 1e-10);
+            Assert.That(y, Is.EqualTo( Math.Sqrt(1 - x * x)).Within( 1e-10));
+            Assert.That(dxY, Is.EqualTo(-x / y).Within(1e-10));
+            Assert.That(dxxY, Is.EqualTo(-1.0 / Math.Pow(1 - x * x, 1.5)).Within(1e-10));
         }
 
         [Test]
@@ -40,12 +42,12 @@ namespace IntersectingQuadrature.Map.Nested
 
             (double Z, double DxZ, double DyZ, double DxxZ, double DxyZ, double DyyZ) = surface.ZdZddZ(x, y);
 
-            Assert.AreEqual(Z, Math.Sqrt(1 - x * x - y * y), 1e-10);
-            Assert.AreEqual(DxZ, -x / Z, 1e-10);
-            Assert.AreEqual(DyZ, -y / Z, 1e-10);
-            Assert.AreEqual(DxxZ, (y * y - 1.0) / Math.Pow(1 - x * x - y * y, 1.5), 1e-10);
-            Assert.AreEqual(DxyZ, -(x * y) / Math.Pow(1 - x * x - y * y, 1.5), 1e-10);
-            Assert.AreEqual(DyyZ, (x * x - 1.0) / Math.Pow(1 - x * x - y * y, 1.5), 1e-10);
+            Assert.That(Z, Is.EqualTo(Math.Sqrt(1 - x * x - y * y)).Within(1e-10));
+            Assert.That(DxZ, Is.EqualTo(-x / Z).Within(1e-10));
+            Assert.That(DyZ, Is.EqualTo(-y / Z).Within(1e-10));
+            Assert.That(DxxZ, Is.EqualTo((y * y - 1.0) / Math.Pow(1 - x * x - y * y, 1.5)).Within(1e-10));
+            Assert.That(DxyZ, Is.EqualTo(-(x * y) / Math.Pow(1 - x * x - y * y, 1.5)).Within(1e-10));
+            Assert.That(DyyZ, Is.EqualTo((x * x - 1.0) / Math.Pow(1 - x * x - y * y, 1.5)).Within(1e-10));
         }
     }
 }

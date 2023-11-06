@@ -39,19 +39,19 @@ namespace IntersectingQuadrature.Map.Graph
             EmbeddedHyperRectangle expectedCube = new EmbeddedHyperRectangle(3);
             expectedCube.Center = Tensor1.Vector(-0.5, 0, 0);
             expectedCube.Diameters = Tensor1.Vector(1, 2, 2);
-            Assert.IsTrue(AreEqual(cube, expectedCube));
+            Assert.That(AreEqual(cube, expectedCube));
 
             EmbeddedHyperRectangle plane = cubeSet.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedPlane = new EmbeddedHyperRectangle(3);
             expectedPlane.Center = Tensor1.Vector(-1, 0, 0);
             expectedPlane.Diameters = Tensor1.Vector(0, 2, 2);
-            Assert.IsTrue(AreEqual(plane, expectedPlane));
+            Assert.That(AreEqual(plane, expectedPlane));
 
             EmbeddedHyperRectangle line = cubeSet.FirstChild.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedline = new EmbeddedHyperRectangle(3);
             expectedline.Center = Tensor1.Vector(-1, -1, 0);
             expectedline.Diameters = Tensor1.Vector(0, 0, 2);
-            Assert.IsTrue(AreEqual(line, expectedline));
+            Assert.That(AreEqual(line, expectedline));
         }
 
         [Test]
@@ -64,19 +64,19 @@ namespace IntersectingQuadrature.Map.Graph
             EmbeddedHyperRectangle expectedCube = new EmbeddedHyperRectangle(3);
             expectedCube.Center = Tensor1.Vector(0.5, 0, 0);
             expectedCube.Diameters = Tensor1.Vector(1, 2, 2);
-            Assert.IsTrue(AreEqual(cube, expectedCube));
+            Assert.That(AreEqual(cube, expectedCube));
 
             EmbeddedHyperRectangle plane = cubeSet.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedPlane = new EmbeddedHyperRectangle(3);
             expectedPlane.Center = Tensor1.Vector(0, 0, 0);
             expectedPlane.Diameters = Tensor1.Vector(0, 2, 2);
-            Assert.IsTrue(AreEqual(plane, expectedPlane));
+            Assert.That(AreEqual(plane, expectedPlane));
 
             EmbeddedHyperRectangle line = cubeSet.FirstChild.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedline = new EmbeddedHyperRectangle(3);
             expectedline.Center = Tensor1.Vector(0, -1, 0);
             expectedline.Diameters = Tensor1.Vector(0, 0, 2);
-            Assert.IsTrue(AreEqual(line, expectedline));
+            Assert.That(AreEqual(line, expectedline));
         }
 
         static bool AreEqual(EmbeddedHyperRectangle a, EmbeddedHyperRectangle b)
@@ -96,19 +96,19 @@ namespace IntersectingQuadrature.Map.Graph
             EmbeddedHyperRectangle expectedCube = new EmbeddedHyperRectangle(3);
             expectedCube.Center = Tensor1.Vector(0, -0.5, 0);
             expectedCube.Diameters = Tensor1.Vector(2, 1, 2);
-            Assert.IsTrue(AreEqual(cube, expectedCube));
+            Assert.That(AreEqual(cube, expectedCube));
 
             EmbeddedHyperRectangle plane = cubeSet.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedPlane = new EmbeddedHyperRectangle(3);
             expectedPlane.Center = Tensor1.Vector(-1, -0.5, 0);
             expectedPlane.Diameters = Tensor1.Vector(0, 1, 2);
-            Assert.IsTrue(AreEqual(plane, expectedPlane));
+            Assert.That(AreEqual(plane, expectedPlane));
 
             EmbeddedHyperRectangle line = cubeSet.FirstChild.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedline = new EmbeddedHyperRectangle(3);
             expectedline.Center = Tensor1.Vector(-1, -1, 0);
             expectedline.Diameters = Tensor1.Vector(0, 0, 2);
-            Assert.IsTrue(AreEqual(line, expectedline));
+            Assert.That(AreEqual(line, expectedline));
         }
 
         [Test]
@@ -121,19 +121,19 @@ namespace IntersectingQuadrature.Map.Graph
             EmbeddedHyperRectangle expectedCube = new EmbeddedHyperRectangle(3);
             expectedCube.Center = Tensor1.Vector(0, 0.5, 0);
             expectedCube.Diameters = Tensor1.Vector(2, 1, 2);
-            Assert.IsTrue(AreEqual(cube, expectedCube));
+            Assert.That(AreEqual(cube, expectedCube));
 
             EmbeddedHyperRectangle plane = cubeSet.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedPlane = new EmbeddedHyperRectangle(3);
             expectedPlane.Center = Tensor1.Vector(-1, 0.5, 0);
             expectedPlane.Diameters = Tensor1.Vector(0, 1, 2);
-            Assert.IsTrue(AreEqual(plane, expectedPlane));
+            Assert.That(AreEqual(plane, expectedPlane));
 
             EmbeddedHyperRectangle line = cubeSet.FirstChild.FirstChild.Value.Geometry;
             EmbeddedHyperRectangle expectedline = new EmbeddedHyperRectangle(3);
             expectedline.Center = Tensor1.Vector(-1, 0, 0);
             expectedline.Diameters = Tensor1.Vector(0, 0, 2);
-            Assert.IsTrue(AreEqual(line, expectedline));
+            Assert.That(AreEqual(line, expectedline));
         }
     }
 }

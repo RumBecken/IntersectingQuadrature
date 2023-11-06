@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntersectingQuadrature", "IntersectingQuadrature\IntersectingQuadrature.csproj", "{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F496EFD0-B695-4CFD-B6CC-B6982BD5907D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9C312B9-ED1C-4CE1-9719-5EBF64C70FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F496EFD0-B695-4CFD-B6CC-B6982BD5907D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F496EFD0-B695-4CFD-B6CC-B6982BD5907D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F496EFD0-B695-4CFD-B6CC-B6982BD5907D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F496EFD0-B695-4CFD-B6CC-B6982BD5907D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,9 @@
 ﻿using IntersectingQuadrature.Tensor;
+using IntersectingQuadrature.Map;
 using NUnit.Framework;
 using System;
 
-namespace IntersectingQuadrature.Map
+namespace Tests.Map
 {
     internal class NewtonMethodTests
     {
@@ -57,7 +58,7 @@ namespace IntersectingQuadrature.Map
 
             Tensor1 numRoot = newton.Root(alpha, a, b);
 
-            Assert.AreEqual(numRoot[0], alpha.Root, 1e-10);
+            Assert.That(numRoot[0], Is.EqualTo(alpha.Root).Within( 1e-10));
         }
 
         [Test]
@@ -70,7 +71,7 @@ namespace IntersectingQuadrature.Map
             Tensor1 b = Tensor1.Vector(0.9);
             Tensor1 numRoot = newton.Root(alpha, a, b);
 
-            Assert.AreEqual(numRoot[0], alpha.Root, 1e-10);
+            Assert.That(numRoot[0], Is.EqualTo(alpha.Root).Within(1e-10));
         }
 
         [Test]
@@ -83,7 +84,7 @@ namespace IntersectingQuadrature.Map
             Tensor1 b = Tensor1.Vector(1);
             Tensor1 numRoot = newton.Root(alpha, a, b);
 
-            Assert.AreEqual(numRoot[0], alpha.Root, 1e-10);
+            Assert.That(numRoot[0], Is.EqualTo(alpha.Root).Within(1e-10));
         }
 
         [Test]
@@ -98,7 +99,7 @@ namespace IntersectingQuadrature.Map
             Tensor1 b = Tensor1.Vector(1);
             Tensor1 numRoot = newton.Root(alpha, a, b);
 
-            Assert.AreEqual(numRoot[0], 0, 1e-10);
+            Assert.That(numRoot[0], Is.EqualTo(0).Within(1e-10));
         }
 
         [Test]
@@ -114,7 +115,7 @@ namespace IntersectingQuadrature.Map
             Tensor1 b = Tensor1.Vector(1);
             Tensor1 numRoot = newton.Root(alpha, a, b);
 
-            Assert.AreEqual(numRoot[0], root, 1e-10);
+            Assert.That(numRoot[0], Is.EqualTo(root).Within(1e-10));
         }
     }
 }
