@@ -8,6 +8,7 @@
     <Company>Chair of Fluid Dynamics, TU Darmstadt</Company>
     <Description>This library contains methods to create numerical quadrature rules for domains bounded by one or two implicit level sets.</Description>
     <RepositoryType>git</RepositoryType>
+    <IsPackable>true</IsPackable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>Copyright (c) 2023 Lauritz Beck</Copyright>
     <RepositoryUrl>https://github.com/RumBecken/IntersectingQuadrature</RepositoryUrl>
