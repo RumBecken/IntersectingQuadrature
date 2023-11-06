@@ -33,10 +33,10 @@ namespace IntersectingQuadrature.Tensor
             Assert.AreEqual(gradient[0], 12 * x * x, 1e-10);
             Assert.AreEqual(gradient[1], 0, 1e-10);
 
-            Assert.AreEqual(hessian[0, 0], 24 * x, 1e-6);
-            Assert.AreEqual(hessian[0, 1], 0, 1e-10);
-            Assert.AreEqual(hessian[1, 0], 0, 1e-10);
-            Assert.AreEqual(hessian[1, 1], 0, 1e-10);
+            Assert.AreEqual( 24 * x, hessian[0, 0], 1e-6);
+            Assert.AreEqual(0, hessian[0, 1], 1e-10);
+            Assert.AreEqual(0, hessian[1, 0], 1e-10);
+            Assert.AreEqual(0, hessian[1, 1], 1e-10);
 
             F = new GradientComponent(fA, 1);
             (evaluation, gradient, hessian) = F.EvaluateAndGradientAndHessian(Tensor1.Vector(x, y));
