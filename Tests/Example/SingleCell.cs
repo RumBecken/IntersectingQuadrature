@@ -64,6 +64,39 @@ namespace Tests.Example
         }
 
         [Test]
+        public static void TwoPlaneIntersectionScalingTest([Values(0.5, 1, 1.5)] double scale) {
+
+            IScalarFunction alpha = new Plane(Tensor1.Vector(1, 0, 0), Tensor1.Zeros(3));
+            IScalarFunction beta = new Plane(Tensor1.Vector(0, 1, 0), Tensor1.Zeros(3));
+
+            Quadrater finder = new Quadrater();
+            HyperRectangle cell = HyperRectangle.UnitCube(3);
+            Algebra.Scale(cell.Diameters, scale);
+            QuadratureRule rule = finder.FindRule(beta, Symbol.Zero, alpha, Symbol.Zero, cell, 1);
+
+            IScalarFunction f = new ConstantPolynomial(1);
+
+            double exact = scale * 2;
+            double F = Quadrature.Evaluate(f, rule);
+            Assert.That(exact, Is.EqualTo(F).Within(1e-10));
+        }
+
+        [Test]
+        public static void TwoLineIntersectionTest() {
+
+            IScalarFunction alpha = new Plane(Tensor1.Vector(1, 0), Tensor1.Zeros(2));
+            IScalarFunction beta = new Plane(Tensor1.Vector(0, 1), Tensor1.Zeros(2));
+
+            Quadrater finder = new Quadrater();
+            HyperRectangle cell = HyperRectangle.UnitCube(2);
+            QuadratureRule rule = finder.FindRule(beta, Symbol.Zero, alpha, Symbol.Zero, cell, 1);
+
+            IScalarFunction f = new ConstantPolynomial(1);
+
+            double F = Quadrature.Evaluate(f, rule);
+        }
+
+        [Test]
         public static void TwoPlaneVolumeScalingTest([Values( 0.5, 1, 1.5)]double scale) {
 
             IScalarFunction alpha = new Plane (Tensor1.Vector(1, 0, 1), Tensor1.Zeros(3));
