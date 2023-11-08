@@ -9,6 +9,7 @@ using Example.Experiments.Shapes;
 using IntersectingQuadrature;
 using IntersectingQuadrature.Tensor;
 using NUnit.Framework;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Tests.Example
 {
@@ -82,13 +83,14 @@ namespace Tests.Example
         }
 
         [Test]
-        public static void TwoLineIntersectionTest() {
+        public static void TwoLineIntersectionTest([Values(0.5, 1, 1.5)] double scale) {
 
             IScalarFunction alpha = new Plane(Tensor1.Vector(1, 0), Tensor1.Vector(0.1,0));
             IScalarFunction beta = new Plane(Tensor1.Vector(0, 1), Tensor1.Vector(0, 0.2));
 
             Quadrater finder = new Quadrater();
             HyperRectangle cell = HyperRectangle.UnitCube(2);
+            Algebra.Scale(cell.Diameters, scale);
             QuadratureRule rule = finder.FindRule(beta, Symbol.Zero, alpha, Symbol.Zero, cell, 1);
 
             Assert.That(rule[0].Point[0], Is.EqualTo(0.1).Within(1e-10));
