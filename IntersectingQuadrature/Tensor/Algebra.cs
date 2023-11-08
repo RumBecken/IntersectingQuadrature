@@ -29,6 +29,8 @@ namespace IntersectingQuadrature.Tensor {
                 det -= t[1, 0] * t[0, 1];
             }else if(t.N == 1 && t.M == 1) {
                 det = t[0, 0];
+            } else if (t.N == 0 && t.M == 0) {
+                det = 1;
             } else {
                 throw new NotImplementedException();
             }
