@@ -62,6 +62,23 @@ namespace Tests.Example
         }
 
         [Test]
+        public static void PointAndConstantSurfaceTest() {
+
+            IScalarFunction alpha = new Plane(Tensor1.Vector(1), Tensor1.Vector(0.1));
+            IScalarFunction beta = new ConstantPolynomial(-0.2, 1);
+
+            Quadrater finder = new Quadrater();
+            HyperRectangle cell = HyperRectangle.UnitCube(1);
+            QuadratureRule minusRule = finder.FindRule(beta, Symbol.Minus, alpha, Symbol.Zero, cell, 1);
+
+            Assert.That(minusRule.Count, Is.EqualTo(1));
+            Assert.That(minusRule[0].Point[0], Is.EqualTo(0.1).Within(1e-10));
+
+            QuadratureRule plusRule = finder.FindRule(beta, Symbol.Plus, alpha, Symbol.Zero, cell, 1);
+            Assert.That(plusRule.Count, Is.EqualTo(0));
+        }
+
+        [Test]
         public static void TwoPointSurfaceReverseTest() {
 
             IScalarFunction alpha = new Plane(Tensor1.Vector(-1), Tensor1.Vector(0.1));
