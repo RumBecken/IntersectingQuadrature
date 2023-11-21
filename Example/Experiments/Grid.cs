@@ -113,7 +113,7 @@ namespace Example.Experiments
         }
 
         public static QuadratureRule[,,] FindRule(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, int n, int cells, int subdivisions = 0) {
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle[,,] grid = CreateGrid(cells);
             QuadratureRule[,,] rules = new QuadratureRule[cells, cells, cells];
             int c = 0;
@@ -133,7 +133,7 @@ namespace Example.Experiments
         }
 
         public static QuadratureRule[,,] FindRuleAdaptive(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, int n, int cells, double tau) {
-            AdaptiveQuadrater finder = new AdaptiveQuadrater(tau);
+            IQuadrater finder = IntersectingQuadrature.Methods.Adaptive(tau);
             HyperRectangle[,,] grid = CreateGrid(cells);
             QuadratureRule[,,] rules = new QuadratureRule[cells, cells, cells];
             for (int i = 0; i < cells; ++i) {
@@ -151,7 +151,7 @@ namespace Example.Experiments
         }
 
         public static QuadratureRule[,,] FindRule(IScalarFunction alpha, Symbol signAlpha, int n, int cells) {
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle[,,] grid = CreateGrid(cells);
             QuadratureRule[,,] rules = new QuadratureRule[cells, cells, cells];
             for (int i = 0; i < cells; ++i) {

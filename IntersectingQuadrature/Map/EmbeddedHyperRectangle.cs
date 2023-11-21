@@ -20,7 +20,7 @@ namespace IntersectingQuadrature.Map
             ActiveDimensions = new BitArray(spaceDimension);
         }
 
-        public static EmbeddedHyperRectangle UnitCube(int dim)
+        public static new EmbeddedHyperRectangle UnitCube(int dim)
         {
             EmbeddedHyperRectangle cube = new EmbeddedHyperRectangle(dim);
             for (int i = 0; i < dim; ++i)

@@ -19,14 +19,9 @@ namespace IntersectingQuadrature.Map
 
         IGrapher grapher;
 
-        public Finder()
-        {
-            IGrapher grapher = new SubdivisionGrapher();
-            //grapher = new NestedGrapher(new Finder(new SubdivisionGrapher()));
-            Initialize(grapher);
-        }
+        private Finder(){ }
 
-        Finder(IGrapher grapher) {
+        private Finder(IGrapher grapher) {
             Initialize(grapher);
         }
 
@@ -35,6 +30,20 @@ namespace IntersectingQuadrature.Map
             newton = new NewtonMethod(Environment.Epsilon);
             organizer = new Tesselater(newton);
             mapper = new Converter(newton);
+        }
+
+        public static Finder Subdivider(int maxSubdivisions) {
+            Finder finder = new Finder();
+            IGrapher grapher = new SubdivisionGrapher(maxSubdivisions);
+            finder.Initialize(grapher);
+            return finder;
+        }
+
+        public static Finder NestedSubdivider(int maxSubdivisions) {
+            Finder finder = new Finder();
+            IGrapher grapher = new NestedGrapher(new Finder(new SubdivisionGrapher(maxSubdivisions)));
+            finder.Initialize(grapher);
+            return finder;
         }
 
         public List<IntegralMapping> FindMappings(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, IHyperRectangle domain)

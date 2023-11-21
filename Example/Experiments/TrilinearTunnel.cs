@@ -62,7 +62,7 @@ namespace Example.Experiments
             IScalarFunction beta = new Tunnel();
             IScalarFunction f = new ConstantPolynomial(1);
 
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(3);
             cube.Diameters = Tensor1.Vector(1, 1, 1);
             cube.Center = Tensor1.Vector(0.5, 0.5, 0.5);

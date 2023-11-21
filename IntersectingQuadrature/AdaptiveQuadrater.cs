@@ -6,14 +6,14 @@ using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature
 {
-    public class AdaptiveQuadrater {
+    class AdaptiveQuadrater : IQuadrater {
 
         Finder hunter;
         Adapter adapter;
 
         public AdaptiveQuadrater(double tau) {
             adapter = new Adapter(tau);
-            hunter = new Finder();
+            hunter = Finder.Subdivider(5);
         }
 
         public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, IHyperRectangle domain, int n, int subdivisions = 0) {

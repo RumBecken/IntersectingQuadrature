@@ -17,7 +17,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(-1), 1.5);
             IScalarFunction beta = new Sphere(Tensor1.Vector(1), 1.5);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater ruler = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(1);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cube, 3, 0);
 
@@ -27,7 +27,7 @@ namespace Example.Experiments
         public static void Circle() {
             IScalarFunction alpha = new Sphere(Tensor1.Vector(0,0), 0.5);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater ruler = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(2);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Minus, cube, 3, 0);
 
@@ -37,7 +37,7 @@ namespace Example.Experiments
         public static void Sphere() {
             IScalarFunction alpha = new Sphere(Tensor1.Vector(0, 0, 0), 0.5);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater ruler = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(3);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
 
@@ -47,7 +47,7 @@ namespace Example.Experiments
         public static void TorusCap() {
             IScalarFunction torus = new Torus(Tensor1.Vector(0.01, -2.01, -1.999), 2, 1);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater ruler = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(3);
             QuadratureRule rule = ruler.FindRule(torus, Symbol.Zero, cube, 3, 0);
 
@@ -64,7 +64,7 @@ namespace Example.Experiments
             IScalarFunction a = new QuadraticPolynomial(-r * r + c * c, Tensor1.Vector(2 * c , 0, 0), A) ;
             IScalarFunction alpha = new Sheet(a, 0.2);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater ruler = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(3);
             QuadratureRule rule = ruler.FindRule(alpha, Symbol.Zero, cube, 3, 0);
 
@@ -81,7 +81,7 @@ namespace Example.Experiments
 
             IScalarFunction alpha = new Sheet(sphere, d);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater ruler = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(3);
             QuadratureRule rule = ruler.FindRule(sphere, Symbol.Zero, cube, 1, 0);
 
@@ -94,7 +94,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Cylinder(Tensor1.Vector(1.8, 0.1, 0 ), 1);
 
 
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle unitDomain = HyperRectangle.UnitCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, unitDomain, 2);
 
@@ -105,7 +105,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Cylinder(Tensor1.Vector(1, 1, 0), 1);
 
 
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle unitDomain = HyperRectangle.UnitCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, unitDomain, 4);
 
@@ -116,7 +116,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Cylinder(Tensor1.Vector(-1, 0.5, 0), 1);
             IScalarFunction beta = new Cylinder(Tensor1.Vector(-1, -0.5, 0), 1);
 
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle unitDomain = HyperRectangle.UnitCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, unitDomain, n);
 
@@ -127,7 +127,7 @@ namespace Example.Experiments
 
             IScalarFunction alpha = new Plane(Tensor1.Vector(0.3, 1, 0.2), Tensor1.Zeros(3));
 
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle cell = new HyperRectangle(3);
             cell.Center = Tensor1.Vector( -0.66666666666666674, 0, 0);
             cell.Diameters[0] = 0.66666666666666663;
@@ -144,7 +144,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Sphere(Tensor1.Vector(-1, -1, -0.49), R);
             IScalarFunction f = new ConstantPolynomial(1);
 
-            Quadrater finder = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle cell = new HyperRectangle(3);
             double h = 2 / 8.0;
             cell.Center = Tensor1.Vector(-1 + h/ 2.0 + h* 0, -1 + h / 2.0 + h * 2 , -1 + h / 2.0 + h * 4);

@@ -6,12 +6,17 @@ using System;
 
 namespace IntersectingQuadrature
 {
-    public class Quadrater {
+    class Quadrater : IQuadrater{
 
         Finder hunter;
+        
+        public Quadrater(int maxSubdivisions) {
+            hunter = Finder.Subdivider(maxSubdivisions);
+        }
 
+        
         public Quadrater() {
-            hunter = new Finder();
+            hunter = Finder.Subdivider(4);
         }
 
         public QuadratureRule FindRule(IScalarFunction alpha, 

@@ -26,7 +26,7 @@ namespace Example.Experiments
             IScalarFunction torus = new Torus(Tensor1.Vector(0.00, 0, 0), 0.7, 0.2);
             IScalarFunction alpha = new Sheet(torus, 0.04);
 
-            Quadrater ruler = new Quadrater();
+            IQuadrater finder = IntersectingQuadrature.Methods.Create();
             HyperRectangle cube = HyperRectangle.UnitCube(3);
             QuadratureRule[,,] rule = Grid.FindRule(alpha, Symbol.Zero, 1, 12);
 

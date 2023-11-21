@@ -7,10 +7,11 @@ namespace IntersectingQuadrature.Map.Graph
     internal class SubdivisionGrapher : IGrapher
     {
 
-        int maxSubdivisions = 100;
+        int maxSubdivisions;
 
-        public SubdivisionGrapher()
+        public SubdivisionGrapher(int maxSubdivisions)
         {
+            this.maxSubdivisions = maxSubdivisions;
         }
 
         public LinkedList<Decomposition> Decompose(IScalarFunction alpha, IHyperRectangle geometry)
