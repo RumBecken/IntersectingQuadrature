@@ -1,8 +1,18 @@
 ﻿using IntersectingQuadrature.Tensor;
 
 namespace IntersectingQuadrature {
+    
+    /// <summary>
+    /// Methods to numerically evaluate definite integrals
+    /// </summary>
     public static class Quadrature {
 
+        /// <summary>
+        /// Numerically evaluates a definite integral of a function
+        /// </summary>
+        /// <param name="f">Function of integral</param>
+        /// <param name="rule">Quadrature rule covering the domain of the integral</param>
+        /// <returns>Value of integral</returns>
         public static double Evaluate(IScalarFunction f, QuadratureRule rule) {
             //Kahan Summation
             double s = 0;
@@ -17,6 +27,12 @@ namespace IntersectingQuadrature {
             return s;
         }
 
+        /// <summary>
+        /// Numerically evaluates a definite integral of a function embedded in a 2 dimensional grid
+        /// </summary>
+        /// <param name="f">Function of integral</param>
+        /// <param name="rules">2 dimensional grid of quadrature rules covering the domain of the integral</param>
+        /// <returns>Value of integral</returns>
         public static double Evaluate(IScalarFunction f, QuadratureRule[,] rules) {
             //Kahan Summation
             double s = 0;
@@ -33,6 +49,12 @@ namespace IntersectingQuadrature {
             return s;
         }
 
+        /// <summary>
+        /// Numerically evaluates a definite integral of a function embedded in a 3 dimensional grid
+        /// </summary>
+        /// <param name="f">Function of integral</param>
+        /// <param name="rules">3 dimensional grid of quadrature rules covering the domain of the integral</param>
+        /// <returns>Value of integral</returns>
         public static double Evaluate(IScalarFunction f, QuadratureRule[,,] rules) {
             //Kahan Summation
             double s = 0;
