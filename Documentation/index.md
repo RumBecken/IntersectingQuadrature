@@ -35,8 +35,8 @@ You have two options to use this package. You can include it as a libary in your
 add IntersectingQuadrature.csproj to your project. 
 
 To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule.yml) : 
-- Implement level sets [`IScalarFunction Alpha`](api/TensorAnalysis.IScalarFunction.yml) 
-  and [`IScalarFunction Beta`](api/TensorAnalysis.IScalarFunction.yml). 
+- Implement level sets [`IScalarFunction Alpha`](api/IntersectingQuadrature.Tensor.IScalarFunction.yml) 
+  and [`IScalarFunction Beta`](api/IntersectingQuadrature.Tensor.IScalarFunction.yml). 
 - Create [`IHyperRectangle K`](api/IntersectingQuadrature.HyperRectangle.yml) of dimension *d* which confines the domain of integration.
 - Determine the domain of integration by selecting 
   [`Symbol signAlpha`](api/IntersectingQuadrature.Symbol.yml) and [`Symbol signBeta`](api/IntersectingQuadrature.Symbol.yml) from {0, -, +} for `Alpha` and `Beta` respectively. 
