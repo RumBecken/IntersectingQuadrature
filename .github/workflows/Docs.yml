@@ -33,7 +33,7 @@ jobs:
         dotnet-version: 8.x
 
     - run: dotnet tool update -g docfx
-    - run: docfx Documentation/docfx.json
+    - run: docfx Documentation/docfx.json -t statictoc
 
     - name: Setup Pages
       uses: actions/configure-pages@v3
