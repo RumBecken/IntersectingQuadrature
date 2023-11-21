@@ -90,8 +90,8 @@ namespace Example {
 add IntersectingQuadrature.csproj to your project.</p>
 <p>To construct a <a href="api/IntersectingQuadrature.QuadratureRule.html"><code>QuadratureRule rule</code></a> :</p>
 <ul>
-<li>Implement level sets <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Alpha</code></a>
-and <a href="api/TensorAnalysis.IScalarFunction.yml"><code>IScalarFunction Beta</code></a>.</li>
+<li>Implement level sets <a href="api/IntersectingQuadrature.Tensor.IScalarFunction.html"><code>IScalarFunction Alpha</code></a>
+and <a href="api/IntersectingQuadrature.Tensor.IScalarFunction.html"><code>IScalarFunction Beta</code></a>.</li>
 <li>Create <a href="api/IntersectingQuadrature.HyperRectangle.html"><code>IHyperRectangle K</code></a> of dimension <em>d</em> which confines the domain of integration.</li>
 <li>Determine the domain of integration by selecting
 <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signAlpha</code></a> and <a href="api/IntersectingQuadrature.Symbol.html"><code>Symbol signBeta</code></a> from {0, -, +} for <code>Alpha</code> and <code>Beta</code> respectively.
