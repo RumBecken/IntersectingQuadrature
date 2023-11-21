@@ -52,4 +52,3 @@ Intersecting Quadrature gratefully uses
 Copyright (c) 2023 Lauritz Beck
 
 MIT
-
