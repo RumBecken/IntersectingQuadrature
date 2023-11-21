@@ -5,18 +5,18 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class Quadrater
+      <title>Interface IQuadrater
  </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class Quadrater
+      <meta name="title" content="Interface IQuadrater
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
     
     
     
@@ -67,82 +67,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="IntersectingQuadrature.Quadrater">
+            <article class="content wrap" id="_content" data-uid="IntersectingQuadrature.IQuadrater">
 
 
 
-  <h1 id="IntersectingQuadrature_Quadrater" data-uid="IntersectingQuadrature.Quadrater" class="text-break">Class Quadrater
+  <h1 id="IntersectingQuadrature_IQuadrater" data-uid="IntersectingQuadrature.IQuadrater" class="text-break">Interface IQuadrater
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides tensorized quadrature rules on subdomains of a hyperrectangle bounded by one or two level sets.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Quadrater</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="IntersectingQuadrature.html">IntersectingQuadrature</a></h6>
   <h6><strong>Assembly</strong>: IntersectingQuadrature.dll</h6>
-  <h5 id="IntersectingQuadrature_Quadrater_syntax">Syntax</h5>
+  <h5 id="IntersectingQuadrature_IQuadrater_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Quadrater</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_Quadrater__ctor.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.Quadrater.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/Quadrater.cs/#L13">View Source</a>
-  </span>
-  <a id="IntersectingQuadrature_Quadrater__ctor_" data-uid="IntersectingQuadrature.Quadrater.#ctor*"></a>
-  <h4 id="IntersectingQuadrature_Quadrater__ctor" data-uid="IntersectingQuadrature.Quadrater.#ctor">Quadrater()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Quadrater()</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IQuadrater</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction%2CIntersectingQuadrature.Symbol%2CIntersectingQuadrature.IHyperRectangle%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_IQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.IQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction%2CIntersectingQuadrature.Symbol%2CIntersectingQuadrature.IHyperRectangle%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/Quadrater.cs/#L17">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/IQuadrater.cs/#L25">View Source</a>
   </span>
-  <a id="IntersectingQuadrature_Quadrater_FindRule_" data-uid="IntersectingQuadrature.Quadrater.FindRule*"></a>
-  <h4 id="IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_" data-uid="IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)">FindRule(IScalarFunction, Symbol, IHyperRectangle, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="IntersectingQuadrature_IQuadrater_FindRule_" data-uid="IntersectingQuadrature.IQuadrater.FindRule*"></a>
+  <h4 id="IntersectingQuadrature_IQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_" data-uid="IntersectingQuadrature.IQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)">FindRule(IScalarFunction, Symbol, IHyperRectangle, int, int)</h4>
+  <div class="markdown level1 summary"><p>Constructs a tensorized Gauss quadrature rule on a subdomain of a hyperrectangle
+bounded by the zero-isocontour of a level set.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, IHyperRectangle domain, int n, int subdivisions = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">QuadratureRule FindRule(IScalarFunction alpha, Symbol sign, IHyperRectangle domain, int n, int subdivisions = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -157,12 +114,14 @@
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.Tensor.IScalarFunction.html">IScalarFunction</a></td>
         <td><span class="parametername">alpha</span></td>
-        <td></td>
+        <td><p>Level set</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.Symbol.html">Symbol</a></td>
         <td><span class="parametername">sign</span></td>
-        <td></td>
+        <td><p>Sign of domain defined by level set</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.IHyperRectangle.html">IHyperRectangle</a></td>
@@ -172,12 +131,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">n</span></td>
-        <td></td>
+        <td><p>Number of quadrature nodes per dimension</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">subdivisions</span></td>
-        <td></td>
+        <td><p>Additional subdivision of the tensorized quadrature rule</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -198,18 +159,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction%2CIntersectingQuadrature.Symbol%2CIntersectingQuadrature.Tensor.IScalarFunction%2CIntersectingQuadrature.Symbol%2CIntersectingQuadrature.IHyperRectangle%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_IQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.IQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction%2CIntersectingQuadrature.Symbol%2CIntersectingQuadrature.Tensor.IScalarFunction%2CIntersectingQuadrature.Symbol%2CIntersectingQuadrature.IHyperRectangle%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/Quadrater.cs/#L34">View Source</a>
+    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/IQuadrater.cs/#L39">View Source</a>
   </span>
-  <a id="IntersectingQuadrature_Quadrater_FindRule_" data-uid="IntersectingQuadrature.Quadrater.FindRule*"></a>
-  <h4 id="IntersectingQuadrature_Quadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_" data-uid="IntersectingQuadrature.Quadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)">FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="IntersectingQuadrature_IQuadrater_FindRule_" data-uid="IntersectingQuadrature.IQuadrater.FindRule*"></a>
+  <h4 id="IntersectingQuadrature_IQuadrater_FindRule_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_Tensor_IScalarFunction_IntersectingQuadrature_Symbol_IntersectingQuadrature_IHyperRectangle_System_Int32_System_Int32_" data-uid="IntersectingQuadrature.IQuadrater.FindRule(IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.Tensor.IScalarFunction,IntersectingQuadrature.Symbol,IntersectingQuadrature.IHyperRectangle,System.Int32,System.Int32)">FindRule(IScalarFunction, Symbol, IScalarFunction, Symbol, IHyperRectangle, int, int)</h4>
+  <div class="markdown level1 summary"><p>Constructs a tensorized Gauss quadrature rule on a subdomain of a hyperrectangle
+bounded by the zero-isocontours of two level sets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public QuadratureRule FindRule(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, IHyperRectangle domain, int n, int subdivisions = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">QuadratureRule FindRule(IScalarFunction alpha, Symbol signAlpha, IScalarFunction beta, Symbol signBeta, IHyperRectangle domain, int n, int subdivisions = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -224,22 +187,26 @@
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.Tensor.IScalarFunction.html">IScalarFunction</a></td>
         <td><span class="parametername">alpha</span></td>
-        <td></td>
+        <td><p>Level set</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.Symbol.html">Symbol</a></td>
         <td><span class="parametername">signAlpha</span></td>
-        <td></td>
+        <td><p>Sign of domain defined by level set alpha</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.Tensor.IScalarFunction.html">IScalarFunction</a></td>
         <td><span class="parametername">beta</span></td>
-        <td></td>
+        <td><p>Level Set</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.Symbol.html">Symbol</a></td>
         <td><span class="parametername">signBeta</span></td>
-        <td></td>
+        <td><p>Sign of domain defined by level set beta</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="IntersectingQuadrature.IHyperRectangle.html">IHyperRectangle</a></td>
@@ -249,12 +216,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">n</span></td>
-        <td></td>
+        <td><p>Number of quadrature nodes per dimension</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">subdivisions</span></td>
-        <td></td>
+        <td><p>Additional subdivision of the tensorized quadrature rule</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -282,10 +251,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_Quadrater.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.Quadrater%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/RumBecken/IntersectingQuadrature/new/master/apiSpec/new?filename=IntersectingQuadrature_IQuadrater.md&amp;value=---%0Auid%3A%20IntersectingQuadrature.IQuadrater%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/Quadrater.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/RumBecken/IntersectingQuadrature/blob/master/IntersectingQuadrature/IQuadrater.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

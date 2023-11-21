@@ -4,16 +4,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.AdaptiveQuadrater.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/IntersectingQuadrature.AdaptiveQuadrater.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/IntersectingQuadrature.HyperRectangle.yml",
       "output": {
         ".html": {
@@ -34,10 +24,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/IntersectingQuadrature.Quadrater.yml",
+      "source_relative_path": "api/IntersectingQuadrature.IQuadrater.yml",
       "output": {
         ".html": {
-          "relative_path": "api/IntersectingQuadrature.Quadrater.html"
+          "relative_path": "api/IntersectingQuadrature.IQuadrater.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntersectingQuadrature.Methods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntersectingQuadrature.Methods.html"
         }
       },
       "version": ""
@@ -256,19 +256,16 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -282,11 +279,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
