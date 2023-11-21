@@ -2,6 +2,7 @@
 
 namespace IntersectingQuadrature {
     public static class Quadrature {
+
         public static double Evaluate(IScalarFunction f, QuadratureRule rule) {
             //Kahan Summation
             double s = 0;

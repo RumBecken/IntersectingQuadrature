@@ -20,9 +20,9 @@ namespace Example {
       IScalarFunction alpha = new LinearPolynomial(0, Tensor1.Vector(1, 0, 0));
       IScalarFunction beta = new LinearPolynomial(0, Tensor1.Vector(0, 1, 0));
 
-      Quadrater finder = new Quadrater();
+      IQuadrater Q = IntersectingQuadrature.Methods.Create();
       HyperRectangle cell = HyperRectangle.UnitCube(3);
-      QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
+      QuadratureRule rule = Q.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, cell, 3);
     }
   }
 }
@@ -45,19 +45,20 @@ To construct a [`QuadratureRule rule`](api/IntersectingQuadrature.QuadratureRule
 - Select a number `int subdivions` of subdivisions.
 
 
-You can construct a quadrature rule by creating a [`Quadrater Q`](api/IntersectingQuadrature.Quadrater.yml) and calling 
+You can construct a quadrature rule by creating a [`IQuadrater Q`](api/IntersectingQuadrature.IQuadrater.yml) and calling 
 `Q.FindRule(...)` :    
 ```cs
-IntersectingQuadrature.Quadrater Q = new Quadrater();
+IQuadrater Q = IntersectingQuadrature.Methods.Create();
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 ```
-If required, the [AdaptiveQuadrater](api/IntersectingQuadrature.AdaptiveQuadrater.yml) 
-creates a quadrature rule, which is refined adaptively according to the relative error threshold `tau` : 
+If required, an adaptive [`IQuadrater Q`](api/IntersectingQuadrature.IQuadrater.yml) can be created.
 ```cs
-double tau;
-AdaptiveQuadrater Q = new AdaptiveQuadrater(tau);
+double tau = 0.001;
+IQuadrater Q = IntersectingQuadrature.Methods.Adaptive(tau);
 QuadratureRule rule = Q.FindRule(alpha, signAlpha, beta, signBeta, K, n, subdivisions);
 ```
+It creates a quadrature rule, which is refined adaptively according to the relative error threshold `tau`. 
+
 
 ## Examples
 To see examples, compile Example/Example.csproj and run the examples in program.cs by uncommenting them.  

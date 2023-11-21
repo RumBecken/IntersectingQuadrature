@@ -116,7 +116,7 @@ namespace Example.Experiments
             IScalarFunction alpha = new Cylinder(Tensor1.Vector(-1, 0.5, 0), 1);
             IScalarFunction beta = new Cylinder(Tensor1.Vector(-1, -0.5, 0), 1);
 
-            IQuadrater finder = IntersectingQuadrature.Methods.Create();
+            IQuadrater finder = Methods.Create();
             HyperRectangle unitDomain = HyperRectangle.UnitCube(3);
             QuadratureRule rule = finder.FindRule(alpha, Symbol.Minus, beta, Symbol.Minus, unitDomain, n);
 
